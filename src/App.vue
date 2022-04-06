@@ -4,7 +4,7 @@ import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <div>
+  <div class="">
     <!-- <header>
       <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
@@ -12,13 +12,93 @@ import TheWelcome from './components/TheWelcome.vue'
         <HelloWorld msg="You did it!" />
       </div>
     </header> -->
+    <header class="header">
+      <div class="navbar">
+        <div class="logo">
+          <h1 class="textLightBlue">Your<strong class="font-weight-normal textPrimary">Weather</strong> </h1>
+        </div>
+        
+        <nav class="d-flex flex-fill justify-content-around">
+          <div>
+            <a href="">Home</a>
+          </div>
+          <div>
+            <a href="">Photos</a>
+          </div>
+          <div>
+            <a href="">Contacts</a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-    <main class="py-5">
+    <main class="">
+      
       <!-- <TheWelcome /> -->
       <!-- <pre ><code type="text/json">{{dataWithApi}}</code></pre> -->
        <!-- {{dt}} -->
 
-       <section class="">
+       <section class="container-fluid section">
+         <HelloWorld :msg="coord" />
+
+         <div class="row m-0">
+           <div class="col-8">
+             <div class="row m-0">
+               <div class="col-12 bgOpacity my-2 bRadius">
+                 <h2>{{name}}</h2>
+                 <div class="d-flex">
+                   <div class="flex-grow-1">
+                     <h5>{{main.temp}} &#x2103;</h5>
+                   </div>
+                   <div class="flex-fill">
+                     <h5 class="text-capitalize" v-for="item in weather" :key="item">{{item.description}}
+                       <img :src="linkIcon(item.icon)" alt="" style="background:pink">
+                     </h5>
+                     <p class="text-capitalize">wilgotność: {{main.humidity}} %</p>
+                     <p class="text-capitalize">prędkość wiatru: {{wind.speed}} m/s</p>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="col-12 bgOpacity my-2 bRadius">
+                  <h2>{{name}}</h2>
+                 <div class="">
+                   <div class="">
+                     <h5>{{main.temp}} &#x2103;</h5>
+                   </div>
+                   <div class="d-flex">
+                      <div class="flex-fill text-center">
+                        <h6>15&deg;</h6>
+                        <p>PN</p>
+                      </div>
+                      <div class="flex-fill text-center">
+                        <h6>15&deg;</h6>
+                        <p>WT</p>
+                      </div>
+                      <div class="flex-fill text-center">
+                        <h6>15&deg;</h6>
+                        <p>ŚR</p>
+                      </div>
+                      <div class="flex-fill text-center">
+                        <h6>15&deg;</h6>
+                        <p>CZW</p>
+                      </div>
+                      <div class="flex-fill text-center">
+                        <h6>15&deg;</h6>
+                        <p>PT</p>
+                      </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-4 my-2 bgOpacity bRadius">
+
+           </div>
+         </div>
+       </section>
+
+       <section>
          <div class="container">
            <div class="row border">
              <div class="col-4 coord">
@@ -36,7 +116,7 @@ import TheWelcome from './components/TheWelcome.vue'
            <div class="row border">
              <div class="col-4 main">
               temperatura: {{main.temp}} Kelwina<br>
-              temperatura: {{kelwinToCelcius()}} Celciusza<br>
+              temperatura: {{main.temp }} Celciusza<br>
               temperatura odczuwalna: {{main.feels_like}} K<br>
               temperatura maxymalna: {{main.temp_max}} K<br>
               temperatura minimalna: {{main.temp_min}} K<br>
@@ -67,7 +147,7 @@ import TheWelcome from './components/TheWelcome.vue'
            </div>
          </div>
        </section>
-      {{celsiusToKelwin( kelwinToCelcius() )}}
+      <!-- {{celsiusToKelwin( kelwinToCelcius() )}} -->
     </main>
   </div>
 </template>
@@ -84,6 +164,9 @@ export default {
         result: [],
         lat: '',
         lon:'',
+        cityName: 'Rzeszów',
+        stateCode:'',
+        temperatureUnit: 'metric',
         
         count: "1",
         dataWithApi: {},
@@ -105,7 +188,8 @@ export default {
         name : "",
         cod: 0,
 
-        tempKelwin: 0.00
+        tempKelwin: 0.00,
+        charCelcius: '&#x2103;'
       }
     },
 
@@ -127,7 +211,7 @@ export default {
       
       async getWeather() {
         
-        await axios.get(`${this.URL}lat=50.011957&lon=21.594081&appid=${this.API_KEY}&lang=pl`)
+        await axios.get(`${this.URL}q=${this.cityName}&lat=${this.lat}&lon=${this.lon}&appid=${this.API_KEY}&lang=pl&units=${this.temperatureUnit}`)
                 .then(res => {
                   console.log(res, "res");
                   if (res.status == 200) {
@@ -174,10 +258,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 @import './assets/base.css';
+@import './scss/app.scss';
+
 .col-4 {
-    background-image: url("./assets/images/sunset.jpg");
+    // background-image: url("./assets/images/sunset.jpg");
     background-size: cover;
 }
 </style>

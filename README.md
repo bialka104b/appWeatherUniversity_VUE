@@ -27,3 +27,5 @@ npm run dev
 ```sh
 npm run build
 ```
+
+PROJEKT ROBIONY NA PRZEDMIOT ZARZĄDZANIE DANYMI
