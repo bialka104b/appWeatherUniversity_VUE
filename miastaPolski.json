@@ -1,0 +1,5786 @@
+[
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Bolesławiec"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 1,
+    "GMI": 4,
+    "NAZWA": "Nowogrodziec"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Bielawa"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 2,
+    "GMI": 2,
+    "NAZWA": "Dzierżoniów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 2,
+    "GMI": 7,
+    "NAZWA": "Niemcza"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 2,
+    "GMI": 3,
+    "NAZWA": "Pieszyce"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 2,
+    "GMI": 4,
+    "NAZWA": "Piława Górna"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Głogów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Góra"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 4,
+    "GMI": 4,
+    "NAZWA": "Wąsosz"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 5,
+    "GMI": 2,
+    "NAZWA": "Bolków"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Jawor"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Jelenia Góra"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Kamienna Góra"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 7,
+    "GMI": 3,
+    "NAZWA": "Lubawka"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 6,
+    "GMI": 1,
+    "NAZWA": "Karpacz"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 6,
+    "GMI": 2,
+    "NAZWA": "Kowary"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 6,
+    "GMI": 3,
+    "NAZWA": "Piechowice"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 6,
+    "GMI": 4,
+    "NAZWA": "Szklarska Poręba"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 6,
+    "NAZWA": "Bystrzyca Kłodzka"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Duszniki-Zdrój"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 2,
+    "NAZWA": "Kłodzko"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 3,
+    "NAZWA": "Kudowa-Zdrój"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 8,
+    "NAZWA": "Lądek-Zdrój"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 10,
+    "NAZWA": "Międzylesie"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 4,
+    "NAZWA": "Nowa Ruda"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 5,
+    "NAZWA": "Polanica-Zdrój"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 12,
+    "NAZWA": "Radków"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 13,
+    "NAZWA": "Stronie Śląskie"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 8,
+    "GMI": 14,
+    "NAZWA": "Szczytna"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Legnica"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Chojnów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 9,
+    "GMI": 7,
+    "NAZWA": "Prochowice"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 10,
+    "GMI": 3,
+    "NAZWA": "Leśna"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Lubań"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 10,
+    "GMI": 5,
+    "NAZWA": "Olszyna"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 10,
+    "GMI": 2,
+    "NAZWA": "Świeradów-Zdrój"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Lubin"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 11,
+    "GMI": 4,
+    "NAZWA": "Ścinawa"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 12,
+    "GMI": 1,
+    "NAZWA": "Gryfów Śląski"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 12,
+    "GMI": 2,
+    "NAZWA": "Lubomierz"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 12,
+    "GMI": 3,
+    "NAZWA": "Lwówek Śląski"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 12,
+    "GMI": 4,
+    "NAZWA": "Mirsk"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 12,
+    "GMI": 5,
+    "NAZWA": "Wleń"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 13,
+    "GMI": 3,
+    "NAZWA": "Milicz"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 14,
+    "GMI": 2,
+    "NAZWA": "Bierutów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 14,
+    "GMI": 5,
+    "NAZWA": "Międzybórz"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 14,
+    "GMI": 1,
+    "NAZWA": "Oleśnica"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 14,
+    "GMI": 7,
+    "NAZWA": "Syców"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 14,
+    "GMI": 8,
+    "NAZWA": "Twardogóra"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 15,
+    "GMI": 3,
+    "NAZWA": "Jelcz-Laskowice"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 15,
+    "GMI": 1,
+    "NAZWA": "Oława"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Chocianów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 16,
+    "GMI": 4,
+    "NAZWA": "Polkowice"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 16,
+    "GMI": 5,
+    "NAZWA": "Przemków"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 17,
+    "GMI": 4,
+    "NAZWA": "Strzelin"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 17,
+    "GMI": 5,
+    "NAZWA": "Wiązów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 18,
+    "GMI": 4,
+    "NAZWA": "Środa Śląska"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 19,
+    "GMI": 4,
+    "NAZWA": "Jaworzyna Śląska"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 19,
+    "GMI": 6,
+    "NAZWA": "Strzegom"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 19,
+    "GMI": 1,
+    "NAZWA": "Świdnica"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 19,
+    "GMI": 2,
+    "NAZWA": "Świebodzice"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 19,
+    "GMI": 8,
+    "NAZWA": "Żarów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 20,
+    "GMI": 1,
+    "NAZWA": "Oborniki Śląskie"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 20,
+    "GMI": 2,
+    "NAZWA": "Prusice"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 20,
+    "GMI": 3,
+    "NAZWA": "Trzebnica"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 20,
+    "GMI": 6,
+    "NAZWA": "Żmigród"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 65,
+    "GMI": 1,
+    "NAZWA": "Wałbrzych"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 21,
+    "GMI": 1,
+    "NAZWA": "Boguszów-Gorce"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 21,
+    "GMI": 5,
+    "NAZWA": "Głuszyca"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 21,
+    "GMI": 2,
+    "NAZWA": "Jedlina-Zdrój"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 21,
+    "GMI": 6,
+    "NAZWA": "Mieroszów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 21,
+    "GMI": 3,
+    "NAZWA": "Szczawno-Zdrój"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 22,
+    "GMI": 1,
+    "NAZWA": "Brzeg Dolny"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 22,
+    "GMI": 3,
+    "NAZWA": "Wołów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 64,
+    "GMI": 1,
+    "NAZWA": "Wrocław"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 23,
+    "GMI": 4,
+    "NAZWA": "Kąty Wrocławskie"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 23,
+    "GMI": 8,
+    "NAZWA": "Siechnice"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 23,
+    "GMI": 7,
+    "NAZWA": "Sobótka"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 24,
+    "GMI": 1,
+    "NAZWA": "Bardo"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 24,
+    "GMI": 3,
+    "NAZWA": "Kamieniec Ząbkowicki"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 24,
+    "GMI": 5,
+    "NAZWA": "Ząbkowice Śląskie"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 24,
+    "GMI": 6,
+    "NAZWA": "Ziębice"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 24,
+    "GMI": 7,
+    "NAZWA": "Złoty Stok"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 25,
+    "GMI": 3,
+    "NAZWA": "Bogatynia"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 25,
+    "GMI": 4,
+    "NAZWA": "Pieńsk"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 25,
+    "GMI": 6,
+    "NAZWA": "Węgliniec"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 25,
+    "GMI": 1,
+    "NAZWA": "Zawidów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 25,
+    "GMI": 2,
+    "NAZWA": "Zgorzelec"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 26,
+    "GMI": 4,
+    "NAZWA": "Świerzawa"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 26,
+    "GMI": 1,
+    "NAZWA": "Wojcieszów"
+  },
+  {
+    "WOJ": "dolnośląskie",
+    "POW": 26,
+    "GMI": 2,
+    "NAZWA": "Złotoryja"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Aleksandrów Kujawski"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 1,
+    "GMI": 2,
+    "NAZWA": "Ciechocinek"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 1,
+    "GMI": 3,
+    "NAZWA": "Nieszawa"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Brodnica"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 2,
+    "GMI": 5,
+    "NAZWA": "Górzno"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 2,
+    "GMI": 7,
+    "NAZWA": "Jabłonowo Pomorskie"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 3,
+    "GMI": 4,
+    "NAZWA": "Koronowo"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 3,
+    "GMI": 8,
+    "NAZWA": "Solec Kujawski"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Bydgoszcz"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Chełmno"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Golub-Dobrzyń"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 5,
+    "GMI": 4,
+    "NAZWA": "Kowalewo Pomorskie"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Grudziądz"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 6,
+    "GMI": 3,
+    "NAZWA": "Łasin"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 6,
+    "GMI": 4,
+    "NAZWA": "Radzyń Chełmiński"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 7,
+    "GMI": 3,
+    "NAZWA": "Gniewkowo"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Inowrocław"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 7,
+    "GMI": 5,
+    "NAZWA": "Janikowo"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 7,
+    "GMI": 6,
+    "NAZWA": "Kruszwica"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 7,
+    "GMI": 7,
+    "NAZWA": "Pakość"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 8,
+    "GMI": 4,
+    "NAZWA": "Dobrzyń nad Wisłą"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Lipno"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 8,
+    "GMI": 7,
+    "NAZWA": "Skępe"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 9,
+    "GMI": 3,
+    "NAZWA": "Mogilno"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 9,
+    "GMI": 4,
+    "NAZWA": "Strzelno"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Kcynia"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 10,
+    "GMI": 2,
+    "NAZWA": "Mrocza"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 10,
+    "GMI": 3,
+    "NAZWA": "Nakło nad Notecią"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 10,
+    "GMI": 5,
+    "NAZWA": "Szubin"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 11,
+    "GMI": 5,
+    "NAZWA": "Piotrków Kujawski"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Radziejów"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 12,
+    "GMI": 1,
+    "NAZWA": "Rypin"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 13,
+    "GMI": 1,
+    "NAZWA": "Kamień Krajeński"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 13,
+    "GMI": 2,
+    "NAZWA": "Sępólno Krajeńskie"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 13,
+    "GMI": 4,
+    "NAZWA": "Więcbork"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 14,
+    "GMI": 6,
+    "NAZWA": "Nowe"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 14,
+    "GMI": 8,
+    "NAZWA": "Pruszcz"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 14,
+    "GMI": 9,
+    "NAZWA": "Świecie"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Toruń"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 15,
+    "GMI": 1,
+    "NAZWA": "Chełmża"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 16,
+    "GMI": 6,
+    "NAZWA": "Tuchola"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 17,
+    "GMI": 1,
+    "NAZWA": "Wąbrzeźno"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 64,
+    "GMI": 1,
+    "NAZWA": "Włocławek"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 18,
+    "GMI": 4,
+    "NAZWA": "Brześć Kujawski"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 18,
+    "GMI": 6,
+    "NAZWA": "Chodecz"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 18,
+    "GMI": 8,
+    "NAZWA": "Izbica Kujawska"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 18,
+    "GMI": 1,
+    "NAZWA": "Kowal"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 18,
+    "GMI": 11,
+    "NAZWA": "Lubień Kujawski"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 18,
+    "GMI": 12,
+    "NAZWA": "Lubraniec"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 19,
+    "GMI": 1,
+    "NAZWA": "Barcin"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 19,
+    "GMI": 3,
+    "NAZWA": "Janowiec Wielkopolski"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 19,
+    "GMI": 4,
+    "NAZWA": "Łabiszyn"
+  },
+  {
+    "WOJ": "kujawsko-pomorskie",
+    "POW": 19,
+    "GMI": 6,
+    "NAZWA": "Żnin"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Międzyrzec Podlaski"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 1,
+    "GMI": 2,
+    "NAZWA": "Terespol"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Biała Podlaska"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Biłgoraj"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 2,
+    "GMI": 5,
+    "NAZWA": "Frampol"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 2,
+    "GMI": 6,
+    "NAZWA": "Goraj"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 2,
+    "GMI": 7,
+    "NAZWA": "Józefów"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 2,
+    "GMI": 12,
+    "NAZWA": "Tarnogród"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Chełm"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 3,
+    "GMI": 15,
+    "NAZWA": "Rejowiec"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Rejowiec Fabryczny"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 3,
+    "GMI": 11,
+    "NAZWA": "Siedliszcze"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Hrubieszów"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 5,
+    "GMI": 5,
+    "NAZWA": "Janów Lubelski"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 5,
+    "GMI": 6,
+    "NAZWA": "Modliborzyce"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 6,
+    "GMI": 4,
+    "NAZWA": "Izbica"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 6,
+    "GMI": 1,
+    "NAZWA": "Krasnystaw"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 7,
+    "GMI": 2,
+    "NAZWA": "Annopol"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Kraśnik"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 7,
+    "GMI": 8,
+    "NAZWA": "Urzędów"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 8,
+    "GMI": 5,
+    "NAZWA": "Kamionka"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 8,
+    "GMI": 6,
+    "NAZWA": "Kock"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Lubartów"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 8,
+    "GMI": 10,
+    "NAZWA": "Ostrów Lubelski"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Bełżyce"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 9,
+    "GMI": 3,
+    "NAZWA": "Bychawa"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Lublin"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 10,
+    "GMI": 3,
+    "NAZWA": "Łęczna"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Łuków"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 11,
+    "GMI": 2,
+    "NAZWA": "Stoczek Łukowski"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 12,
+    "GMI": 2,
+    "NAZWA": "Józefów nad Wisłą"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 12,
+    "GMI": 5,
+    "NAZWA": "Opole Lubelskie"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 12,
+    "GMI": 6,
+    "NAZWA": "Poniatowa"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 13,
+    "GMI": 4,
+    "NAZWA": "Parczew"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 14,
+    "GMI": 4,
+    "NAZWA": "Kazimierz Dolny"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 14,
+    "GMI": 8,
+    "NAZWA": "Nałęczów"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 14,
+    "GMI": 1,
+    "NAZWA": "Puławy"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 15,
+    "GMI": 1,
+    "NAZWA": "Radzyń Podlaski"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Dęblin"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 16,
+    "GMI": 4,
+    "NAZWA": "Ryki"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 17,
+    "GMI": 3,
+    "NAZWA": "Piaski"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 17,
+    "GMI": 1,
+    "NAZWA": "Świdnik"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 18,
+    "GMI": 5,
+    "NAZWA": "Lubycza Królewska"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 18,
+    "GMI": 6,
+    "NAZWA": "Łaszczów"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 18,
+    "GMI": 1,
+    "NAZWA": "Tomaszów Lubelski"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 18,
+    "GMI": 12,
+    "NAZWA": "Tyszowce"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 19,
+    "GMI": 1,
+    "NAZWA": "Włodawa"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 20,
+    "GMI": 4,
+    "NAZWA": "Krasnobród"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 20,
+    "GMI": 13,
+    "NAZWA": "Szczebrzeszyn"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 20,
+    "GMI": 15,
+    "NAZWA": "Zwierzyniec"
+  },
+  {
+    "WOJ": "lubelskie",
+    "POW": 64,
+    "GMI": 1,
+    "NAZWA": "Zamość"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Kostrzyn nad Odrą"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 1,
+    "GMI": 7,
+    "NAZWA": "Witnica"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Gorzów Wielkopolski"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Gubin"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 2,
+    "GMI": 6,
+    "NAZWA": "Krosno Odrzańskie"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 3,
+    "GMI": 2,
+    "NAZWA": "Międzyrzecz"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 3,
+    "GMI": 5,
+    "NAZWA": "Skwierzyna"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 3,
+    "GMI": 6,
+    "NAZWA": "Trzciel"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 4,
+    "GMI": 2,
+    "NAZWA": "Bytom Odrzański"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 4,
+    "GMI": 4,
+    "NAZWA": "Kożuchów"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Nowa Sól"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 4,
+    "GMI": 6,
+    "NAZWA": "Nowe Miasteczko"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 4,
+    "GMI": 7,
+    "NAZWA": "Otyń"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Cybinka"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 5,
+    "GMI": 3,
+    "NAZWA": "Ośno Lubuskie"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 5,
+    "GMI": 4,
+    "NAZWA": "Rzepin"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 5,
+    "GMI": 5,
+    "NAZWA": "Słubice"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 6,
+    "GMI": 1,
+    "NAZWA": "Dobiegniew"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 6,
+    "GMI": 2,
+    "NAZWA": "Drezdenko"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 6,
+    "GMI": 4,
+    "NAZWA": "Strzelce Krajeńskie"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 7,
+    "GMI": 2,
+    "NAZWA": "Lubniewice"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 7,
+    "GMI": 4,
+    "NAZWA": "Sulęcin"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 7,
+    "GMI": 5,
+    "NAZWA": "Torzym"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 8,
+    "GMI": 5,
+    "NAZWA": "Świebodzin"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 8,
+    "GMI": 6,
+    "NAZWA": "Zbąszynek"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 12,
+    "GMI": 1,
+    "NAZWA": "Sława"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 12,
+    "GMI": 2,
+    "NAZWA": "Szlichtyngowa"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 12,
+    "GMI": 3,
+    "NAZWA": "Wschowa"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Zielona Góra"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Babimost"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 9,
+    "GMI": 3,
+    "NAZWA": "Czerwieńsk"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 9,
+    "GMI": 4,
+    "NAZWA": "Kargowa"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 9,
+    "GMI": 5,
+    "NAZWA": "Nowogród Bobrzański"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 9,
+    "GMI": 6,
+    "NAZWA": "Sulechów"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Gozdnica"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 10,
+    "GMI": 4,
+    "NAZWA": "Iłowa"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 10,
+    "GMI": 5,
+    "NAZWA": "Małomice"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 10,
+    "GMI": 7,
+    "NAZWA": "Szprotawa"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 10,
+    "GMI": 2,
+    "NAZWA": "Żagań"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 11,
+    "GMI": 4,
+    "NAZWA": "Jasień"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 11,
+    "GMI": 6,
+    "NAZWA": "Lubsko"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Łęknica"
+  },
+  {
+    "WOJ": "lubuskie",
+    "POW": 11,
+    "GMI": 2,
+    "NAZWA": "Żary"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Bełchatów"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 1,
+    "GMI": 8,
+    "NAZWA": "Zelów"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 21,
+    "GMI": 1,
+    "NAZWA": "Brzeziny"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 2,
+    "GMI": 4,
+    "NAZWA": "Krośniewice"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Kutno"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 2,
+    "GMI": 11,
+    "NAZWA": "Żychlin"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 3,
+    "GMI": 2,
+    "NAZWA": "Łask"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Łęczyca"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 4,
+    "GMI": 6,
+    "NAZWA": "Piątek"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Łowicz"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 6,
+    "GMI": 7,
+    "NAZWA": "Koluszki"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 6,
+    "GMI": 10,
+    "NAZWA": "Rzgów"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 6,
+    "GMI": 11,
+    "NAZWA": "Tuszyn"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Łódź"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 7,
+    "GMI": 2,
+    "NAZWA": "Drzewica"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 7,
+    "GMI": 4,
+    "NAZWA": "Opoczno"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Konstantynów Łódzki"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 8,
+    "GMI": 6,
+    "NAZWA": "Lutomiersk"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 8,
+    "GMI": 2,
+    "NAZWA": "Pabianice"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Działoszyn"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 9,
+    "GMI": 4,
+    "NAZWA": "Pajęczno"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 10,
+    "GMI": 9,
+    "NAZWA": "Sulejów"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 10,
+    "GMI": 11,
+    "NAZWA": "Wolbórz"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Piotrków Trybunalski"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 11,
+    "GMI": 3,
+    "NAZWA": "Poddębice"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 11,
+    "GMI": 4,
+    "NAZWA": "Uniejów"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 12,
+    "GMI": 5,
+    "NAZWA": "Kamieńsk"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 12,
+    "GMI": 11,
+    "NAZWA": "Przedbórz"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 12,
+    "GMI": 1,
+    "NAZWA": "Radomsko"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 13,
+    "GMI": 2,
+    "NAZWA": "Biała Rawska"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 13,
+    "GMI": 1,
+    "NAZWA": "Rawa Mazowiecka"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 14,
+    "GMI": 2,
+    "NAZWA": "Błaszki"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 14,
+    "GMI": 1,
+    "NAZWA": "Sieradz"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 14,
+    "GMI": 9,
+    "NAZWA": "Warta"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 14,
+    "GMI": 11,
+    "NAZWA": "Złoczew"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Skierniewice"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 15,
+    "GMI": 1,
+    "NAZWA": "Bolimów"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Tomaszów Mazowiecki"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 17,
+    "GMI": 9,
+    "NAZWA": "Wieluń"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 18,
+    "GMI": 4,
+    "NAZWA": "Lututów"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 18,
+    "GMI": 7,
+    "NAZWA": "Wieruszów"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 19,
+    "GMI": 2,
+    "NAZWA": "Szadek"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 19,
+    "GMI": 1,
+    "NAZWA": "Zduńska Wola"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 20,
+    "GMI": 4,
+    "NAZWA": "Aleksandrów Łódzki"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 20,
+    "GMI": 1,
+    "NAZWA": "Głowno"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 20,
+    "GMI": 2,
+    "NAZWA": "Ozorków"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 20,
+    "GMI": 8,
+    "NAZWA": "Stryków"
+  },
+  {
+    "WOJ": "łódzkie",
+    "POW": 20,
+    "GMI": 3,
+    "NAZWA": "Zgierz"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Bochnia"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 1,
+    "GMI": 6,
+    "NAZWA": "Nowy Wiśnicz"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 2,
+    "GMI": 2,
+    "NAZWA": "Brzesko"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 2,
+    "GMI": 3,
+    "NAZWA": "Czchów"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Alwernia"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 3,
+    "GMI": 3,
+    "NAZWA": "Chrzanów"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 3,
+    "GMI": 4,
+    "NAZWA": "Libiąż"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 3,
+    "GMI": 5,
+    "NAZWA": "Trzebinia"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 4,
+    "GMI": 2,
+    "NAZWA": "Dąbrowa Tarnowska"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 4,
+    "GMI": 7,
+    "NAZWA": "Szczucin"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 5,
+    "GMI": 2,
+    "NAZWA": "Biecz"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 5,
+    "GMI": 3,
+    "NAZWA": "Bobowa"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Gorlice"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 6,
+    "GMI": 6,
+    "NAZWA": "Krzeszowice"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 6,
+    "GMI": 10,
+    "NAZWA": "Skała"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 6,
+    "GMI": 11,
+    "NAZWA": "Skawina"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 6,
+    "GMI": 12,
+    "NAZWA": "Słomniki"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 6,
+    "GMI": 14,
+    "NAZWA": "Świątniki Górne"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Kraków"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Limanowa"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 7,
+    "GMI": 2,
+    "NAZWA": "Mszana Dolna"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 8,
+    "GMI": 5,
+    "NAZWA": "Miechów"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Dobczyce"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 9,
+    "GMI": 3,
+    "NAZWA": "Myślenice"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 9,
+    "GMI": 7,
+    "NAZWA": "Sułkowice"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Grybów"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 10,
+    "GMI": 7,
+    "NAZWA": "Krynica-Zdrój"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 10,
+    "GMI": 11,
+    "NAZWA": "Muszyna"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 10,
+    "GMI": 13,
+    "NAZWA": "Piwniczna-Zdrój"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 10,
+    "GMI": 16,
+    "NAZWA": "Stary Sącz"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Nowy Targ"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 11,
+    "GMI": 12,
+    "NAZWA": "Rabka-Zdrój"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 11,
+    "GMI": 2,
+    "NAZWA": "Szczawnica"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Nowy Sącz"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 12,
+    "GMI": 1,
+    "NAZWA": "Bukowno"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 12,
+    "GMI": 5,
+    "NAZWA": "Olkusz"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 12,
+    "GMI": 7,
+    "NAZWA": "Wolbrom"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 13,
+    "GMI": 2,
+    "NAZWA": "Brzeszcze"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 13,
+    "GMI": 3,
+    "NAZWA": "Chełmek"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 13,
+    "GMI": 4,
+    "NAZWA": "Kęty"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 13,
+    "GMI": 1,
+    "NAZWA": "Oświęcim"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 13,
+    "GMI": 9,
+    "NAZWA": "Zator"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 14,
+    "GMI": 2,
+    "NAZWA": "Koszyce"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 14,
+    "GMI": 3,
+    "NAZWA": "Nowe Brzesko"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 14,
+    "GMI": 5,
+    "NAZWA": "Proszowice"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 15,
+    "GMI": 1,
+    "NAZWA": "Jordanów"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 15,
+    "GMI": 6,
+    "NAZWA": "Maków Podhalański"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 15,
+    "GMI": 2,
+    "NAZWA": "Sucha Beskidzka"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Ciężkowice"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 16,
+    "GMI": 5,
+    "NAZWA": "Radłów"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 16,
+    "GMI": 6,
+    "NAZWA": "Ryglice"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 16,
+    "GMI": 10,
+    "NAZWA": "Tuchów"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 16,
+    "GMI": 13,
+    "NAZWA": "Wojnicz"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 16,
+    "GMI": 14,
+    "NAZWA": "Zakliczyn"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 16,
+    "GMI": 15,
+    "NAZWA": "Żabno"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Tarnów"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 17,
+    "GMI": 1,
+    "NAZWA": "Zakopane"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 18,
+    "GMI": 1,
+    "NAZWA": "Andrychów"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 18,
+    "GMI": 3,
+    "NAZWA": "Kalwaria Zebrzydowska"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 18,
+    "GMI": 9,
+    "NAZWA": "Wadowice"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 19,
+    "GMI": 4,
+    "NAZWA": "Niepołomice"
+  },
+  {
+    "WOJ": "małopolskie",
+    "POW": 19,
+    "GMI": 5,
+    "NAZWA": "Wieliczka"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Białobrzegi"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 1,
+    "GMI": 6,
+    "NAZWA": "Wyśmierzyce"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Ciechanów"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 2,
+    "GMI": 3,
+    "NAZWA": "Glinojeck"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Garwolin"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 3,
+    "GMI": 2,
+    "NAZWA": "Łaskarzew"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 3,
+    "GMI": 10,
+    "NAZWA": "Pilawa"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 3,
+    "GMI": 14,
+    "NAZWA": "Żelechów"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Gostynin"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 4,
+    "GMI": 4,
+    "NAZWA": "Sanniki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 5,
+    "GMI": 4,
+    "NAZWA": "Grodzisk Mazowiecki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Milanówek"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 5,
+    "GMI": 2,
+    "NAZWA": "Podkowa Leśna"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 6,
+    "GMI": 5,
+    "NAZWA": "Grójec"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 6,
+    "GMI": 7,
+    "NAZWA": "Mogielnica"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 6,
+    "GMI": 8,
+    "NAZWA": "Nowe Miasto nad Pilicą"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 6,
+    "GMI": 11,
+    "NAZWA": "Warka"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 7,
+    "GMI": 5,
+    "NAZWA": "Kozienice"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Legionowo"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 8,
+    "GMI": 4,
+    "NAZWA": "Serock"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 9,
+    "GMI": 3,
+    "NAZWA": "Lipsko"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 9,
+    "GMI": 6,
+    "NAZWA": "Solec nad Wisłą"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 10,
+    "GMI": 2,
+    "NAZWA": "Łosice"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Maków Mazowiecki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 11,
+    "GMI": 7,
+    "NAZWA": "Różan"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 12,
+    "GMI": 4,
+    "NAZWA": "Cegłów"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 12,
+    "GMI": 7,
+    "NAZWA": "Halinów"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 12,
+    "GMI": 9,
+    "NAZWA": "Kałuszyn"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 12,
+    "GMI": 1,
+    "NAZWA": "Mińsk Mazowiecki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 12,
+    "GMI": 12,
+    "NAZWA": "Mrozy"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 12,
+    "GMI": 15,
+    "NAZWA": "Sulejówek"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 13,
+    "GMI": 1,
+    "NAZWA": "Mława"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 14,
+    "GMI": 4,
+    "NAZWA": "Nasielsk"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 14,
+    "GMI": 1,
+    "NAZWA": "Nowy Dwór Mazowiecki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 14,
+    "GMI": 6,
+    "NAZWA": "Zakroczym"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 15,
+    "GMI": 8,
+    "NAZWA": "Myszyniec"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Ostrołęka"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 16,
+    "GMI": 4,
+    "NAZWA": "Brok"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Ostrów Mazowiecka"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 17,
+    "GMI": 1,
+    "NAZWA": "Józefów"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 17,
+    "GMI": 4,
+    "NAZWA": "Karczew"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 17,
+    "GMI": 2,
+    "NAZWA": "Otwock"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 18,
+    "GMI": 1,
+    "NAZWA": "Góra Kalwaria"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 18,
+    "GMI": 2,
+    "NAZWA": "Konstancin-Jeziorna"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 18,
+    "GMI": 4,
+    "NAZWA": "Piaseczno"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 18,
+    "GMI": 6,
+    "NAZWA": "Tarczyn"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Płock"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 19,
+    "GMI": 5,
+    "NAZWA": "Drobin"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 19,
+    "GMI": 6,
+    "NAZWA": "Gąbin"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 19,
+    "GMI": 15,
+    "NAZWA": "Wyszogród"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 20,
+    "GMI": 4,
+    "NAZWA": "Czerwińsk nad Wisłą"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 20,
+    "GMI": 8,
+    "NAZWA": "Nowe Miasto"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 20,
+    "GMI": 1,
+    "NAZWA": "Płońsk"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 20,
+    "GMI": 2,
+    "NAZWA": "Raciąż"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 20,
+    "GMI": 11,
+    "NAZWA": "Sochocin"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 21,
+    "GMI": 3,
+    "NAZWA": "Brwinów"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 21,
+    "GMI": 1,
+    "NAZWA": "Piastów"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 21,
+    "GMI": 2,
+    "NAZWA": "Pruszków"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 22,
+    "GMI": 2,
+    "NAZWA": "Chorzele"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 22,
+    "GMI": 1,
+    "NAZWA": "Przasnysz"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 23,
+    "GMI": 6,
+    "NAZWA": "Przysucha"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 24,
+    "GMI": 4,
+    "NAZWA": "Pułtusk"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Radom"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 25,
+    "GMI": 3,
+    "NAZWA": "Iłża"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 25,
+    "GMI": 6,
+    "NAZWA": "Jedlnia-Letnisko"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 25,
+    "GMI": 1,
+    "NAZWA": "Pionki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 25,
+    "GMI": 10,
+    "NAZWA": "Skaryszew"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 64,
+    "GMI": 1,
+    "NAZWA": "Siedlce"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 26,
+    "GMI": 5,
+    "NAZWA": "Mordy"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 27,
+    "GMI": 1,
+    "NAZWA": "Sierpc"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 28,
+    "GMI": 1,
+    "NAZWA": "Sochaczew"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 29,
+    "GMI": 5,
+    "NAZWA": "Kosów Lacki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 29,
+    "GMI": 1,
+    "NAZWA": "Sokołów Podlaski"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 30,
+    "GMI": 5,
+    "NAZWA": "Szydłowiec"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 65,
+    "GMI": 1,
+    "NAZWA": "Warszawa"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 32,
+    "GMI": 1,
+    "NAZWA": "Błonie"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 32,
+    "GMI": 5,
+    "NAZWA": "Łomianki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 32,
+    "GMI": 6,
+    "NAZWA": "Ożarów Mazowiecki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 33,
+    "GMI": 5,
+    "NAZWA": "Łochów"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 33,
+    "GMI": 1,
+    "NAZWA": "Węgrów"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 34,
+    "GMI": 1,
+    "NAZWA": "Kobyłka"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 34,
+    "GMI": 2,
+    "NAZWA": "Marki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 34,
+    "GMI": 9,
+    "NAZWA": "Radzymin"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 34,
+    "GMI": 11,
+    "NAZWA": "Tłuszcz"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 34,
+    "GMI": 12,
+    "NAZWA": "Wołomin"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 34,
+    "GMI": 3,
+    "NAZWA": "Ząbki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 34,
+    "GMI": 4,
+    "NAZWA": "Zielonka"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 35,
+    "GMI": 5,
+    "NAZWA": "Wyszków"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 36,
+    "GMI": 5,
+    "NAZWA": "Zwoleń"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 37,
+    "GMI": 1,
+    "NAZWA": "Bieżuń"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 37,
+    "GMI": 3,
+    "NAZWA": "Lubowidz"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 37,
+    "GMI": 6,
+    "NAZWA": "Żuromin"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 38,
+    "GMI": 2,
+    "NAZWA": "Mszczonów"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 38,
+    "GMI": 5,
+    "NAZWA": "Wiskitki"
+  },
+  {
+    "WOJ": "mazowieckie",
+    "POW": 38,
+    "GMI": 1,
+    "NAZWA": "Żyrardów"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Brzeg"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 1,
+    "GMI": 3,
+    "NAZWA": "Grodków"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 1,
+    "GMI": 4,
+    "NAZWA": "Lewin Brzeski"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Baborów"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 2,
+    "GMI": 3,
+    "NAZWA": "Głubczyce"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 2,
+    "GMI": 4,
+    "NAZWA": "Kietrz"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Kędzierzyn-Koźle"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Byczyna"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 4,
+    "GMI": 2,
+    "NAZWA": "Kluczbork"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 4,
+    "GMI": 4,
+    "NAZWA": "Wołczyn"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Gogolin"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 5,
+    "GMI": 2,
+    "NAZWA": "Krapkowice"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 5,
+    "GMI": 5,
+    "NAZWA": "Zdzieszowice"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 6,
+    "GMI": 2,
+    "NAZWA": "Namysłów"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Głuchołazy"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 7,
+    "GMI": 3,
+    "NAZWA": "Korfantów"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 7,
+    "GMI": 5,
+    "NAZWA": "Nysa"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 7,
+    "GMI": 6,
+    "NAZWA": "Otmuchów"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 7,
+    "GMI": 7,
+    "NAZWA": "Paczków"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Dobrodzień"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 8,
+    "GMI": 2,
+    "NAZWA": "Gorzów Śląski"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 8,
+    "GMI": 3,
+    "NAZWA": "Olesno"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 8,
+    "GMI": 4,
+    "NAZWA": "Praszka"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Opole"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 9,
+    "GMI": 7,
+    "NAZWA": "Niemodlin"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 9,
+    "GMI": 8,
+    "NAZWA": "Ozimek"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 9,
+    "GMI": 10,
+    "NAZWA": "Prószków"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 9,
+    "GMI": 12,
+    "NAZWA": "Tułowice"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Biała"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 10,
+    "GMI": 2,
+    "NAZWA": "Głogówek"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 10,
+    "GMI": 4,
+    "NAZWA": "Prudnik"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 11,
+    "GMI": 3,
+    "NAZWA": "Kolonowskie"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 11,
+    "GMI": 4,
+    "NAZWA": "Leśnica"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 11,
+    "GMI": 5,
+    "NAZWA": "Strzelce Opolskie"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 11,
+    "GMI": 6,
+    "NAZWA": "Ujazd"
+  },
+  {
+    "WOJ": "opolskie",
+    "POW": 11,
+    "GMI": 7,
+    "NAZWA": "Zawadzkie"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 1,
+    "GMI": 8,
+    "NAZWA": "Ustrzyki Dolne"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Brzozów"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 3,
+    "GMI": 2,
+    "NAZWA": "Brzostek"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Dębica"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 3,
+    "GMI": 6,
+    "NAZWA": "Pilzno"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Jarosław"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 4,
+    "GMI": 7,
+    "NAZWA": "Pruchnik"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 4,
+    "GMI": 2,
+    "NAZWA": "Radymno"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Jasło"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 5,
+    "GMI": 5,
+    "NAZWA": "Kołaczyce"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 6,
+    "GMI": 2,
+    "NAZWA": "Kolbuszowa"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Krosno"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 7,
+    "GMI": 2,
+    "NAZWA": "Dukla"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 7,
+    "GMI": 3,
+    "NAZWA": "Iwonicz-Zdrój"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 7,
+    "GMI": 4,
+    "NAZWA": "Jedlicze"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 7,
+    "GMI": 8,
+    "NAZWA": "Rymanów"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 21,
+    "GMI": 3,
+    "NAZWA": "Lesko"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Leżajsk"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 8,
+    "GMI": 5,
+    "NAZWA": "Nowa Sarzyna"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 9,
+    "GMI": 2,
+    "NAZWA": "Cieszanów"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Lubaczów"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 9,
+    "GMI": 5,
+    "NAZWA": "Narol"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 9,
+    "GMI": 6,
+    "NAZWA": "Oleszyce"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Łańcut"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Mielec"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 11,
+    "GMI": 7,
+    "NAZWA": "Przecław"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 11,
+    "GMI": 8,
+    "NAZWA": "Radomyśl Wielki"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 12,
+    "GMI": 5,
+    "NAZWA": "Nisko"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 12,
+    "GMI": 6,
+    "NAZWA": "Rudnik nad Sanem"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 12,
+    "GMI": 7,
+    "NAZWA": "Ulanów"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 13,
+    "GMI": 2,
+    "NAZWA": "Dubiecko"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Przemyśl"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 14,
+    "GMI": 5,
+    "NAZWA": "Kańczuga"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 14,
+    "GMI": 1,
+    "NAZWA": "Przeworsk"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 14,
+    "GMI": 7,
+    "NAZWA": "Sieniawa"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 15,
+    "GMI": 3,
+    "NAZWA": "Ropczyce"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 15,
+    "GMI": 4,
+    "NAZWA": "Sędziszów Małopolski"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 16,
+    "GMI": 2,
+    "NAZWA": "Błażowa"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 16,
+    "GMI": 3,
+    "NAZWA": "Boguchwała"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Dynów"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 16,
+    "GMI": 6,
+    "NAZWA": "Głogów Małopolski"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 16,
+    "GMI": 11,
+    "NAZWA": "Sokołów Małopolski"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 16,
+    "GMI": 14,
+    "NAZWA": "Tyczyn"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Rzeszów"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 17,
+    "GMI": 1,
+    "NAZWA": "Sanok"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 17,
+    "GMI": 7,
+    "NAZWA": "Zagórz"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 18,
+    "GMI": 1,
+    "NAZWA": "Stalowa Wola"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 18,
+    "GMI": 5,
+    "NAZWA": "Zaklików"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 19,
+    "GMI": 4,
+    "NAZWA": "Strzyżów"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 64,
+    "GMI": 1,
+    "NAZWA": "Tarnobrzeg"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 20,
+    "GMI": 1,
+    "NAZWA": "Baranów Sandomierski"
+  },
+  {
+    "WOJ": "podkarpackie",
+    "POW": 20,
+    "GMI": 4,
+    "NAZWA": "Nowa Dęba"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Augustów"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 1,
+    "GMI": 4,
+    "NAZWA": "Lipsk"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Choroszcz"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 2,
+    "GMI": 2,
+    "NAZWA": "Czarna Białostocka"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 2,
+    "GMI": 6,
+    "NAZWA": "Łapy"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 2,
+    "GMI": 7,
+    "NAZWA": "Michałowo"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 2,
+    "GMI": 9,
+    "NAZWA": "Supraśl"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 2,
+    "GMI": 10,
+    "NAZWA": "Suraż"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 2,
+    "GMI": 12,
+    "NAZWA": "Tykocin"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 2,
+    "GMI": 13,
+    "NAZWA": "Wasilków"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 2,
+    "GMI": 14,
+    "NAZWA": "Zabłudów"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Białystok"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Bielsk Podlaski"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 3,
+    "GMI": 2,
+    "NAZWA": "Brańsk"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Grajewo"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 4,
+    "GMI": 4,
+    "NAZWA": "Rajgród"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 4,
+    "GMI": 5,
+    "NAZWA": "Szczuczyn"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Hajnówka"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 5,
+    "GMI": 7,
+    "NAZWA": "Kleszczele"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 6,
+    "GMI": 1,
+    "NAZWA": "Kolno"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 6,
+    "GMI": 5,
+    "NAZWA": "Stawiski"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Łomża"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Jedwabne"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 7,
+    "GMI": 4,
+    "NAZWA": "Nowogród"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Goniądz"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 8,
+    "GMI": 4,
+    "NAZWA": "Knyszyn"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 8,
+    "GMI": 6,
+    "NAZWA": "Mońki"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Sejny"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 10,
+    "GMI": 2,
+    "NAZWA": "Drohiczyn"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Siemiatycze"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Dąbrowa Białostocka"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 11,
+    "GMI": 4,
+    "NAZWA": "Krynki"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 11,
+    "GMI": 8,
+    "NAZWA": "Sokółka"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 11,
+    "GMI": 9,
+    "NAZWA": "Suchowola"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Suwałki"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 13,
+    "GMI": 2,
+    "NAZWA": "Ciechanowiec"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 13,
+    "GMI": 3,
+    "NAZWA": "Czyżew"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 13,
+    "GMI": 9,
+    "NAZWA": "Szepietowo"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 13,
+    "GMI": 1,
+    "NAZWA": "Wysokie Mazowieckie"
+  },
+  {
+    "WOJ": "podlaskie",
+    "POW": 14,
+    "GMI": 1,
+    "NAZWA": "Zambrów"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 1,
+    "GMI": 2,
+    "NAZWA": "Bytów"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 1,
+    "GMI": 6,
+    "NAZWA": "Miastko"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 2,
+    "GMI": 2,
+    "NAZWA": "Brusy"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Chojnice"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 2,
+    "GMI": 4,
+    "NAZWA": "Czersk"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 3,
+    "GMI": 2,
+    "NAZWA": "Czarne"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Człuchów"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 3,
+    "GMI": 4,
+    "NAZWA": "Debrzno"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Gdańsk"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Pruszcz Gdański"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Gdynia"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 5,
+    "GMI": 2,
+    "NAZWA": "Kartuzy"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 5,
+    "GMI": 8,
+    "NAZWA": "Żukowo"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 6,
+    "GMI": 1,
+    "NAZWA": "Kościerzyna"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Kwidzyn"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 7,
+    "GMI": 4,
+    "NAZWA": "Prabuty"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Lębork"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 8,
+    "GMI": 2,
+    "NAZWA": "Łeba"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Malbork"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 9,
+    "GMI": 7,
+    "NAZWA": "Nowy Staw"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Krynica Morska"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 10,
+    "GMI": 2,
+    "NAZWA": "Nowy Dwór Gdański"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Hel"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 11,
+    "GMI": 2,
+    "NAZWA": "Jastarnia"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 11,
+    "GMI": 3,
+    "NAZWA": "Puck"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 11,
+    "GMI": 4,
+    "NAZWA": "Władysławowo"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Słupsk"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 12,
+    "GMI": 5,
+    "NAZWA": "Kępice"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 12,
+    "GMI": 1,
+    "NAZWA": "Ustka"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 64,
+    "GMI": 1,
+    "NAZWA": "Sopot"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 13,
+    "GMI": 1,
+    "NAZWA": "Czarna Woda"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 13,
+    "GMI": 9,
+    "NAZWA": "Skarszewy"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 13,
+    "GMI": 2,
+    "NAZWA": "Skórcz"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 13,
+    "GMI": 3,
+    "NAZWA": "Starogard Gdański"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Dzierzgoń"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 16,
+    "GMI": 5,
+    "NAZWA": "Sztum"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 14,
+    "GMI": 2,
+    "NAZWA": "Gniew"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 14,
+    "GMI": 4,
+    "NAZWA": "Pelplin"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 14,
+    "GMI": 1,
+    "NAZWA": "Tczew"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 15,
+    "GMI": 1,
+    "NAZWA": "Reda"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 15,
+    "GMI": 2,
+    "NAZWA": "Rumia"
+  },
+  {
+    "WOJ": "pomorskie",
+    "POW": 15,
+    "GMI": 3,
+    "NAZWA": "Wejherowo"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Będzin"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 1,
+    "GMI": 2,
+    "NAZWA": "Czeladź"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 1,
+    "GMI": 7,
+    "NAZWA": "Siewierz"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 1,
+    "GMI": 8,
+    "NAZWA": "Sławków"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 1,
+    "GMI": 3,
+    "NAZWA": "Wojkowice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 2,
+    "GMI": 4,
+    "NAZWA": "Czechowice-Dziedzice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Szczyrk"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 2,
+    "GMI": 9,
+    "NAZWA": "Wilamowice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Bielsko-Biała"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 14,
+    "GMI": 1,
+    "NAZWA": "Bieruń"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 14,
+    "GMI": 2,
+    "NAZWA": "Imielin"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 14,
+    "GMI": 3,
+    "NAZWA": "Lędziny"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Bytom"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Chorzów"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Cieszyn"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 3,
+    "GMI": 10,
+    "NAZWA": "Skoczów"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 3,
+    "GMI": 11,
+    "NAZWA": "Strumień"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 3,
+    "GMI": 2,
+    "NAZWA": "Ustroń"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 3,
+    "GMI": 3,
+    "NAZWA": "Wisła"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 64,
+    "GMI": 1,
+    "NAZWA": "Częstochowa"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Blachownia"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 4,
+    "GMI": 6,
+    "NAZWA": "Koniecpol"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 4,
+    "GMI": 12,
+    "NAZWA": "Olsztyn"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 65,
+    "GMI": 1,
+    "NAZWA": "Dąbrowa Górnicza"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 66,
+    "GMI": 1,
+    "NAZWA": "Gliwice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Knurów"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 5,
+    "GMI": 2,
+    "NAZWA": "Pyskowice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 5,
+    "GMI": 6,
+    "NAZWA": "Sośnicowice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 5,
+    "GMI": 7,
+    "NAZWA": "Toszek"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 67,
+    "GMI": 1,
+    "NAZWA": "Jastrzębie-Zdrój"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 68,
+    "GMI": 1,
+    "NAZWA": "Jaworzno"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 69,
+    "GMI": 1,
+    "NAZWA": "Katowice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 6,
+    "GMI": 1,
+    "NAZWA": "Kłobuck"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 6,
+    "GMI": 2,
+    "NAZWA": "Krzepice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Lubliniec"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 7,
+    "GMI": 8,
+    "NAZWA": "Woźniki"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Łaziska Górne"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 8,
+    "GMI": 2,
+    "NAZWA": "Mikołów"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 8,
+    "GMI": 3,
+    "NAZWA": "Orzesze"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 70,
+    "GMI": 1,
+    "NAZWA": "Mysłowice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 9,
+    "GMI": 2,
+    "NAZWA": "Koziegłowy"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Myszków"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 9,
+    "GMI": 5,
+    "NAZWA": "Żarki"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 71,
+    "GMI": 1,
+    "NAZWA": "Piekary Śląskie"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 10,
+    "GMI": 5,
+    "NAZWA": "Pszczyna"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 11,
+    "GMI": 3,
+    "NAZWA": "Krzanowice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 11,
+    "GMI": 5,
+    "NAZWA": "Kuźnia Raciborska"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Racibórz"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 72,
+    "GMI": 1,
+    "NAZWA": "Ruda Śląska"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 12,
+    "GMI": 1,
+    "NAZWA": "Czerwionka-Leszczyny"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 73,
+    "GMI": 1,
+    "NAZWA": "Rybnik"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 74,
+    "GMI": 1,
+    "NAZWA": "Siemianowice Śląskie"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 75,
+    "GMI": 1,
+    "NAZWA": "Sosnowiec"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 76,
+    "GMI": 1,
+    "NAZWA": "Świętochłowice"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 13,
+    "GMI": 1,
+    "NAZWA": "Kalety"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 13,
+    "GMI": 2,
+    "NAZWA": "Miasteczko Śląskie"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 13,
+    "GMI": 3,
+    "NAZWA": "Radzionków"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 13,
+    "GMI": 4,
+    "NAZWA": "Tarnowskie Góry"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 77,
+    "GMI": 1,
+    "NAZWA": "Tychy"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 15,
+    "GMI": 1,
+    "NAZWA": "Pszów"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 15,
+    "GMI": 2,
+    "NAZWA": "Radlin"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 15,
+    "GMI": 3,
+    "NAZWA": "Rydułtowy"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 15,
+    "GMI": 4,
+    "NAZWA": "Wodzisław Śląski"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 78,
+    "GMI": 1,
+    "NAZWA": "Zabrze"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 16,
+    "GMI": 5,
+    "NAZWA": "Łazy"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 16,
+    "GMI": 6,
+    "NAZWA": "Ogrodzieniec"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 16,
+    "GMI": 7,
+    "NAZWA": "Pilica"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Poręba"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 16,
+    "GMI": 8,
+    "NAZWA": "Szczekociny"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 16,
+    "GMI": 2,
+    "NAZWA": "Zawiercie"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 79,
+    "GMI": 1,
+    "NAZWA": "Żory"
+  },
+  {
+    "WOJ": "śląskie",
+    "POW": 17,
+    "GMI": 1,
+    "NAZWA": "Żywiec"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Busko-Zdrój"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 1,
+    "GMI": 3,
+    "NAZWA": "Nowy Korczyn"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 1,
+    "GMI": 4,
+    "NAZWA": "Pacanów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 1,
+    "GMI": 6,
+    "NAZWA": "Stopnica"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 1,
+    "GMI": 8,
+    "NAZWA": "Wiślica"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 2,
+    "GMI": 2,
+    "NAZWA": "Jędrzejów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 2,
+    "GMI": 3,
+    "NAZWA": "Małogoszcz"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 2,
+    "GMI": 6,
+    "NAZWA": "Sędziszów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 2,
+    "GMI": 9,
+    "NAZWA": "Wodzisław"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 3,
+    "GMI": 3,
+    "NAZWA": "Kazimierza Wielka"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 3,
+    "GMI": 4,
+    "NAZWA": "Opatowiec"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 3,
+    "GMI": 5,
+    "NAZWA": "Skalbmierz"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Kielce"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 4,
+    "GMI": 2,
+    "NAZWA": "Bodzentyn"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 4,
+    "GMI": 3,
+    "NAZWA": "Chęciny"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 4,
+    "GMI": 4,
+    "NAZWA": "Chmielnik"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 4,
+    "GMI": 5,
+    "NAZWA": "Daleszyce"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 4,
+    "GMI": 7,
+    "NAZWA": "Łagów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 4,
+    "GMI": 12,
+    "NAZWA": "Morawica"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 4,
+    "GMI": 13,
+    "NAZWA": "Nowa Słupia"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 4,
+    "GMI": 15,
+    "NAZWA": "Pierzchnica"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 5,
+    "GMI": 3,
+    "NAZWA": "Końskie"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 5,
+    "GMI": 4,
+    "NAZWA": "Radoszyce"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 5,
+    "GMI": 8,
+    "NAZWA": "Stąporków"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 6,
+    "GMI": 2,
+    "NAZWA": "Iwaniska"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 6,
+    "GMI": 4,
+    "NAZWA": "Opatów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 6,
+    "GMI": 5,
+    "NAZWA": "Ożarów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 7,
+    "GMI": 4,
+    "NAZWA": "Ćmielów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 7,
+    "GMI": 5,
+    "NAZWA": "Kunów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Ostrowiec Świętokrzyski"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Działoszyce"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 8,
+    "GMI": 4,
+    "NAZWA": "Pińczów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 9,
+    "GMI": 3,
+    "NAZWA": "Klimontów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 9,
+    "GMI": 4,
+    "NAZWA": "Koprzywnica"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Sandomierz"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 9,
+    "GMI": 9,
+    "NAZWA": "Zawichost"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Skarżysko-Kamienna"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 10,
+    "GMI": 5,
+    "NAZWA": "Suchedniów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Starachowice"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 11,
+    "GMI": 5,
+    "NAZWA": "Wąchock"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 12,
+    "GMI": 3,
+    "NAZWA": "Oleśnica"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 12,
+    "GMI": 4,
+    "NAZWA": "Osiek"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 12,
+    "GMI": 5,
+    "NAZWA": "Połaniec"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 12,
+    "GMI": 7,
+    "NAZWA": "Staszów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 12,
+    "GMI": 8,
+    "NAZWA": "Szydłów"
+  },
+  {
+    "WOJ": "świętokrzyskie",
+    "POW": 13,
+    "GMI": 6,
+    "NAZWA": "Włoszczowa"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Bartoszyce"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 1,
+    "GMI": 4,
+    "NAZWA": "Bisztynek"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 1,
+    "GMI": 2,
+    "NAZWA": "Górowo Iławeckie"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 1,
+    "GMI": 6,
+    "NAZWA": "Sępopol"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Braniewo"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 2,
+    "GMI": 3,
+    "NAZWA": "Frombork"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 2,
+    "GMI": 5,
+    "NAZWA": "Pieniężno"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Działdowo"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 3,
+    "GMI": 4,
+    "NAZWA": "Lidzbark"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Elbląg"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 4,
+    "GMI": 6,
+    "NAZWA": "Młynary"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 4,
+    "GMI": 7,
+    "NAZWA": "Pasłęk"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 4,
+    "GMI": 9,
+    "NAZWA": "Tolkmicko"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 5,
+    "GMI": 1,
+    "NAZWA": "Ełk"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 6,
+    "GMI": 1,
+    "NAZWA": "Giżycko"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 6,
+    "GMI": 8,
+    "NAZWA": "Ryn"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 18,
+    "GMI": 3,
+    "NAZWA": "Gołdap"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Iława"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 7,
+    "GMI": 4,
+    "NAZWA": "Kisielice"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 7,
+    "GMI": 2,
+    "NAZWA": "Lubawa"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 7,
+    "GMI": 6,
+    "NAZWA": "Susz"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 7,
+    "GMI": 7,
+    "NAZWA": "Zalewo"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Kętrzyn"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 8,
+    "GMI": 4,
+    "NAZWA": "Korsze"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 8,
+    "GMI": 5,
+    "NAZWA": "Reszel"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Lidzbark Warmiński"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 9,
+    "GMI": 5,
+    "NAZWA": "Orneta"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 10,
+    "GMI": 2,
+    "NAZWA": "Mikołajki"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Mrągowo"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 11,
+    "GMI": 4,
+    "NAZWA": "Nidzica"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 12,
+    "GMI": 1,
+    "NAZWA": "Nowe Miasto Lubawskie"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 13,
+    "GMI": 4,
+    "NAZWA": "Olecko"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Olsztyn"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 14,
+    "GMI": 1,
+    "NAZWA": "Barczewo"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 14,
+    "GMI": 2,
+    "NAZWA": "Biskupiec"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 14,
+    "GMI": 3,
+    "NAZWA": "Dobre Miasto"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 14,
+    "GMI": 6,
+    "NAZWA": "Jeziorany"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 14,
+    "GMI": 9,
+    "NAZWA": "Olsztynek"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 15,
+    "GMI": 6,
+    "NAZWA": "Miłakowo"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 15,
+    "GMI": 7,
+    "NAZWA": "Miłomłyn"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 15,
+    "GMI": 8,
+    "NAZWA": "Morąg"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 15,
+    "GMI": 1,
+    "NAZWA": "Ostróda"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Biała Piska"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 16,
+    "GMI": 2,
+    "NAZWA": "Orzysz"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 16,
+    "GMI": 3,
+    "NAZWA": "Pisz"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 16,
+    "GMI": 4,
+    "NAZWA": "Ruciane-Nida"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 17,
+    "GMI": 4,
+    "NAZWA": "Pasym"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 17,
+    "GMI": 1,
+    "NAZWA": "Szczytno"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 17,
+    "GMI": 8,
+    "NAZWA": "Wielbark"
+  },
+  {
+    "WOJ": "warmińsko-mazurskie",
+    "POW": 19,
+    "GMI": 3,
+    "NAZWA": "Węgorzewo"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 1,
+    "GMI": 2,
+    "NAZWA": "Budzyń"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Chodzież"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 1,
+    "GMI": 4,
+    "NAZWA": "Margonin"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 1,
+    "GMI": 5,
+    "NAZWA": "Szamocin"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 2,
+    "GMI": 1,
+    "NAZWA": "Czarnków"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 2,
+    "GMI": 4,
+    "NAZWA": "Krzyż Wielkopolski"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 2,
+    "GMI": 7,
+    "NAZWA": "Trzcianka"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 2,
+    "GMI": 8,
+    "NAZWA": "Wieleń"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 3,
+    "GMI": 2,
+    "NAZWA": "Czerniejewo"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Gniezno"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 3,
+    "GMI": 5,
+    "NAZWA": "Kłecko"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 3,
+    "GMI": 9,
+    "NAZWA": "Trzemeszno"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 3,
+    "GMI": 10,
+    "NAZWA": "Witkowo"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 4,
+    "GMI": 1,
+    "NAZWA": "Borek Wielkopolski"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 4,
+    "GMI": 2,
+    "NAZWA": "Gostyń"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 4,
+    "GMI": 3,
+    "NAZWA": "Krobia"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 4,
+    "GMI": 6,
+    "NAZWA": "Pogorzela"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 4,
+    "GMI": 7,
+    "NAZWA": "Poniec"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 5,
+    "GMI": 2,
+    "NAZWA": "Grodzisk Wielkopolski"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 5,
+    "GMI": 4,
+    "NAZWA": "Rakoniewice"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 5,
+    "GMI": 5,
+    "NAZWA": "Wielichowo"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 6,
+    "GMI": 1,
+    "NAZWA": "Jaraczewo"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 6,
+    "GMI": 2,
+    "NAZWA": "Jarocin"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 6,
+    "GMI": 4,
+    "NAZWA": "Żerków"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 7,
+    "GMI": 5,
+    "NAZWA": "Koźminek"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 7,
+    "GMI": 8,
+    "NAZWA": "Opatówek"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 7,
+    "GMI": 9,
+    "NAZWA": "Stawiszyn"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Kalisz"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 8,
+    "GMI": 3,
+    "NAZWA": "Kępno"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 9,
+    "GMI": 4,
+    "NAZWA": "Dąbie"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 9,
+    "GMI": 6,
+    "NAZWA": "Kłodawa"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 9,
+    "GMI": 1,
+    "NAZWA": "Koło"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 9,
+    "GMI": 11,
+    "NAZWA": "Przedecz"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Konin"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Golina"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 10,
+    "GMI": 4,
+    "NAZWA": "Kleczew"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 10,
+    "GMI": 7,
+    "NAZWA": "Rychwał"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 10,
+    "GMI": 10,
+    "NAZWA": "Sompolno"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 10,
+    "GMI": 12,
+    "NAZWA": "Ślesin"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 11,
+    "GMI": 2,
+    "NAZWA": "Czempiń"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 11,
+    "GMI": 1,
+    "NAZWA": "Kościan"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 11,
+    "GMI": 4,
+    "NAZWA": "Krzywiń"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 11,
+    "GMI": 5,
+    "NAZWA": "Śmigiel"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 12,
+    "GMI": 2,
+    "NAZWA": "Kobylin"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 12,
+    "GMI": 3,
+    "NAZWA": "Koźmin Wielkopolski"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 12,
+    "GMI": 4,
+    "NAZWA": "Krotoszyn"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 12,
+    "GMI": 1,
+    "NAZWA": "Sulmierzyce"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 12,
+    "GMI": 6,
+    "NAZWA": "Zduny"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 13,
+    "GMI": 3,
+    "NAZWA": "Osieczna"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 13,
+    "GMI": 4,
+    "NAZWA": "Rydzyna"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Leszno"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 14,
+    "GMI": 3,
+    "NAZWA": "Międzychód"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 14,
+    "GMI": 4,
+    "NAZWA": "Sieraków"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 15,
+    "GMI": 2,
+    "NAZWA": "Lwówek"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 15,
+    "GMI": 4,
+    "NAZWA": "Nowy Tomyśl"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 15,
+    "GMI": 5,
+    "NAZWA": "Opalenica"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 15,
+    "GMI": 6,
+    "NAZWA": "Zbąszyń"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Oborniki"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 16,
+    "GMI": 2,
+    "NAZWA": "Rogoźno"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 17,
+    "GMI": 2,
+    "NAZWA": "Nowe Skalmierzyce"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 17,
+    "GMI": 3,
+    "NAZWA": "Odolanów"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 17,
+    "GMI": 1,
+    "NAZWA": "Ostrów Wielkopolski"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 17,
+    "GMI": 6,
+    "NAZWA": "Raszków"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 18,
+    "GMI": 3,
+    "NAZWA": "Grabów nad Prosną"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 18,
+    "GMI": 6,
+    "NAZWA": "Mikstat"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 18,
+    "GMI": 7,
+    "NAZWA": "Ostrzeszów"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 19,
+    "GMI": 3,
+    "NAZWA": "Kaczory"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 19,
+    "GMI": 4,
+    "NAZWA": "Łobżenica"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 19,
+    "GMI": 1,
+    "NAZWA": "Piła"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 19,
+    "GMI": 7,
+    "NAZWA": "Ujście"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 19,
+    "GMI": 8,
+    "NAZWA": "Wyrzysk"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 19,
+    "GMI": 9,
+    "NAZWA": "Wysoka"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 20,
+    "GMI": 1,
+    "NAZWA": "Chocz"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 20,
+    "GMI": 3,
+    "NAZWA": "Dobrzyca"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 20,
+    "GMI": 6,
+    "NAZWA": "Pleszew"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 64,
+    "GMI": 1,
+    "NAZWA": "Poznań"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 21,
+    "GMI": 3,
+    "NAZWA": "Buk"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 21,
+    "GMI": 8,
+    "NAZWA": "Kostrzyn"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 21,
+    "GMI": 9,
+    "NAZWA": "Kórnik"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 21,
+    "GMI": 1,
+    "NAZWA": "Luboń"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 21,
+    "GMI": 10,
+    "NAZWA": "Mosina"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 21,
+    "GMI": 11,
+    "NAZWA": "Murowana Goślina"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 21,
+    "GMI": 12,
+    "NAZWA": "Pobiedziska"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 21,
+    "GMI": 2,
+    "NAZWA": "Puszczykowo"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 21,
+    "GMI": 14,
+    "NAZWA": "Stęszew"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 21,
+    "GMI": 16,
+    "NAZWA": "Swarzędz"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 22,
+    "GMI": 1,
+    "NAZWA": "Bojanowo"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 22,
+    "GMI": 2,
+    "NAZWA": "Jutrosin"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 22,
+    "GMI": 3,
+    "NAZWA": "Miejska Górka"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 22,
+    "GMI": 5,
+    "NAZWA": "Rawicz"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 23,
+    "GMI": 1,
+    "NAZWA": "Słupca"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 23,
+    "GMI": 8,
+    "NAZWA": "Zagórów"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 24,
+    "GMI": 1,
+    "NAZWA": "Obrzycko"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 24,
+    "GMI": 5,
+    "NAZWA": "Ostroróg"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 24,
+    "GMI": 6,
+    "NAZWA": "Pniewy"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 24,
+    "GMI": 7,
+    "NAZWA": "Szamotuły"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 24,
+    "GMI": 8,
+    "NAZWA": "Wronki"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 25,
+    "GMI": 4,
+    "NAZWA": "Środa Wielkopolska"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 26,
+    "GMI": 2,
+    "NAZWA": "Dolsk"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 26,
+    "GMI": 3,
+    "NAZWA": "Książ Wielkopolski"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 26,
+    "GMI": 4,
+    "NAZWA": "Śrem"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 27,
+    "GMI": 3,
+    "NAZWA": "Dobra"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 27,
+    "GMI": 7,
+    "NAZWA": "Tuliszków"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 27,
+    "GMI": 1,
+    "NAZWA": "Turek"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 28,
+    "GMI": 3,
+    "NAZWA": "Gołańcz"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 28,
+    "GMI": 5,
+    "NAZWA": "Skoki"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 28,
+    "GMI": 1,
+    "NAZWA": "Wągrowiec"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 29,
+    "GMI": 3,
+    "NAZWA": "Wolsztyn"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 30,
+    "GMI": 2,
+    "NAZWA": "Miłosław"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 30,
+    "GMI": 3,
+    "NAZWA": "Nekla"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 30,
+    "GMI": 4,
+    "NAZWA": "Pyzdry"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 30,
+    "GMI": 5,
+    "NAZWA": "Września"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 31,
+    "GMI": 2,
+    "NAZWA": "Jastrowie"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 31,
+    "GMI": 3,
+    "NAZWA": "Krajenka"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 31,
+    "GMI": 5,
+    "NAZWA": "Okonek"
+  },
+  {
+    "WOJ": "wielkopolskie",
+    "POW": 31,
+    "GMI": 1,
+    "NAZWA": "Złotów"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 1,
+    "GMI": 1,
+    "NAZWA": "Białogard"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 1,
+    "GMI": 3,
+    "NAZWA": "Karlino"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 1,
+    "GMI": 4,
+    "NAZWA": "Tychowo"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 2,
+    "GMI": 2,
+    "NAZWA": "Choszczno"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 2,
+    "GMI": 3,
+    "NAZWA": "Drawno"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 2,
+    "GMI": 5,
+    "NAZWA": "Pełczyce"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 2,
+    "GMI": 6,
+    "NAZWA": "Recz"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 3,
+    "GMI": 1,
+    "NAZWA": "Czaplinek"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 3,
+    "GMI": 2,
+    "NAZWA": "Drawsko Pomorskie"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 3,
+    "GMI": 3,
+    "NAZWA": "Kalisz Pomorski"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 3,
+    "GMI": 6,
+    "NAZWA": "Złocieniec"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 4,
+    "GMI": 2,
+    "NAZWA": "Goleniów"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 4,
+    "GMI": 3,
+    "NAZWA": "Maszewo"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 4,
+    "GMI": 4,
+    "NAZWA": "Nowogard"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 4,
+    "GMI": 7,
+    "NAZWA": "Stepnica"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 5,
+    "GMI": 2,
+    "NAZWA": "Gryfice"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 5,
+    "GMI": 4,
+    "NAZWA": "Płoty"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 5,
+    "GMI": 8,
+    "NAZWA": "Trzebiatów"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 6,
+    "GMI": 2,
+    "NAZWA": "Cedynia"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 6,
+    "GMI": 3,
+    "NAZWA": "Chojna"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 6,
+    "GMI": 4,
+    "NAZWA": "Gryfino"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 6,
+    "GMI": 5,
+    "NAZWA": "Mieszkowice"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 6,
+    "GMI": 6,
+    "NAZWA": "Moryń"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 6,
+    "GMI": 8,
+    "NAZWA": "Trzcińsko-Zdrój"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 7,
+    "GMI": 1,
+    "NAZWA": "Dziwnów"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 7,
+    "GMI": 2,
+    "NAZWA": "Golczewo"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 7,
+    "GMI": 3,
+    "NAZWA": "Kamień Pomorski"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 7,
+    "GMI": 4,
+    "NAZWA": "Międzyzdroje"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 7,
+    "GMI": 6,
+    "NAZWA": "Wolin"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 8,
+    "GMI": 3,
+    "NAZWA": "Gościno"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 8,
+    "GMI": 1,
+    "NAZWA": "Kołobrzeg"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 61,
+    "GMI": 1,
+    "NAZWA": "Koszalin"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 9,
+    "GMI": 3,
+    "NAZWA": "Bobolice"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 9,
+    "GMI": 5,
+    "NAZWA": "Mielno"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 9,
+    "GMI": 6,
+    "NAZWA": "Polanów"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 9,
+    "GMI": 7,
+    "NAZWA": "Sianów"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 18,
+    "GMI": 1,
+    "NAZWA": "Dobra"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 18,
+    "GMI": 2,
+    "NAZWA": "Łobez"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 18,
+    "GMI": 4,
+    "NAZWA": "Resko"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 18,
+    "GMI": 5,
+    "NAZWA": "Węgorzyno"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 10,
+    "GMI": 1,
+    "NAZWA": "Barlinek"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 10,
+    "GMI": 3,
+    "NAZWA": "Dębno"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 10,
+    "GMI": 4,
+    "NAZWA": "Myślibórz"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 11,
+    "GMI": 3,
+    "NAZWA": "Nowe Warpno"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 11,
+    "GMI": 4,
+    "NAZWA": "Police"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 12,
+    "GMI": 3,
+    "NAZWA": "Lipiany"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 12,
+    "GMI": 5,
+    "NAZWA": "Pyrzyce"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 13,
+    "GMI": 1,
+    "NAZWA": "Darłowo"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 13,
+    "GMI": 2,
+    "NAZWA": "Sławno"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 14,
+    "GMI": 2,
+    "NAZWA": "Chociwel"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 14,
+    "GMI": 3,
+    "NAZWA": "Dobrzany"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 14,
+    "GMI": 5,
+    "NAZWA": "Ińsko"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 14,
+    "GMI": 1,
+    "NAZWA": "Stargard"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 14,
+    "GMI": 11,
+    "NAZWA": "Suchań"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 62,
+    "GMI": 1,
+    "NAZWA": "Szczecin"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 15,
+    "GMI": 2,
+    "NAZWA": "Barwice"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 15,
+    "GMI": 3,
+    "NAZWA": "Biały Bór"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 15,
+    "GMI": 4,
+    "NAZWA": "Borne Sulinowo"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 15,
+    "GMI": 1,
+    "NAZWA": "Szczecinek"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 16,
+    "GMI": 3,
+    "NAZWA": "Połczyn-Zdrój"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 16,
+    "GMI": 1,
+    "NAZWA": "Świdwin"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 63,
+    "GMI": 1,
+    "NAZWA": "Świnoujście"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 17,
+    "GMI": 2,
+    "NAZWA": "Człopa"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 17,
+    "GMI": 3,
+    "NAZWA": "Mirosławiec"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 17,
+    "GMI": 4,
+    "NAZWA": "Tuczno"
+  },
+  {
+    "WOJ": "zachodnio-pomorskie",
+    "POW": 17,
+    "GMI": 1,
+    "NAZWA": "Wałcz"
+  }
+]
