@@ -30,7 +30,7 @@ import TheWelcome from './components/TheWelcome.vue'
 								</div>
 							</div>
 							<div class="col-12 bgOpacity my-2 bRadius">
-								<Forecast1 
+								<!-- <Forecast1 
 									:cityName="cityName"
 									:lat="12"
 									:lon="15"
@@ -38,7 +38,7 @@ import TheWelcome from './components/TheWelcome.vue'
 									:table="listInfoForecast"
 									:tempHeader="main.temp"
 									:defaultTableDayTemp="defaultTable"
-								/>
+								/> -->
 							</div>
 						</div>
 					</div>
@@ -101,6 +101,31 @@ import TheWelcome from './components/TheWelcome.vue'
 
 			<section>
 				<div class="container">
+					<div class="row m-0">
+						<div class="col-6">
+							<Forecast1 
+								:cityName="cityName"
+								:lat="12"
+								:lon="15"
+								:tableDayTemp="tableOfAverageDayTemperatures"
+								:table="listInfoForecast"
+								:tempHeader="main.temp"
+								:defaultTableDayTemp="defaultTable"
+							/>
+						</div>
+						<div class="col-6">
+							tu bedzie wykres
+							<LineChart 
+								:chartData="chartData"
+								:chartOptions="chartOptions"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
 				<div class="row border">
 					<div class="col-4 coord">
 					długośc geograficzna: {{coord.lon}}<br>
@@ -157,16 +182,17 @@ import cities from './module/cities';
 import lang from './module/language';
 import axios from "axios";
 import Header from './components/Header.vue';
-import Forecast from './components/Forecast.vue';
 import Forecast1 from './components/Forecast1.vue';
 import VueMultiselect from 'vue-multiselect';
+import LineChart from './chart/LineChart'
 
 export default {
 	name: "app",
 	components: {
 		VueMultiselect,
 		Header,
-		Forecast,
+		Forecast1,
+		LineChart
 	},
     data() {
       	return {
@@ -224,7 +250,30 @@ export default {
 			listResultsForecast: [],
             cityInfoForecast: {},
 			listInfoForecast: [],
-			defaultTable: []
+			defaultTable: [],
+
+			//CHART JS
+			chartData: {
+				labels: ["January", "February", "March", "April", "May", "June", "July"],
+				datasets: [
+					{
+						label: "Temperatura Minimalna",
+						backgroundColor: "red",
+						data: [40, 39, 10, 40, 39, 80, 40],
+						borderColor: 'red',
+					},
+					{
+						label: "Temperatura maksymalna",
+						backgroundColor: "violet",
+						data: [3, 112, 55, 30, 80, 40, 36],
+						borderColor: 'violet',
+					},
+				],
+			},
+			chartOptions: {
+				responsive: true,
+				maintainAspectRatio: false,
+			}
       	}
     },
 
@@ -239,6 +288,13 @@ export default {
     },
 
     methods: {
+		// getDay(index){
+        //     const todayDate = new Date();
+        //     const tablicaNazwDni = [ 'N', 'PN', "WT", "ŚR", "CZW", "PT", "SO",'N', 'PN', "WT", "ŚR", "CZW", "PT"]
+		// 	const tablicaLabel = []
+
+        //     return tablicaNazwDni[todayDate.getDay()+index];
+        // },
 
 		selectCityWorld(e){
 			this.city.WOJ = '';

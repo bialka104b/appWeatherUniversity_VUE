@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-            <pre ><code type="text/json" class="text-white">{{table}}</code></pre>
+            <!-- <pre ><code type="text/json" class="text-white">{{table}}</code></pre> -->
     </div>
 </template>
 
