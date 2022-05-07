@@ -1,0 +1,272 @@
+[
+	{
+		"PANSTWO":"Algieria",
+		"STOLICA": "Algier",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO":"Angola",
+		"STOLICA": "Luanda",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO":"Benin",
+		"STOLICA": "Porto-Novo",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO":"Botswana",
+		"STOLICA": "Gaborone",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO":"Burkina Faso",
+		"STOLICA": "Wagadugu",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO":"Burundi",
+		"STOLICA": "Gitega",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO":"Czad",
+		"STOLICA": "Ndżamena",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO":"Demokratyczna Republika Konga",
+		"STOLICA": "Kinszasa",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Dżibuti",
+		"STOLICA": "Dżibuti",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Egipt",
+		"STOLICA": "Kair",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Erytrea",
+		"STOLICA": "Asmara",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Etiopia",
+		"STOLICA": "Addis Abeba",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Gabon",
+		"STOLICA": "Libreville",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Gambia",
+		"STOLICA": "Bandżul",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Ghana",
+		"STOLICA": "Akra",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Gwinea",
+		"STOLICA": "Konakry",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Gwinea Bissau",
+		"STOLICA": "Bissau",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Gwinea Równikowa",
+		"STOLICA": "Malabo",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Kamerun",
+		"STOLICA": "Jaunde",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Kenia",
+		"STOLICA": "Nairobi",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Komory",
+		"STOLICA": "Moroni",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Kongo",
+		"STOLICA": "Brazzaville",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Lesotho",
+		"STOLICA": "Maseru",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Liberia",
+		"STOLICA": "Monrovia",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Libia",
+		"STOLICA": "Trypolis",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Madagaskar",
+		"STOLICA": "Antananarywa",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Malawi",
+		"STOLICA": "Lilongwe",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Mali",
+		"STOLICA": "Bamako",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Maroko",
+		"STOLICA": "Rabat",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Mauretania",
+		"STOLICA": "Nawakszut",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Mauritius",
+		"STOLICA": "Port Louis",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Mozambik",
+		"STOLICA": "Maputo",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Namibia",
+		"STOLICA": "Windhuk",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Niger",
+		"STOLICA": "Niamey",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Nigeria",
+		"STOLICA": "Abudża",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Południowa Afryka",
+		"STOLICA": "Pretoria",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Republika Środkowoafrykańska",
+		"STOLICA": "Bangi",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Republika Zielonego Przylądka",
+		"STOLICA": "Praia",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Rwanda",
+		"STOLICA": "Kigali",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Senegal",
+		"STOLICA": "Dakar",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Seszele",
+		"STOLICA": "Victoria",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Sierra Leone",
+		"STOLICA": "Freetown",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Somalia",
+		"STOLICA": "Mogadiszu",
+		"KONTYNENT": "Afryka"
+	},		
+ 	{
+		"PANSTWO": "Eswatini",
+		"STOLICA": "Mbabane",
+		"KONTYNENT": "Afryka"
+	},		
+ 	{
+		"PANSTWO": "Sudan",
+		"STOLICA": "Chartum",
+		"KONTYNENT": "Afryka"
+	},		
+ 	{
+		"PANSTWO": "Sudan Południowy",
+		"STOLICA": "Dżuba",
+		"KONTYNENT": "Afryka"
+	},		
+ 	{
+		"PANSTWO": "Tanzania",
+		"STOLICA": "Dodoma",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Togo",
+		"STOLICA": "Lomé",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Tunezja",
+		"STOLICA": "Tunis",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Uganda",
+		"STOLICA": "Kampala",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Wybrzeże Kości Słoniowej",
+		"STOLICA": "Jamusukro",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Wyspy Świętego Tomasza i Książęca",
+		"STOLICA": "São Tomé",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Zambia",
+		"STOLICA": "Lusaka",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Zimbabwe",
+		"STOLICA": "Harare",
+		"KONTYNENT": "Afryka"
+	}
+]

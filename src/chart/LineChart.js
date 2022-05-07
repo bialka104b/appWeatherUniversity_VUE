@@ -8,9 +8,19 @@ import {
 	LineElement,
 	LinearScale,
 	PointElement,
-	CategoryScale
+	CategoryScale,
+	Filler,
 } from "chart.js";
-ChartJS.register(Title, Tooltip, Legend, LineElement, LinearScale, PointElement, CategoryScale);
+ChartJS.register(
+	Title,
+	Tooltip,
+	Legend,
+	LineElement,
+	LinearScale,
+	PointElement,
+	CategoryScale,
+	Filler,
+);
 
 export default defineComponent({
 	name: "LineChart",
