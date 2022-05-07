@@ -268,5 +268,230 @@
 		"PANSTWO": "Zimbabwe",
 		"STOLICA": "Harare",
 		"KONTYNENT": "Afryka"
-	}
+	},
+ 	{
+		"PANSTWO": "",
+		"STOLICA": "McMurdo",
+		"KONTYNENT": "Afryka"
+	},
+
+
+ 	{
+		"PANSTWO": "Majotta",
+		"STOLICA": "Mamoudzou",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Reunion",
+		"STOLICA": "Saint-Denis",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Sahara Zachodnia",
+		"STOLICA": "Al-Ujun",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Somaliland",
+		"STOLICA": "Hargejsa",
+		"KONTYNENT": "Afryka"
+	},
+ 	{
+		"PANSTWO": "Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha",
+		"STOLICA": "Jamestown",
+		"KONTYNENT": "Afryka"
+	},
+
+	{
+		"PANSTWO": "Argentyna",
+		"STOLICA": "Buenos Aires",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Boliwia",
+		"STOLICA": "Sucre",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Brazylia",
+		"STOLICA": "Brasília",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Chile",
+		"STOLICA": "Santiago",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Ekwador",
+		"STOLICA": "Quito",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Gujana",
+		"STOLICA": "Georgetown",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Kolumbia",
+		"STOLICA": "Bogota",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Paragwaj",
+		"STOLICA": "Asunción",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Peru",
+		"STOLICA": "Lima",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Surinam",
+		"STOLICA": "Paramaribo",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Urugwaj",
+		"STOLICA": "Montevideo",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Wenezuela",
+		"STOLICA": "Caracas",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Falklandy",
+		"STOLICA": "Stanley",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": " Georgia Południowa i Sandwich Południowy",
+		"STOLICA": "King Edward Point",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Gujana Francuska",
+		"STOLICA": "Kajenna",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+
+	{
+		"PANSTWO": "Antigua i Barbuda",
+		"STOLICA": "Saint John’s",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Bahamy",
+		"STOLICA": "Nassau",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Barbados",
+		"STOLICA": "Bridgetown",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Belize",
+		"STOLICA": "Belmopan",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Dominika",
+		"STOLICA": "Roseau",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Dominikana",
+		"STOLICA": "Santo Domingo",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Grenada",
+		"STOLICA": "Saint George’s",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Gwatemala",
+		"STOLICA": "Gwatemala",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Haiti",
+		"STOLICA": "Port-au-Prince",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Honduras",
+		"STOLICA": "Tegucigalpa",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Jamajka",
+		"STOLICA": "Kingston",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Kanada",
+		"STOLICA": "Ottawa",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Kostaryka",
+		"STOLICA": "San José",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Kuba",
+		"STOLICA": "Hawana",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Meksyk",
+		"STOLICA": "Meksyk",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Nikaragua",
+		"STOLICA": "Managua",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Panama",
+		"STOLICA": "Panama",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Saint Kitts i Nevis",
+		"STOLICA": "Basseterre",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Saint Lucia",
+		"STOLICA": "Castries",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": " Saint Vincent i Grenadyny",
+		"STOLICA": "Kingstown",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Salwador",
+		"STOLICA": "San Salvador",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Stany Zjednoczone",
+		"STOLICA": "Waszyngton",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Trynidad i Tobago",
+		"STOLICA": "Port-of-Spain",
+		"KONTYNENT": "Ameryka Północna"
+	} 	
+ 	
 ]

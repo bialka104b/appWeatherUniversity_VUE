@@ -1,5 +1,6 @@
 <script setup>
 import TheWelcome from './components/TheWelcome.vue'
+import { restElement } from '@babel/types';
 </script>
 
 <template>
@@ -57,17 +58,28 @@ import TheWelcome from './components/TheWelcome.vue'
 								/>
 						</div>
 						<div class="container-fluid py-1">
-							<div class="">
+							<label for="">Wybierz stolice świata</label>
+							<VueMultiselect
+								v-model="cityWorld"
+								:options="myCitiesWorld"
+								:close-on-select="true"
+								:clear-on-select="false"
+								:placeholder="'Select City'"
+								label="STOLICA"
+								track-by="STOLICA"
+								@close="selectCityWorld(cityWorld)"
+								/>
+							<!-- <div class="">
 								<label >Wpisz dowolne miasto świata</label>
 								<input 
 								type="text" 
 								name="city-world" 
 								v-model="cityWorld" 
-								@input="selectCityWorld" 
+								@input="selectCityWorld(cityWorld)" 
 								class="multiselect__input" 
 								style="height:40px"
 								placeholder="Rzeszów">
-							</div>
+							</div> -->
 						</div>
 						<div class="container-fluid py-1">
 							<label for="">Wybierz jednostkę temperatury</label>
@@ -100,7 +112,7 @@ import TheWelcome from './components/TheWelcome.vue'
 			</section>
 
 			<section>
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row m-0">
 						<div class="col-6">
 							<Forecast1 
@@ -113,11 +125,17 @@ import TheWelcome from './components/TheWelcome.vue'
 								:defaultTableDayTemp="defaultTable"
 							/>
 						</div>
-						<div class="col-6">
-							tu bedzie wykres
-							<LineChart 
+						<div class="col-12">
+						
+							<!-- <LineChart 
 								:chartData="chartData"
 								:chartOptions="chartOptions"
+							/> -->
+							<Temperature 
+								:cityName="cityName"
+								:lat="12"
+								:lon="15"
+								:table="listInfoForecast"
 							/>
 						</div>
 					</div>
@@ -179,12 +197,15 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <script>
 import cities from './module/cities';
+import citiesWorld from './module/citiesWorld';
 import lang from './module/language';
 import axios from "axios";
 import Header from './components/Header.vue';
 import Forecast1 from './components/Forecast1.vue';
+import Temperature from './components/Temperature.vue';
 import VueMultiselect from 'vue-multiselect';
-import LineChart from './chart/LineChart'
+// import LineChart from './chart/LineChart'
+import moment from 'moment';
 
 export default {
 	name: "app",
@@ -192,14 +213,17 @@ export default {
 		VueMultiselect,
 		Header,
 		Forecast1,
-		LineChart
+		// LineChart,
+		Temperature
 	},
     data() {
       	return {
 			tableOfAverageDayTemperatures: ["dd", "d"],
 			myCities: [],
+			myCitiesWorld: [],
 			selected: null,
 			city: {},
+			cityWorld:{},
 			options1: ['list', 'of', 'options'],
 			options: [
 				{ name: 'Vue.js', language: 'JavaScript' },
@@ -217,7 +241,7 @@ export default {
 			selectedTemperatureUnit: 'metric',
 			myLang: [],
 			selectedLang:'pl',
-			cityWorld: '',
+			// cityWorld: '',
 			API_KEY: '5baab241d44debf04d78944091967607',
 			// API_KEY: '1c7fbae096fe77971b1dc5aa8fcd17ae',
         	URLWeather: "https://api.openweathermap.org/data/2.5/weather?",
@@ -253,60 +277,84 @@ export default {
 			defaultTable: [],
 
 			//CHART JS
-			chartData: {
-				labels: ["January", "February", "March", "April", "May", "June", "July"],
+			chartData: {},
+			chartOptions: {
+				responsive: true,
+				maintainAspectRatio: false,
+			},
+
+			dt_txtTab: [],
+			temp_minTab: [],
+			temp_maxTab:[],
+      	}
+    },
+
+    async created(){
+      const resultCity = JSON.parse(cities());
+	  const resultCityWorld = JSON.parse(citiesWorld());
+      this.myCities = resultCity;
+      this.myCitiesWorld = resultCityWorld;
+      this.myLang = lang();
+      this.getWeather();
+	  await this.daily();;
+	  
+    },
+	updated(){
+		// this.returnChartData();
+	},
+
+    methods: {
+		returnChartData(){
+            this.chartData = {
+                labels: this.dt_txtTab,
 				datasets: [
 					{
 						label: "Temperatura Minimalna",
 						backgroundColor: "red",
-						data: [40, 39, 10, 40, 39, 80, 40],
+						data: this.temp_minTab,
 						borderColor: 'red',
 					},
 					{
 						label: "Temperatura maksymalna",
 						backgroundColor: "violet",
-						data: [3, 112, 55, 30, 80, 40, 36],
+						data: this.temp_maxTab,
 						borderColor: 'violet',
 					},
 				],
-			},
-			chartOptions: {
-				responsive: true,
-				maintainAspectRatio: false,
-			}
-      	}
-    },
+            }
+			return this.chartData;
+        },
+		// async stworzTabliceTempDziennej(tab){
+		// 	this.dt_txtTab.length = 0;
+		// 	this.temp_minTab.length = 0;
+		// 	this.temp_maxTab.length = 0;
+		// 	const nowaT = tab.list.map((x)=> {
+		// 		// console.log(x);
+		// 		const dt_txt = moment(x.dt_txt).format("DD-MM, HH:mm");
+		// 		const temp_min = x.main.temp_min;
+		// 		const temp_max = x.main.temp_max;
+			
+		// 		this.dt_txtTab.push(dt_txt);
+		// 		this.temp_minTab.push(temp_min);
+		// 		this.temp_maxTab.push(temp_max);
+				
+		// 	})
+		// },
 
-    created(){
-      const resultCity = JSON.parse(cities());
-      this.myCities = resultCity;
-      this.myLang = lang();
-      this.getWeather();
-	  this.daily();
-      // this.downloadData()
-      // this.assignWeather();
-    },
-
-    methods: {
-		// getDay(index){
-        //     const todayDate = new Date();
-        //     const tablicaNazwDni = [ 'N', 'PN', "WT", "ŚR", "CZW", "PT", "SO",'N', 'PN', "WT", "ŚR", "CZW", "PT"]
-		// 	const tablicaLabel = []
-
-        //     return tablicaNazwDni[todayDate.getDay()+index];
-        // },
-
-		selectCityWorld(e){
-			this.city.WOJ = '';
-			this.cityName = e.target.value;
-			this.getWeather();
-			this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
+		async selectCityWorld(e){
+			// this.city.WOJ = '';
+			// this.cityName = e.value;
+			this.cityName = e.STOLICA;
+			console.log(e, "event")
+			await this.getWeather();
+			await this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
 		},
 
-		selectCity(e){
+		async selectCity(e){
 			this.cityName = e.NAZWA;
-			this.getWeather();
-			this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
+			
+			await this.getWeather();
+			await this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
 		},
 
 		selectUnitTemp(e){
@@ -320,7 +368,6 @@ export default {
 			this.getWeather();
 		},
 		async getWeather() {
-			
 			await axios.get(`${this.URLWeather}q=${this.cityName}&lat=${this.lat}&lon=${this.lon}&appid=${this.API_KEY}&lang=${this.selectedLang}&units=${this.selectedTemperatureUnit}`)
 				.then(res => {
 					if (res.status == 200) {
@@ -354,9 +401,10 @@ export default {
                     if (res.status == 200) {
                         this.listResultsForecast = res.data;
                         this.cityInfoForecast = res.data.city;
-						this.listInfoForecast = res.data.list
+						this.listInfoForecast = res.data.list;
                     } else {
                         console.log(res);
+						console.log("uuuuuuuu...")
                     }
                 })
                 .catch(err => {
@@ -376,8 +424,7 @@ export default {
 		}
   },
   watch: {
-    
-  }
+    }
 }
 </script>
 <style src="vue-multiselect/dist/vue-multiselect.css"></style>
