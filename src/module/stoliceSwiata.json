@@ -1,72 +1,22 @@
 [
 	{
-		"PANSTWO":"Algieria",
-		"STOLICA": "Algier",
+		"PANSTWO": "Zjednoczone Emiraty Arabskie",
+		"STOLICA": "Abu Zabi",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Nigeria",
+		"STOLICA": "Abudża",
 		"KONTYNENT": "Afryka"
 	},
 	{
-		"PANSTWO":"Angola",
-		"STOLICA": "Luanda",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO":"Benin",
-		"STOLICA": "Porto-Novo",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO":"Botswana",
-		"STOLICA": "Gaborone",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO":"Burkina Faso",
-		"STOLICA": "Wagadugu",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO":"Burundi",
-		"STOLICA": "Gitega",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO":"Czad",
-		"STOLICA": "Ndżamena",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO":"Demokratyczna Republika Konga",
-		"STOLICA": "Kinszasa",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Dżibuti",
-		"STOLICA": "Dżibuti",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Egipt",
-		"STOLICA": "Kair",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Erytrea",
-		"STOLICA": "Asmara",
-		"KONTYNENT": "Afryka"
+		"PANSTWO": "Pitcairn",
+		"STOLICA": "Adamstown",
+		"KONTYNENT": "Australia i Oceania"
 	},
 	{
 		"PANSTWO": "Etiopia",
 		"STOLICA": "Addis Abeba",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Gabon",
-		"STOLICA": "Libreville",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Gambia",
-		"STOLICA": "Bandżul",
 		"KONTYNENT": "Afryka"
 	},
 	{
@@ -75,54 +25,39 @@
 		"KONTYNENT": "Afryka"
 	},
 	{
-		"PANSTWO": "Gwinea",
-		"STOLICA": "Konakry",
+		"PANSTWO": "Algieria",
+		"STOLICA": "Algier",
 		"KONTYNENT": "Afryka"
 	},
 	{
-		"PANSTWO": "Gwinea Bissau",
-		"STOLICA": "Bissau",
+		"PANSTWO": "Niue",
+		"STOLICA": "Alofi",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Sahara Zachodnia",
+		"STOLICA": "Al-Ujun",
 		"KONTYNENT": "Afryka"
 	},
 	{
-		"PANSTWO": "Gwinea Równikowa",
-		"STOLICA": "Malabo",
-		"KONTYNENT": "Afryka"
+		"PANSTWO": "Jordania",
+		"STOLICA": "Amman",
+		"KONTYNENT": "Azja"
 	},
 	{
-		"PANSTWO": "Kamerun",
-		"STOLICA": "Jaunde",
-		"KONTYNENT": "Afryka"
+		"PANSTWO": "Holandia",
+		"STOLICA": "Amsterdam",
+		"KONTYNENT": "Europa"
 	},
 	{
-		"PANSTWO": "Kenia",
-		"STOLICA": "Nairobi",
-		"KONTYNENT": "Afryka"
+		"PANSTWO": "Andora",
+		"STOLICA": "Andora",
+		"KONTYNENT": "Europa"
 	},
 	{
-		"PANSTWO": "Komory",
-		"STOLICA": "Moroni",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Kongo",
-		"STOLICA": "Brazzaville",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Lesotho",
-		"STOLICA": "Maseru",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Liberia",
-		"STOLICA": "Monrovia",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Libia",
-		"STOLICA": "Trypolis",
-		"KONTYNENT": "Afryka"
+		"PANSTWO": "Turcja",
+		"STOLICA": "Ankara",
+		"KONTYNENT": "Azja i Europa"
 	},
 	{
 		"PANSTWO": "Madagaskar",
@@ -130,212 +65,14 @@
 		"KONTYNENT": "Afryka"
 	},
 	{
-		"PANSTWO": "Malawi",
-		"STOLICA": "Lilongwe",
-		"KONTYNENT": "Afryka"
+		"PANSTWO": "Samoa",
+		"STOLICA": "Apia",
+		"KONTYNENT": "Australia i Oceania"
 	},
 	{
-		"PANSTWO": "Mali",
-		"STOLICA": "Bamako",
+		"PANSTWO": "Erytrea",
+		"STOLICA": "Asmara",
 		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Maroko",
-		"STOLICA": "Rabat",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Mauretania",
-		"STOLICA": "Nawakszut",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Mauritius",
-		"STOLICA": "Port Louis",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Mozambik",
-		"STOLICA": "Maputo",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Namibia",
-		"STOLICA": "Windhuk",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Niger",
-		"STOLICA": "Niamey",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Nigeria",
-		"STOLICA": "Abudża",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Południowa Afryka",
-		"STOLICA": "Pretoria",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Republika Środkowoafrykańska",
-		"STOLICA": "Bangi",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Republika Zielonego Przylądka",
-		"STOLICA": "Praia",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Rwanda",
-		"STOLICA": "Kigali",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Senegal",
-		"STOLICA": "Dakar",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Seszele",
-		"STOLICA": "Victoria",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Sierra Leone",
-		"STOLICA": "Freetown",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Somalia",
-		"STOLICA": "Mogadiszu",
-		"KONTYNENT": "Afryka"
-	},		
- 	{
-		"PANSTWO": "Eswatini",
-		"STOLICA": "Mbabane",
-		"KONTYNENT": "Afryka"
-	},		
- 	{
-		"PANSTWO": "Sudan",
-		"STOLICA": "Chartum",
-		"KONTYNENT": "Afryka"
-	},		
- 	{
-		"PANSTWO": "Sudan Południowy",
-		"STOLICA": "Dżuba",
-		"KONTYNENT": "Afryka"
-	},		
- 	{
-		"PANSTWO": "Tanzania",
-		"STOLICA": "Dodoma",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Togo",
-		"STOLICA": "Lomé",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Tunezja",
-		"STOLICA": "Tunis",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Uganda",
-		"STOLICA": "Kampala",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Wybrzeże Kości Słoniowej",
-		"STOLICA": "Jamusukro",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Wyspy Świętego Tomasza i Książęca",
-		"STOLICA": "São Tomé",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Zambia",
-		"STOLICA": "Lusaka",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Zimbabwe",
-		"STOLICA": "Harare",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "",
-		"STOLICA": "McMurdo",
-		"KONTYNENT": "Afryka"
-	},
-
-
- 	{
-		"PANSTWO": "Majotta",
-		"STOLICA": "Mamoudzou",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Reunion",
-		"STOLICA": "Saint-Denis",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Sahara Zachodnia",
-		"STOLICA": "Al-Ujun",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Somaliland",
-		"STOLICA": "Hargejsa",
-		"KONTYNENT": "Afryka"
-	},
- 	{
-		"PANSTWO": "Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha",
-		"STOLICA": "Jamestown",
-		"KONTYNENT": "Afryka"
-	},
-
-	{
-		"PANSTWO": "Argentyna",
-		"STOLICA": "Buenos Aires",
-		"KONTYNENT": "Ameryka Południowa"
-	},
-	{
-		"PANSTWO": "Boliwia",
-		"STOLICA": "Sucre",
-		"KONTYNENT": "Ameryka Południowa"
-	},
-	{
-		"PANSTWO": "Brazylia",
-		"STOLICA": "Brasília",
-		"KONTYNENT": "Ameryka Południowa"
-	},
-	{
-		"PANSTWO": "Chile",
-		"STOLICA": "Santiago",
-		"KONTYNENT": "Ameryka Południowa"
-	},
-	{
-		"PANSTWO": "Ekwador",
-		"STOLICA": "Quito",
-		"KONTYNENT": "Ameryka Południowa"
-	},
-	{
-		"PANSTWO": "Gujana",
-		"STOLICA": "Georgetown",
-		"KONTYNENT": "Ameryka Południowa"
-	},
-	{
-		"PANSTWO": "Kolumbia",
-		"STOLICA": "Bogota",
-		"KONTYNENT": "Ameryka Południowa"
 	},
 	{
 		"PANSTWO": "Paragwaj",
@@ -343,55 +80,79 @@
 		"KONTYNENT": "Ameryka Południowa"
 	},
 	{
-		"PANSTWO": "Peru",
-		"STOLICA": "Lima",
-		"KONTYNENT": "Ameryka Południowa"
+		"PANSTWO": "Turkmenistan",
+		"STOLICA": "Aszchabad",
+		"KONTYNENT": "Azja"
 	},
 	{
-		"PANSTWO": "Surinam",
-		"STOLICA": "Paramaribo",
-		"KONTYNENT": "Ameryka Południowa"
+		"PANSTWO": "Grecja",
+		"STOLICA": "Ateny",
+		"KONTYNENT": "Europa"
 	},
 	{
-		"PANSTWO": "Urugwaj",
-		"STOLICA": "Montevideo",
-		"KONTYNENT": "Ameryka Południowa"
+		"PANSTWO": "Wyspy Cooka",
+		"STOLICA": "Avarua",
+		"KONTYNENT": "Australia i Oceania"
 	},
 	{
-		"PANSTWO": "Wenezuela",
-		"STOLICA": "Caracas",
-		"KONTYNENT": "Ameryka Południowa"
+		"PANSTWO": "Irak",
+		"STOLICA": "Bagdad",
+		"KONTYNENT": "Azja"
 	},
 	{
-		"PANSTWO": "Falklandy",
-		"STOLICA": "Stanley",
-		"KONTYNENT": "Ameryka Południowa"
+		"PANSTWO": "Kiribati",
+		"STOLICA": "Bairiki",
+		"KONTYNENT": "Australia i Oceania"
 	},
 	{
-		"PANSTWO": " Georgia Południowa i Sandwich Południowy",
-		"STOLICA": "King Edward Point",
-		"KONTYNENT": "Ameryka Południowa"
+		"PANSTWO": "Azerbejdżan",
+		"STOLICA": "Baku",
+		"KONTYNENT": "Azja"
 	},
 	{
-		"PANSTWO": "Gujana Francuska",
-		"STOLICA": "Kajenna",
-		"KONTYNENT": "Ameryka Południowa"
+		"PANSTWO": "Mali",
+		"STOLICA": "Bamako",
+		"KONTYNENT": "Afryka"
 	},
-
 	{
-		"PANSTWO": "Antigua i Barbuda",
-		"STOLICA": "Saint John’s",
+		"PANSTWO": "Brunei",
+		"STOLICA": "Bandar Seri Begawan",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Gambia",
+		"STOLICA": "Bandżul",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Republika środkowoafrykańska",
+		"STOLICA": "Bangi",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Tajlandia",
+		"STOLICA": "Bangkok",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Saint Kitts i Nevis",
+		"STOLICA": "Basseterre",
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
-		"PANSTWO": "Bahamy",
-		"STOLICA": "Nassau",
+		"PANSTWO": "Gwadelupa",
+		"STOLICA": "Basse-Terre",
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
-		"PANSTWO": "Barbados",
-		"STOLICA": "Bridgetown",
-		"KONTYNENT": "Ameryka Północna"
+		"PANSTWO": "Liban",
+		"STOLICA": "Bejrut",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Serbia",
+		"STOLICA": "Belgrad",
+		"KONTYNENT": "Europa"
 	},
 	{
 		"PANSTWO": "Belize",
@@ -399,18 +160,233 @@
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
-		"PANSTWO": "Dominika",
-		"STOLICA": "Roseau",
+		"PANSTWO": "Niemcy",
+		"STOLICA": "Berlin",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Gwinea Bissau",
+		"STOLICA": "Bissau",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Kirgistan",
+		"STOLICA": "Biszkek",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Kolumbia",
+		"STOLICA": "Bogota",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Montserrat Plymouth",
+		"STOLICA": "Brades",
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
-		"PANSTWO": "Dominikana",
-		"STOLICA": "Santo Domingo",
+		"PANSTWO": "Brazylia",
+		"STOLICA": "Brasília",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Słowacja",
+		"STOLICA": "Bratysława",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Kongo",
+		"STOLICA": "Brazzaville",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Barbados",
+		"STOLICA": "Bridgetown",
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
-		"PANSTWO": "Grenada",
-		"STOLICA": "Saint George’s",
+		"PANSTWO": "Szwajcaria",
+		"STOLICA": "Brno",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Belgia",
+		"STOLICA": "Bruksela",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Węgry",
+		"STOLICA": "Budapeszt",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Argentyna",
+		"STOLICA": "Buenos Aires",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Rumunia",
+		"STOLICA": "Bukareszt",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Australia",
+		"STOLICA": "Canberra",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Wenezuela",
+		"STOLICA": "Caracas",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Saint Lucia",
+		"STOLICA": "Castries",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Osetia Południowa",
+		"STOLICA": "Cchinwali",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Mariany Północne",
+		"STOLICA": "Chalan Kanoa",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Wyspy Dziewicze Stanów Zjednoczonych",
+		"STOLICA": "Charlotte Amalie",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Sudan",
+		"STOLICA": "Chartum",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Turks i Caicos",
+		"STOLICA": "Cockburn Town",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Senegal",
+		"STOLICA": "Dakar",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Syria",
+		"STOLICA": "Damaszek",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Bangladesz",
+		"STOLICA": "Dhaka",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Timor Wschodni",
+		"STOLICA": "Dili",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Tanzania",
+		"STOLICA": "Dodoma",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Katar",
+		"STOLICA": "Doha",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Wyspa Man",
+		"STOLICA": "Douglas",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Irlandia",
+		"STOLICA": "Dublin",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Tadżykistan",
+		"STOLICA": "Duszanbe",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Indonezja",
+		"STOLICA": "Dżakarta",
+		"KONTYNENT": "Azja i Oceania"
+	},
+	{
+		"PANSTWO": "Dżibuti",
+		"STOLICA": "Dżibuti",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Sudan Południowy",
+		"STOLICA": "Dżuba",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Armenia",
+		"STOLICA": "Erywań",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Samoa Amerykańskie",
+		"STOLICA": "Fagatogo",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Tokelau",
+		"STOLICA": "Fakaofo",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Wyspa Bożego Narodzenia",
+		"STOLICA": "Flying Fish Cove",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Martynika",
+		"STOLICA": "Fort-de-France",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Sierra Leone",
+		"STOLICA": "Freetown",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Botswana",
+		"STOLICA": "Gaborone",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Kajmany",
+		"STOLICA": "George Town",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Gujana",
+		"STOLICA": "Georgetown",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Gibraltar",
+		"STOLICA": "Gibraltar",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Burundi",
+		"STOLICA": "Gitega",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Saint-Barthélemy",
+		"STOLICA": "Gustavia",
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
@@ -419,29 +395,29 @@
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
-		"PANSTWO": "Haiti",
-		"STOLICA": "Port-au-Prince",
+		"PANSTWO": "Guam",
+		"STOLICA": "Hag?t?a",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Bermudy",
+		"STOLICA": "Hamilton",
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
-		"PANSTWO": "Honduras",
-		"STOLICA": "Tegucigalpa",
-		"KONTYNENT": "Ameryka Północna"
+		"PANSTWO": "Wietnam",
+		"STOLICA": "Hanoi",
+		"KONTYNENT": "Azja"
 	},
 	{
-		"PANSTWO": "Jamajka",
-		"STOLICA": "Kingston",
-		"KONTYNENT": "Ameryka Północna"
+		"PANSTWO": "Zimbabwe",
+		"STOLICA": "Harare",
+		"KONTYNENT": "Afryka"
 	},
 	{
-		"PANSTWO": "Kanada",
-		"STOLICA": "Ottawa",
-		"KONTYNENT": "Ameryka Północna"
-	},
-	{
-		"PANSTWO": "Kostaryka",
-		"STOLICA": "San José",
-		"KONTYNENT": "Ameryka Północna"
+		"PANSTWO": "Somaliland",
+		"STOLICA": "Hargejsa",
+		"KONTYNENT": "Afryka"
 	},
 	{
 		"PANSTWO": "Kuba",
@@ -449,28 +425,88 @@
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
-		"PANSTWO": "Meksyk",
-		"STOLICA": "Meksyk",
-		"KONTYNENT": "Ameryka Północna"
+		"PANSTWO": "Finlandia",
+		"STOLICA": "Helsinki",
+		"KONTYNENT": "Europa"
 	},
 	{
-		"PANSTWO": "Nikaragua",
-		"STOLICA": "Managua",
-		"KONTYNENT": "Ameryka Północna"
+		"PANSTWO": "Wyspy Salomona",
+		"STOLICA": "Honiara",
+		"KONTYNENT": "Australia i Oceania"
 	},
 	{
-		"PANSTWO": "Panama",
-		"STOLICA": "Panama",
-		"KONTYNENT": "Ameryka Północna"
+		"PANSTWO": "Pakistan",
+		"STOLICA": "Islamabad",
+		"KONTYNENT": "Azja"
 	},
 	{
-		"PANSTWO": "Saint Kitts i Nevis",
-		"STOLICA": "Basseterre",
-		"KONTYNENT": "Ameryka Północna"
+		"PANSTWO": "Wyspa Świętej Heleny, Wyspa Wniebowstąpienia i Tristan da Cunha",
+		"STOLICA": "Jamestown",
+		"KONTYNENT": "Afryka"
 	},
 	{
-		"PANSTWO": "Saint Lucia",
-		"STOLICA": "Castries",
+		"PANSTWO": "Wybrzeże Kości Słoniowej",
+		"STOLICA": "Jamusukro",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Kamerun",
+		"STOLICA": "Jaunde",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Palestyna",
+		"STOLICA": "Jerozolima",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Afganistan",
+		"STOLICA": "Kabul",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Egipt",
+		"STOLICA": "Kair",
+		"KONTYNENT": "Afryka i Azja"
+	},
+	{
+		"PANSTWO": "Gujana Francuska",
+		"STOLICA": "Kajenna",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Uganda",
+		"STOLICA": "Kampala",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Nepal",
+		"STOLICA": "Katmandu",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Rwanda",
+		"STOLICA": "Kigali",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Ukraina",
+		"STOLICA": "Kijów",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": " Georgia Południowa i Sandwich Południowy",
+		"STOLICA": "King Edward Point",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Norfolk",
+		"STOLICA": "Kingston",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Jamajka",
+		"STOLICA": "Kingston",
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
@@ -479,9 +515,689 @@
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
+		"PANSTWO": "Demokratyczna Republika Konga",
+		"STOLICA": "Kinszasa",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Mołdawia",
+		"STOLICA": "Kiszyniów",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Gagauzja",
+		"STOLICA": "Komrat",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Gwinea",
+		"STOLICA": "Konakry",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Dania",
+		"STOLICA": "Kopenhaga",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Bonaire",
+		"STOLICA": "Kralendijk",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Malezja",
+		"STOLICA": "Kuala Lumpur",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Kuwejt",
+		"STOLICA": "Kuwejt",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Gabon",
+		"STOLICA": "Libreville",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Malawi",
+		"STOLICA": "Lilongwe",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Peru",
+		"STOLICA": "Lima",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Portugalia",
+		"STOLICA": "Lizbona",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Togo",
+		"STOLICA": "Lomé",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Wielka Brytania",
+		"STOLICA": "Londyn",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Svalbard",
+		"STOLICA": "Longyearbyen",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Angola",
+		"STOLICA": "Luanda",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Słowenia",
+		"STOLICA": "Lublana",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Luksemburg",
+		"STOLICA": "Luksemburg",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Zambia",
+		"STOLICA": "Lusaka",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Hiszpania",
+		"STOLICA": "Madryt",
+		"KONTYNENT": "Europa i Afryka"
+	},
+	{
+		"PANSTWO": "Wyspy Marshalla",
+		"STOLICA": "Majuro",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Gwinea Równikowa",
+		"STOLICA": "Malabo",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Malediwy",
+		"STOLICA": "Male",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Majotta",
+		"STOLICA": "Mamoudzou",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Nikaragua",
+		"STOLICA": "Managua",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Bahrajn",
+		"STOLICA": "Manama",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Filipiny",
+		"STOLICA": "Manila",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Mozambik",
+		"STOLICA": "Maputo",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Saint-Martin",
+		"STOLICA": "Marigot",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Lesotho",
+		"STOLICA": "Maseru",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Oman",
+		"STOLICA": "Maskat",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Wallis i Futuna",
+		"STOLICA": "Mata-Utu",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Eswatini",
+		"STOLICA": "Mbabane",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "",
+		"STOLICA": "McMurdo",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Meksyk",
+		"STOLICA": "Meksyk",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Białoruś",
+		"STOLICA": "Mińsk",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Somalia",
+		"STOLICA": "Mogadiszu",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Monako",
+		"STOLICA": "Monako",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Liberia",
+		"STOLICA": "Monrovia",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Urugwaj",
+		"STOLICA": "Montevideo",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Komory",
+		"STOLICA": "Moroni",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Rosja",
+		"STOLICA": "Moskwa",
+		"KONTYNENT": "Europa i Azja"
+	},
+	{
+		"PANSTWO": "Kenia",
+		"STOLICA": "Nairobi",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Bahamy",
+		"STOLICA": "Nassau",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Mauretania",
+		"STOLICA": "Nawakszut",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Mjanma",
+		"STOLICA": "Naypyidaw",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Czad",
+		"STOLICA": "Ndżamena",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Palau",
+		"STOLICA": "Ngerulmud",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Niger",
+		"STOLICA": "Niamey",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Cypr",
+		"STOLICA": "Nikozja",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Cypr Północny",
+		"STOLICA": "Nikozja",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Indie",
+		"STOLICA": "Nowe Delhi",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Tonga",
+		"STOLICA": "Nuku?alofa",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Nowa Kaledonia",
+		"STOLICA": "Numea",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Kazachstan",
+		"STOLICA": "Nur-Sułtan",
+		"KONTYNENT": "Azja i Europa"
+	},
+	{
+		"PANSTWO": "Grenlandia",
+		"STOLICA": "Nuuk",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Aruba i Sint Eustatius",
+		"STOLICA": "Oranjestad",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Norwegia",
+		"STOLICA": "Oslo",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Kanada",
+		"STOLICA": "Ottawa",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Mikronezja",
+		"STOLICA": "Palikir",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Panama",
+		"STOLICA": "Panama",
+		"KONTYNENT": "Ameryka Północna i południowa"
+	},
+	{
+		"PANSTWO": "Polinezja Francuska",
+		"STOLICA": "Papeete",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Surinam",
+		"STOLICA": "Paramaribo",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Francja",
+		"STOLICA": "Paryż",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Chiny",
+		"STOLICA": "Pekin",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Sint Maarten",
+		"STOLICA": "Philipsburg",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Kambodża",
+		"STOLICA": "Phnom Penh",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Korea Północna",
+		"STOLICA": "Pjongjang",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Montserrat",
+		"STOLICA": "Plymouth",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Czarnogóra",
+		"STOLICA": "Podgorica",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Mauritius",
+		"STOLICA": "Port Louis",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Papua-Nowa Gwinea",
+		"STOLICA": "Port Moresby",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Vanuatu",
+		"STOLICA": "Port Vila",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Haiti",
+		"STOLICA": "Port-au-Prince",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Trynidad i Tobago",
+		"STOLICA": "Port-of-Spain",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Benin",
+		"STOLICA": "Porto-Novo",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Czechy",
+		"STOLICA": "Praga",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Republika Zielonego Przylądka",
+		"STOLICA": "Praia",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Południowa Afryka",
+		"STOLICA": "Pretoria",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Kosowo",
+		"STOLICA": "Prisztina",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Ekwador",
+		"STOLICA": "Quito",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Maroko",
+		"STOLICA": "Rabat",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Islandia",
+		"STOLICA": "Reykjavík",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Arabia Saudyjska",
+		"STOLICA": "Rijad",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Brytyjskie Wyspy Dziewicze",
+		"STOLICA": "Road Town",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Dominika",
+		"STOLICA": "Roseau",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Łotwa",
+		"STOLICA": "Ryga",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Włochy",
+		"STOLICA": "Rzym",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Grenada",
+		"STOLICA": "Saint George’s",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Jersey",
+		"STOLICA": "Saint Helier",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Antigua i Barbuda",
+		"STOLICA": "Saint John’s",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Guernsey",
+		"STOLICA": "Saint Peter Port",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Reunion",
+		"STOLICA": "Saint-Denis",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Saint-Pierre i Miquelon",
+		"STOLICA": "Saint-Pierre",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Kostaryka",
+		"STOLICA": "San José",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Portoryko",
+		"STOLICA": "San Juan",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "San Marino",
+		"STOLICA": "San Marino",
+		"KONTYNENT": "Europa"
+	},
+	{
 		"PANSTWO": "Salwador",
 		"STOLICA": "San Salvador",
 		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Jemen",
+		"STOLICA": "Sana",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Chile",
+		"STOLICA": "Santiago",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Dominikana",
+		"STOLICA": "Santo Domingo",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Wyspy Świętego Tomasza i Książęca",
+		"STOLICA": "São Tomé",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Bośnia i Hercegowina",
+		"STOLICA": "Sarajewo",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Korea Południowa",
+		"STOLICA": "Seul",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Singapur",
+		"STOLICA": "Singapur",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Macedonia Północna",
+		"STOLICA": "Skopje",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Bułgaria",
+		"STOLICA": "Sofia",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Sri Lanka",
+		"STOLICA": "Sri Dźajawardanapura Kotte",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Falklandy",
+		"STOLICA": "Stanley",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Górski Karabach",
+		"STOLICA": "Stepanakert",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Abchazja",
+		"STOLICA": "Suchumi",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Boliwia",
+		"STOLICA": "Sucre",
+		"KONTYNENT": "Ameryka Południowa"
+	},
+	{
+		"PANSTWO": "Fidżi",
+		"STOLICA": "Suva",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Szwecja",
+		"STOLICA": "Sztokholm",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Tajwan",
+		"STOLICA": "Tajpej",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Estonia",
+		"STOLICA": "Tallinn",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Uzbekistan",
+		"STOLICA": "Taszkent",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Gruzja",
+		"STOLICA": "Tbilisi",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Honduras",
+		"STOLICA": "Tegucigalpa",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Iran",
+		"STOLICA": "Teheran",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Izrael",
+		"STOLICA": "Tel Awiw-Jafa",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Saba",
+		"STOLICA": "The Bottom",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Anguilla",
+		"STOLICA": "The Valley",
+		"KONTYNENT": "Ameryka Północna"
+	},
+	{
+		"PANSTWO": "Bhutan",
+		"STOLICA": "Thimphu",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Wyspy Owcze",
+		"STOLICA": "Thorshavn",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Albania",
+		"STOLICA": "Tirana",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Japonia",
+		"STOLICA": "Tokio",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Libia",
+		"STOLICA": "Trypolis",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Tunezja",
+		"STOLICA": "Tunis",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Naddniestrze",
+		"STOLICA": "Tyraspol",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Mongolia",
+		"STOLICA": "Ułan Bator",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Liechtenstein",
+		"STOLICA": "Vaduz",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Tuvalu",
+		"STOLICA": "Vaiaku",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Malta",
+		"STOLICA": "Valletta",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Seszele",
+		"STOLICA": "Victoria",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Burkina Faso",
+		"STOLICA": "Wagadugu",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Polska",
+		"STOLICA": "Warszawa",
+		"KONTYNENT": "Europa"
 	},
 	{
 		"PANSTWO": "Stany Zjednoczone",
@@ -489,9 +1205,53 @@
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
-		"PANSTWO": "Trynidad i Tobago",
-		"STOLICA": "Port-of-Spain",
+		"PANSTWO": "Watykan",
+		"STOLICA": "Watykan",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Nowa Zelandia",
+		"STOLICA": "Wellington",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Wyspy Kokosowe",
+		"STOLICA": "West Island",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Austria",
+		"STOLICA": "Wiedeń",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Laos",
+		"STOLICA": "Wientian",
+		"KONTYNENT": "Azja"
+	},
+	{
+		"PANSTWO": "Curaçao",
+		"STOLICA": "Willemstad",
 		"KONTYNENT": "Ameryka Północna"
-	} 	
- 	
+	},
+	{
+		"PANSTWO": "Litwa",
+		"STOLICA": "Wilno",
+		"KONTYNENT": "Europa"
+	},
+	{
+		"PANSTWO": "Namibia",
+		"STOLICA": "Windhuk",
+		"KONTYNENT": "Afryka"
+	},
+	{
+		"PANSTWO": "Nauru",
+		"STOLICA": "Yaren",
+		"KONTYNENT": "Australia i Oceania"
+	},
+	{
+		"PANSTWO": "Chorwacja",
+		"STOLICA": "Zagrzeb",
+		"KONTYNENT": "Europa"
+	}
 ]

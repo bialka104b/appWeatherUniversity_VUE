@@ -19,7 +19,8 @@ import { restElement } from '@babel/types';
 							
 								<div class="d-flex">
 									<div class="flex-grow-1">
-										<h5>{{main.temp}} &#x2103;</h5>
+										<img src="./assets/icons/temperature.svg">
+										<h5 class="d-inline-block">{{main.temp}} &#x2103;</h5>
 									</div>
 									<div class="flex-fill">
 										<h5 class="text-capitalize" v-for="item in weather" :key="item">{{item.description}}
@@ -31,15 +32,12 @@ import { restElement } from '@babel/types';
 								</div>
 							</div>
 							<div class="col-12 bgOpacity my-2 bRadius">
-								<!-- <Forecast1 
-									:cityName="cityName"
-									:lat="12"
-									:lon="15"
-									:tableDayTemp="tableOfAverageDayTemperatures"
-									:table="listInfoForecast"
-									:tempHeader="main.temp"
-									:defaultTableDayTemp="defaultTable"
-								/> -->
+								<SunriseSunset
+									:sys="sys"
+									:visibility="visibility"
+								>
+
+								</SunriseSunset>
 							</div>
 						</div>
 					</div>
@@ -65,21 +63,21 @@ import { restElement } from '@babel/types';
 								:close-on-select="true"
 								:clear-on-select="false"
 								:placeholder="'Select City'"
+								:custom-label="nameWithLang"
 								label="STOLICA"
 								track-by="STOLICA"
 								@close="selectCityWorld(cityWorld)"
-								/>
-							<!-- <div class="">
-								<label >Wpisz dowolne miasto świata</label>
-								<input 
-								type="text" 
-								name="city-world" 
-								v-model="cityWorld" 
-								@input="selectCityWorld(cityWorld)" 
-								class="multiselect__input" 
-								style="height:40px"
-								placeholder="Rzeszów">
-							</div> -->
+								:show-labels="false"
+								>
+								<!-- :show-labels="false" -->
+								<template v-slot:option="{ option }">
+									<div class="">
+										<p class="mb-0 w-100">{{ option.STOLICA }}</p>
+									 	<span class="">{{ option.PANSTWO }} - </span>
+									 	<span class="">{{ option.KONTYNENT }}</span>
+									</div>
+							</template>
+							</VueMultiselect>
 						</div>
 						<div class="container-fluid py-1">
 							<label for="">Wybierz jednostkę temperatury</label>
@@ -119,18 +117,12 @@ import { restElement } from '@babel/types';
 								:cityName="cityName"
 								:lat="12"
 								:lon="15"
-								:tableDayTemp="tableOfAverageDayTemperatures"
 								:table="listInfoForecast"
 								:tempHeader="main.temp"
 								:defaultTableDayTemp="defaultTable"
 							/>
 						</div>
 						<div class="col-12">
-						
-							<!-- <LineChart 
-								:chartData="chartData"
-								:chartOptions="chartOptions"
-							/> -->
 							<Temperature 
 								:cityName="cityName"
 								:lat="12"
@@ -158,21 +150,9 @@ import { restElement } from '@babel/types';
 					<div class="col-4 base">Parametr wewnętrzny: {{base}}</div>
 				</div>
 				<div class="row border">
-					<div class="col-4 main">
-					temperatura: {{main.temp}} Kelwina<br>
-					temperatura: {{main.temp }} Celciusza<br>
-					temperatura odczuwalna: {{main.feels_like}} K<br>
-					temperatura maxymalna: {{main.temp_max}} K<br>
-					temperatura minimalna: {{main.temp_min}} K<br>
-					ciśnienie atmosferyczne: {{main.pressure}}hPa<br>
-					wilgotność: {{main.humidity}}%<br>
-					</div>
+					
 					<div class="col-4 visibility">widoczność: {{visibility}} meters</div>
-					<div class="col-4 wind">
-					prędkość wiatru: {{wind.speed}}m/s<br>
-					podmuch wiatru: {{wind.gust}}<br>
-					kierunek wiatru: {{wind.deg}}stopnie meterologiczne
-					</div>
+					
 				</div>
 				<div class="row border">
 					<div class="col-4 clouds">zachmurzenie: {{clouds.all}}%</div>
@@ -202,9 +182,9 @@ import lang from './module/language';
 import axios from "axios";
 import Header from './components/Header.vue';
 import Forecast1 from './components/Forecast1.vue';
+import SunriseSunset from './components/SunriseSunset.vue';
 import Temperature from './components/Temperature.vue';
 import VueMultiselect from 'vue-multiselect';
-// import LineChart from './chart/LineChart'
 import moment from 'moment';
 
 export default {
@@ -213,25 +193,15 @@ export default {
 		VueMultiselect,
 		Header,
 		Forecast1,
-		// LineChart,
-		Temperature
+		Temperature,
+		SunriseSunset,
 	},
     data() {
       	return {
-			tableOfAverageDayTemperatures: ["dd", "d"],
 			myCities: [],
 			myCitiesWorld: [],
-			selected: null,
 			city: {},
-			cityWorld:{},
-			options1: ['list', 'of', 'options'],
-			options: [
-				{ name: 'Vue.js', language: 'JavaScript' },
-				{ name: 'Rails', language: 'Ruby' },
-				{ name: 'Sinatra', language: 'Ruby' },
-				{ name: 'Laravel', language: 'PHP', $isDisabled: true },
-				{ name: 'Phoenix', language: 'Elixir' }
-			],
+			cityWorld:{ STOLICA: 'Rzeszów', PANSTWO: 'Polska', KONTYNENT: 'Europa'},
 			unitsTemp: null,
 			temperatureUnit: [
 				{key: 'metric', unit: 'Celciusza' },
@@ -241,7 +211,6 @@ export default {
 			selectedTemperatureUnit: 'metric',
 			myLang: [],
 			selectedLang:'pl',
-			// cityWorld: '',
 			API_KEY: '5baab241d44debf04d78944091967607',
 			// API_KEY: '1c7fbae096fe77971b1dc5aa8fcd17ae',
         	URLWeather: "https://api.openweathermap.org/data/2.5/weather?",
@@ -249,9 +218,6 @@ export default {
 			lat: '',
 			lon:'',
 			cityName: 'Rzeszów',
-			stateCode:'',
-			count: "1",
-			dataWithApi: {},
 			coord: {},
 			weather: [],
 			base: '',
@@ -275,17 +241,6 @@ export default {
             cityInfoForecast: {},
 			listInfoForecast: [],
 			defaultTable: [],
-
-			//CHART JS
-			chartData: {},
-			chartOptions: {
-				responsive: true,
-				maintainAspectRatio: false,
-			},
-
-			dt_txtTab: [],
-			temp_minTab: [],
-			temp_maxTab:[],
       	}
     },
 
@@ -296,65 +251,28 @@ export default {
       this.myCitiesWorld = resultCityWorld;
       this.myLang = lang();
       this.getWeather();
-	  await this.daily();;
+	  await this.daily();
+	  console.log(this.result, "this.result 358")
 	  
     },
-	updated(){
-		// this.returnChartData();
-	},
-
     methods: {
-		returnChartData(){
-            this.chartData = {
-                labels: this.dt_txtTab,
-				datasets: [
-					{
-						label: "Temperatura Minimalna",
-						backgroundColor: "red",
-						data: this.temp_minTab,
-						borderColor: 'red',
-					},
-					{
-						label: "Temperatura maksymalna",
-						backgroundColor: "violet",
-						data: this.temp_maxTab,
-						borderColor: 'violet',
-					},
-				],
-            }
-			return this.chartData;
-        },
-		// async stworzTabliceTempDziennej(tab){
-		// 	this.dt_txtTab.length = 0;
-		// 	this.temp_minTab.length = 0;
-		// 	this.temp_maxTab.length = 0;
-		// 	const nowaT = tab.list.map((x)=> {
-		// 		// console.log(x);
-		// 		const dt_txt = moment(x.dt_txt).format("DD-MM, HH:mm");
-		// 		const temp_min = x.main.temp_min;
-		// 		const temp_max = x.main.temp_max;
+		nameWithLang ({ STOLICA, PANSTWO, KONTYNENT }) {
 			
-		// 		this.dt_txtTab.push(dt_txt);
-		// 		this.temp_minTab.push(temp_min);
-		// 		this.temp_maxTab.push(temp_max);
-				
-		// 	})
-		// },
-
+			return `
+			${STOLICA}
+			`
+		},
 		async selectCityWorld(e){
-			// this.city.WOJ = '';
-			// this.cityName = e.value;
 			this.cityName = e.STOLICA;
-			console.log(e, "event")
 			await this.getWeather();
 			await this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
 		},
 
 		async selectCity(e){
 			this.cityName = e.NAZWA;
-			
 			await this.getWeather();
 			await this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
+			console.log(this.result, "this.result 358")
 		},
 
 		selectUnitTemp(e){
@@ -414,17 +332,10 @@ export default {
 		linkIcon(icon){
 			return `http://openweathermap.org/img/w/${icon}.png`;
 		},
-		kelwinToCelcius(){
-			const tempCelcius = (this.main.temp - 273.15).toFixed(2);
-			return tempCelcius;
-		},
-		celsiusToKelwin(celcius){
-			const tempKelwin = (Number(celcius) + 273.15).toFixed(2);
-			return tempKelwin;
-		}
-  },
-  watch: {
-    }
+  	},
+	watch: {
+		
+	}
 }
 </script>
 <style src="vue-multiselect/dist/vue-multiselect.css"></style>
@@ -435,5 +346,9 @@ export default {
 .col-4 {
     // background-image: url("./assets/images/sunset.jpg");
     background-size: cover;
+}
+.multiselect__content {
+	min-width: 0;
+	width:100%
 }
 </style>

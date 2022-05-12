@@ -33,9 +33,17 @@
             />
         </div>
         <div class="text-dark">
-            Prawdopodobieństwo opadów w %
+            Opady deszczu i sniegu na m2
             <LineChart 
                 :chartData="chartDataRainfall"
+                :chartOptions="chartOptions"
+                :height="350"
+            />
+        </div>
+        <div class="text-dark">
+            Prędkość i podmuch wiatru
+            <LineChart 
+                :chartData="chartDataWind"
                 :chartOptions="chartOptions"
                 :height="350"
             />
@@ -64,6 +72,7 @@ export default {
             chartDataClouds:{},
             chartDataPop:{},
             chartDataRainfall:{},
+            chartDataWind:[],
 			chartOptions: {
 				responsive: true,
 				maintainAspectRatio: false,
@@ -93,6 +102,8 @@ export default {
             popTab:[],//prawdopodobieństwo opadów
             rainTab:[],//deszcz w mm
             snowTab:[],//snieg w mm
+            speedWindTab:[],//predkosc
+            gustWindTab:[],//podmuch wiatru
 
             dayNightHumidity:[],
             dayNightPressure:[],
@@ -107,6 +118,8 @@ export default {
             pop:[],
             rain:[],
             snow:[],
+            speedWind:[],
+            gustWind:[],
         }
     },
     
@@ -122,7 +135,8 @@ export default {
             this.chartDataHumidity = this.returnChartDataHumidity();
             this.chartDataClouds = this.returnChartDataClouds();
             this.chartDataRainfall = this.returnChartDataRainfall();
-            console.log(this.table)
+            this.chartDataWind = this.returnChartDataWind();
+            // console.log(this.table)
         }
     },
     methods: {
@@ -143,6 +157,8 @@ export default {
             localStorage.setItem('popTab', JSON.stringify(this.popTab));
             localStorage.setItem('rainTab', JSON.stringify(this.rainTab));
             localStorage.setItem('snowTab', JSON.stringify(this.snowTab));
+            localStorage.setItem('speedWindTab', JSON.stringify(this.speedWindTab));
+            localStorage.setItem('gustWindTab', JSON.stringify(this.gustWindTab));
         },
         getLocalStorage(){
             this.dayNightRain= JSON.parse(localStorage.getItem("dayNightRainTab"));
@@ -160,8 +176,42 @@ export default {
             this.pop= JSON.parse(localStorage.getItem("popTab"));
             this.rain= JSON.parse(localStorage.getItem("rainTab"));
             this.snow= JSON.parse(localStorage.getItem("snowTab"));
+            this.speedWind= JSON.parse(localStorage.getItem("speedWindTab"));
+            this.gustWind= JSON.parse(localStorage.getItem("gustWindTab"));
 
             
+        },
+        returnChartDataWind(){
+            return {
+                labels: this.daysTab,
+				datasets: [
+					{
+						label: "prędkość wiatru m/s",
+						backgroundColor: "rgba(255,140,0, 0.2)",
+						data: this.speedWind,
+						borderColor: 'rgb(255,140,0)',
+                        tension:0.5,
+                        fill: true,
+					},
+					{
+						label: "Podmuch wiatru m/s",
+						backgroundColor: "rgba(255,0,0, 0.2)",
+						data: this.gustWind,
+						borderColor: 'rgb(255,0,0)',
+                        tension:0.5,
+                        fill: true,
+					},
+					{
+						label: "Noc w polskiej strefie czasowej",
+						backgroundColor: "rgba(199,199,199, 0.5)",
+						data: this.dayNightRain,
+                        tension:0.5,
+                        fill: true,
+                        stepped: true,
+                        pointRadius: 0
+					}
+				],
+            }
         },
         returnChartDataRainfall(){
             return {
@@ -184,7 +234,7 @@ export default {
                         fill: true,
 					},
 					{
-						label: "Noc",
+						label: "Noc w polskiej strefie czasowej",
 						backgroundColor: "rgba(199,199,199, 0.5)",
 						data: this.dayNightRain,
                         tension:0.5,
@@ -216,7 +266,7 @@ export default {
                         fill: true,
 					},
 					{
-						label: "Noc",
+						label: "Noc w polskiej strefie czasowej",
 						backgroundColor: "rgba(199,199,199, 0.5)",
 						data: this.dayNightHumidity,
                         tension:0.5,
@@ -242,7 +292,7 @@ export default {
                         // stepped: true
 					},
 					{
-						label: "Noc",
+						label: "Noc w polskiej strefie czasowej",
 						backgroundColor: "rgba(199,199,199, 0.5)",
 						data: this.dayNightHumidity,
 						// borderColor: 'blue',
@@ -280,7 +330,7 @@ export default {
                         // stepped: true
 					},
                     {
-						label: "Noc",
+						label: "Noc w polskiej strefie czasowej",
 						backgroundColor: "rgba(199,199,199, 0.5)",
 						data: this.dayNightPressure,
 						// borderColor: 'blue',
@@ -327,7 +377,7 @@ export default {
                         pointRadius: 0,
 					},
                     {
-						label: "Noc",
+						label: "Noc w polskiej strefie czasowej",
 						backgroundColor: "rgba(199,199,199, 0.5)",
 						data: this.dayNightTemperature,
 						// borderColor: 'blue',
@@ -355,6 +405,8 @@ export default {
             this.dayNightRainTab.length=0;
             this.rainTab.length = 0;
             this.snowTab.length = 0;
+            this.speedWindTab.length = 0;
+            this.gustWindTab.length = 0;
 			tab.map((x)=> {
 				const dt_txt = moment(x.dt_txt).format("DD-MM, HH:mm");
                 const dayNight = Number(moment(x.dt_txt).format("HH"));
@@ -377,6 +429,8 @@ export default {
                 this.popTab.push(x.pop*100);//prawdopodobieństwo opadów
                 this.rainTab.push(x.rain ? x.rain["3h"]: 0);// deszczu w mm
                 this.snowTab.push(x.snow ? x.snow["3h"] : 0);//śnieg w mm
+                this.speedWindTab.push(((x.wind.speed*1000)/3600).toFixed(2));//śnieg w mm
+                this.gustWindTab.push(((x.wind.gust*1000)/3600).toFixed(2));//śnieg w mm
 			})
 		},
         zakresyNocy(num, max, min){
