@@ -245,13 +245,8 @@
 		"KONTYNENT": "Ameryka Północna"
 	},
 	{
-		"PANSTWO": "Osetia Południowa",
-		"STOLICA": "Cchinwali",
-		"KONTYNENT": "Azja"
-	},
-	{
 		"PANSTWO": "Mariany Północne",
-		"STOLICA": "Chalan Kanoa",
+		"STOLICA": "Capitol Hill",
 		"KONTYNENT": "Australia i Oceania"
 	},
 	{
@@ -326,22 +321,12 @@
 	},
 	{
 		"PANSTWO": "Sudan Południowy",
-		"STOLICA": "Dżuba",
+		"STOLICA": "Juba",
 		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Armenia",
-		"STOLICA": "Erywań",
-		"KONTYNENT": "Azja"
 	},
 	{
 		"PANSTWO": "Samoa Amerykańskie",
 		"STOLICA": "Fagatogo",
-		"KONTYNENT": "Australia i Oceania"
-	},
-	{
-		"PANSTWO": "Tokelau",
-		"STOLICA": "Fakaofo",
 		"KONTYNENT": "Australia i Oceania"
 	},
 	{
@@ -363,11 +348,6 @@
 		"PANSTWO": "Botswana",
 		"STOLICA": "Gaborone",
 		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Kajmany",
-		"STOLICA": "George Town",
-		"KONTYNENT": "Ameryka Północna"
 	},
 	{
 		"PANSTWO": "Gujana",
@@ -396,7 +376,7 @@
 	},
 	{
 		"PANSTWO": "Guam",
-		"STOLICA": "Hag?t?a",
+		"STOLICA": "Hagåtña",
 		"KONTYNENT": "Australia i Oceania"
 	},
 	{
@@ -412,11 +392,6 @@
 	{
 		"PANSTWO": "Zimbabwe",
 		"STOLICA": "Harare",
-		"KONTYNENT": "Afryka"
-	},
-	{
-		"PANSTWO": "Somaliland",
-		"STOLICA": "Hargejsa",
 		"KONTYNENT": "Afryka"
 	},
 	{
