@@ -178,8 +178,6 @@ export default {
             this.snow= JSON.parse(localStorage.getItem("snowTab"));
             this.speedWind= JSON.parse(localStorage.getItem("speedWindTab"));
             this.gustWind= JSON.parse(localStorage.getItem("gustWindTab"));
-
-            
         },
         returnChartDataWind(){
             return {
@@ -286,7 +284,6 @@ export default {
 						backgroundColor: "rgba(0,0,255, 0.2)",
 						data: this.humidity,
 						borderColor: 'blue',
-                        // lineTension:0,
                         tension:0.5,
                         fill: true,
                         // stepped: true
@@ -443,7 +440,5 @@ export default {
             return dayNight;
         }
     },
-    
-    
 }
 </script>

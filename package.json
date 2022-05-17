@@ -11,9 +11,11 @@
     "chart.js": "^3.7.1",
     "eslint-plugin-vue": "^8.5.0",
     "moment": "^2.29.3",
+    "path": "^0.12.7",
     "vue": "^3.2.31",
     "vue-chartjs": "^4.0.7",
-    "vue-multiselect": "^3.0.0-alpha.2"
+    "vue-multiselect": "^3.0.0-alpha.2",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.2",

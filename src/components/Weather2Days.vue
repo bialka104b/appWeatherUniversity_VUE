@@ -1,0 +1,240 @@
+<template>
+	<div>
+		<section class="container-fluid section">
+			<div class="row m-0">
+				<div class="col-8">
+					<div class="row m-0">
+						<div class="col-12 bgOpacity my-2 bRadius">
+							<h2>
+								{{ name }}
+								<p class="h6 pt-2">Województwo: {{ city.WOJ }}</p>
+							</h2>
+
+							<div class="d-flex">
+								<div class="flex-grow-1">
+									<img src="../assets/icons/temperature.svg" />
+									<h5 class="d-inline-block">{{ currentWeather.temp }} &#x2103;</h5>
+								</div>
+								<div class="flex-fill">
+									<h5 class="text-capitalize" v-for="item in currentWeather.weather" :key="item">
+										{{ item.description }}
+										<img
+											:src="linkIcon(item.icon)"
+											alt=""
+											style="background: pink"
+										/>
+									</h5>
+									<p class="text-capitalize">wilgotność: {{ currentWeather.humidity }} %</p>
+									<p class="text-capitalize">
+										prędkość wiatru: {{ currentWeather.wind_speed }} m/s
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 bgOpacity my-2 bRadius">
+							
+							<div class="col-6">
+								<SunriseSunset :sys="sys" :visibility="currentWeather.visibility"> </SunriseSunset>
+							</div>
+							<div class="col-6">
+								
+								<div class="pb-2">
+									<img src="./../assets/icons/uv.svg">Wskaźnik UV w południe {{currentWeather.uvi}}
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 my-2 bgOpacity bRadius">
+					<div class="container-fluid py-1">
+						<label for="">Wybierz miasto Polski</label>
+						<VueMultiselect
+							v-model="city"
+							:options="myCities"
+							:close-on-select="true"
+							:clear-on-select="false"
+							:placeholder="'Select City'"
+							label="NAZWA"
+							track-by="NAZWA"
+							@close="selectCity(city)"
+						/>
+					</div>
+					<div class="container-fluid py-1">
+						<label for="">Wybierz stolice świata</label>
+						<VueMultiselect
+							v-model="cityWorld"
+							:options="myCitiesWorld"
+							:close-on-select="true"
+							:clear-on-select="false"
+							:placeholder="'Select City'"
+							:custom-label="nameWithLang"
+							label="STOLICA"
+							track-by="STOLICA"
+							@close="selectCityWorld(cityWorld)"
+							:show-labels="false"
+						>
+							<!-- :show-labels="false" -->
+							<template v-slot:option="{ option }">
+								<div class="">
+									<p class="mb-0 w-100">{{ option.STOLICA }}</p>
+									<span class="">{{ option.PANSTWO }} - </span>
+									<span class="">{{ option.KONTYNENT }}</span>
+								</div>
+							</template>
+						</VueMultiselect>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>2 sekcja</section>
+	</div>
+</template>
+
+<script>
+import SunriseSunset from "./SunriseSunset.vue";
+import VueMultiselect from "vue-multiselect";
+import cities from "../module/cities";
+import citiesWorld from "../module/citiesWorld";
+// import lang from '../module/language';
+import axios from "axios";
+// defineProps({
+//   msg: {
+//     type: Array,
+//     required: true
+//   }
+// })
+
+export default {
+	name: "weather48h",
+	props: {},
+	components: {
+		SunriseSunset,
+		VueMultiselect,
+	},
+	data() {
+		return {
+			result: [],
+			cityName: "Rzeszów",
+			city: {},
+			coord: {},
+			sys: {},
+			name: "",
+
+			currentWeather: {},
+			dailyWeather: [],
+			hourlyWeather: [],
+			minutelyWeather:[],
+			alertsWeather: [],
+
+			myCities: [],
+			myCitiesWorld: [],
+			cityWorld: { STOLICA: "Rzeszów", PANSTWO: "Polska", KONTYNENT: "Europa" },
+
+			//API
+			API_KEY: "5baab241d44debf04d78944091967607",
+			// API_KEY: '1c7fbae096fe77971b1dc5aa8fcd17ae',
+			URLWeather: "https://api.openweathermap.org/data/2.5/weather?",
+			URLOneCall: "https://api.openweathermap.org/data/2.5/onecall?",
+		};
+	},
+	created() {
+		const resultCity = JSON.parse(cities());
+		const resultCityWorld = JSON.parse(citiesWorld());
+		this.myCities = resultCity;
+		this.myCitiesWorld = resultCityWorld;
+		this.getWeather();
+		this.daily48h();
+	},
+	methods: {
+		nameWithLang({ STOLICA, PANSTWO, KONTYNENT }) {
+			return `${STOLICA}`;
+		},
+
+		async selectCityWorld(e) {
+			this.cityName = e.STOLICA;
+			await this.getWeather();
+			await this.daily48h(this.coord.lat, this.coord.lon);
+		},
+
+		async selectCity(e) {
+			this.cityName = e.NAZWA;
+			await this.getWeather();
+			await this.daily48h(this.coord.lat, this.coord.lon);
+			console.log(this.result, "this.result 358");
+		},
+
+		linkIcon(icon) {
+			return `http://openweathermap.org/img/w/${icon}.png`;
+		},
+
+		async getWeather() {
+			await axios
+				.get(
+					`${this.URLWeather}q=${this.cityName}&lat=${this.lat}&lon=${this.lon}&appid=${this.API_KEY}&lang=${this.selectedLang}&units=metric`,
+				)
+				.then((res) => {
+					if (res.status == 200) {
+						this.result = res.data;
+						this.coord = res.data.coord;
+						this.sys = res.data.sys;
+						this.name = res.data.name;
+					} else {
+						console.log(res.statusText);
+					}
+				})
+				.catch((err) => {
+					console.log(err);
+				});
+		},
+
+		// FORECAST
+		async daily48h(lat = 50.0413, lon = 21.999) {
+			await axios
+				.get(
+					`${this.URLOneCall}lat=${lat}&lon=${lon}&exclude=&units=metric&lang=pl&appid=${this.API_KEY}`,
+				)
+				.then((res) => {
+					if (res.status == 200) {
+						this.listResultsOneCall = res.data;
+						this.currentWeather = res.data.current;
+						this.dailyWeather = res.data.daily;
+						this.hourlyWeather = res.data.hourly;
+						this.minutelyWeather = res.data.minutely;
+						this.alertsWeather = res.data.alerts;
+						console.log(res.data.alerts, "red data one call", res.data)
+
+					} else {
+						console.log(res);
+					}
+				})
+				.catch((err) => {
+					console.log(err, "forecast");
+				});
+		},
+	},
+};
+</script>
+
+<style scoped>
+h1 {
+	font-weight: 500;
+	font-size: 2.6rem;
+	top: -10px;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+.greetings h1,
+.greetings h3 {
+	text-align: center;
+}
+
+@media (min-width: 1024px) {
+	.greetings h1,
+	.greetings h3 {
+		text-align: left;
+	}
+}
+</style>
