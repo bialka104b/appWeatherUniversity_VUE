@@ -1,7 +1,11 @@
+<script setup>
+// import { defineComponent } from '@vue/composition-api'
+</script>
+
 <template>
     <div>
         <div class="text-dark">
-            	Temperatura minimalna i maksymalna na 5 dni
+            Temperatura minimalna i maksymalna na 5 dni
             <LineChart 
                 :chartData="chartData"
                 :chartOptions="chartOptions"
@@ -120,23 +124,44 @@ export default {
             snow:[],
             speedWind:[],
             gustWind:[],
+
+            abc: []
         }
     },
     
     updated() {
-        
+        // this.setDataLocalStorage();
+        // this.getLocalStorage();
+        // this.chartData = this.returnChartData();
+        // this.chartDataPressure = this.returnCartDataPressure();
+        // this.chartDataHumidity = this.returnChartDataHumidity();
+        // this.chartDataClouds = this.returnChartDataClouds();
+        // this.chartDataRainfall = this.returnChartDataRainfall();
+        // this.chartDataWind = this.returnChartDataWind();
+    },
+    created() {
+        this.table;
+        this.setDataLocalStorage();
+        this.getLocalStorage();
+        this.chartData = this.returnChartData();
+        this.chartDataPressure = this.returnCartDataPressure();
+        this.chartDataHumidity = this.returnChartDataHumidity();
+        this.chartDataClouds = this.returnChartDataClouds();
+        this.chartDataRainfall = this.returnChartDataRainfall();
+        this.chartDataWind = this.returnChartDataWind();
+        // this.updated;
     },
     watch: {
         table(){
             this.setDataLocalStorage();
             this.getLocalStorage();
+            // try {}
             this.chartData = this.returnChartData();
             this.chartDataPressure = this.returnCartDataPressure();
             this.chartDataHumidity = this.returnChartDataHumidity();
             this.chartDataClouds = this.returnChartDataClouds();
             this.chartDataRainfall = this.returnChartDataRainfall();
             this.chartDataWind = this.returnChartDataWind();
-            // console.log(this.table)
         }
     },
     methods: {

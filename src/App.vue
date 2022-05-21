@@ -1,5 +1,5 @@
 <script setup>
-import TheWelcome from './components/Weather5Days.vue'
+// import TheWelcome from './components/Weather5Days.vue'
 import { restElement } from '@babel/types';
 </script>
 

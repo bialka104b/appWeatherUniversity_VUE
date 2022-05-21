@@ -291,7 +291,6 @@ export default {
       this.myLang = lang();
       this.getWeather();
 	  await this.daily();
-	  console.log(this.result, "this.result 358")
     },
 	methods: {
 		nameWithLang ({ STOLICA, PANSTWO, KONTYNENT }) {
@@ -356,6 +355,7 @@ export default {
                         this.listResultsForecast = res.data;
                         this.cityInfoForecast = res.data.city;
 						this.listInfoForecast = res.data.list;
+						// console.log(res.data, "resdata")
                     } else {
                         console.log(res);
 						console.log("uuuuuuuu...")
