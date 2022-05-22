@@ -13,10 +13,17 @@
 							<div class="d-flex">
 								<div class="flex-grow-1">
 									<img src="../assets/icons/temperature.svg" />
-									<h5 class="d-inline-block">{{ currentWeather.temp }} &#x2103;</h5>
+									<h5 class="d-inline-block">
+										{{ currentWeather.temp }} &#x2103;
+									</h5>
 								</div>
 								<div class="flex-fill">
-									<h5 class="text-capitalize" v-for="item in currentWeather.weather" :key="item">
+								
+									<h5
+										class="text-capitalize"
+										v-for="item in currentWeather.weather"
+										:key="item"
+									>
 										{{ item.description }}
 										<img
 											:src="linkIcon(item.icon)"
@@ -24,7 +31,9 @@
 											style="background: pink"
 										/>
 									</h5>
-									<p class="text-capitalize">wilgotność: {{ currentWeather.humidity }} %</p>
+									<p class="text-capitalize">
+										wilgotność: {{ currentWeather.humidity }} %
+									</p>
 									<p class="text-capitalize">
 										prędkość wiatru: {{ currentWeather.wind_speed }} m/s
 									</p>
@@ -32,15 +41,15 @@
 							</div>
 						</div>
 						<div class="col-12 bgOpacity my-2 bRadius">
-							
 							<div class="col-6">
-								<SunriseSunset :sys="sys" :visibility="currentWeather.visibility"> </SunriseSunset>
+								<SunriseSunset :sys="sys" :visible="currentWeather.visibility">
+								</SunriseSunset>
 							</div>
 							<div class="col-6">
-								
 								<div class="pb-2">
-									<img src="./../assets/icons/uv.svg">Wskaźnik UV w południe {{currentWeather.uvi}}
-									</div>
+									<img src="./../assets/icons/uv.svg" />Wskaźnik UV w południe
+									{{ currentWeather.uvi }}
+								</div>
 							</div>
 						</div>
 					</div>
@@ -57,7 +66,7 @@
 							label="NAZWA"
 							track-by="NAZWA"
 							@close="selectCity(city)"
-						/>
+						></VueMultiselect>
 					</div>
 					<div class="container-fluid py-1">
 						<label for="">Wybierz stolice świata</label>
@@ -73,7 +82,6 @@
 							@close="selectCityWorld(cityWorld)"
 							:show-labels="false"
 						>
-							<!-- :show-labels="false" -->
 							<template v-slot:option="{ option }">
 								<div class="">
 									<p class="mb-0 w-100">{{ option.STOLICA }}</p>
@@ -83,10 +91,35 @@
 							</template>
 						</VueMultiselect>
 					</div>
+					<!-- <div>{{hourlyWeather}}</div> -->
 				</div>
 			</div>
 		</section>
-		<section>2 sekcja</section>
+		<section class="weather2Days">
+			<div class="container-fluid">
+				<div class="row m-0">
+					<div class="col-6">
+						<!-- <Forecast1
+							:cityName="cityName"
+							:lat="12"
+							:lon="15"
+							:table="listInfoForecast"
+							:tempHeader="main.temp"
+							:defaultTableDayTemp="defaultTable"
+						/> -->
+					</div>
+					<div class="col-12">
+						<Weather48Chart
+							:cityName="cityName"
+							:lat="12"
+							:lon="15"
+							:table="hourlyWeather"
+						/>
+						<button>dd</button>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </template>
 
@@ -95,14 +128,9 @@ import SunriseSunset from "./SunriseSunset.vue";
 import VueMultiselect from "vue-multiselect";
 import cities from "../module/cities";
 import citiesWorld from "../module/citiesWorld";
+import Weather48Chart from "./Weather48Chart.vue";
 // import lang from '../module/language';
 import axios from "axios";
-// defineProps({
-//   msg: {
-//     type: Array,
-//     required: true
-//   }
-// })
 
 export default {
 	name: "weather48h",
@@ -110,6 +138,7 @@ export default {
 	components: {
 		SunriseSunset,
 		VueMultiselect,
+		Weather48Chart,
 	},
 	data() {
 		return {
@@ -123,7 +152,7 @@ export default {
 			currentWeather: {},
 			dailyWeather: [],
 			hourlyWeather: [],
-			minutelyWeather:[],
+			minutelyWeather: [],
 			alertsWeather: [],
 
 			myCities: [],
@@ -160,7 +189,6 @@ export default {
 			this.cityName = e.NAZWA;
 			await this.getWeather();
 			await this.daily48h(this.coord.lat, this.coord.lon);
-			console.log(this.result, "this.result 358");
 		},
 
 		linkIcon(icon) {
@@ -179,7 +207,6 @@ export default {
 						this.sys = res.data.sys;
 						this.name = res.data.name;
 					} else {
-						console.log(res.statusText);
 					}
 				})
 				.catch((err) => {
@@ -201,8 +228,7 @@ export default {
 						this.hourlyWeather = res.data.hourly;
 						this.minutelyWeather = res.data.minutely;
 						this.alertsWeather = res.data.alerts;
-						console.log(res.data.alerts, "red data one call", res.data)
-
+						console.log(res.data.alerts, "red data one call", res.data);
 					} else {
 						console.log(res);
 					}
@@ -214,27 +240,3 @@ export default {
 	},
 };
 </script>
-
-<style scoped>
-h1 {
-	font-weight: 500;
-	font-size: 2.6rem;
-	top: -10px;
-}
-
-h3 {
-	font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-	text-align: center;
-}
-
-@media (min-width: 1024px) {
-	.greetings h1,
-	.greetings h3 {
-		text-align: left;
-	}
-}
-</style>

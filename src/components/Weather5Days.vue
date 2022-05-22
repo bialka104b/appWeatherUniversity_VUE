@@ -224,6 +224,7 @@ import lang from '../module/language';
 import axios from "axios";
 import Forecast1 from "./Forecast1.vue";
 import Temperature from "./Temperature.vue";
+
 import SunriseSunset from './SunriseSunset.vue';
 import VueMultiselect from 'vue-multiselect';
 export default {
@@ -306,7 +307,6 @@ export default {
 			this.cityName = e.NAZWA;
 			await this.getWeather();
 			await this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
-			console.log(this.result, "this.result 358")
 		},
 
 		selectUnitTemp(e){
@@ -340,7 +340,6 @@ export default {
 						this.lon = res.data.coord.lon;
 						this.lat = res.data.coord.lat;
 					} else {
-						console.log(res.statusText);
 					}})
 				.catch(err => {
 					console.log(err);
@@ -355,10 +354,9 @@ export default {
                         this.listResultsForecast = res.data;
                         this.cityInfoForecast = res.data.city;
 						this.listInfoForecast = res.data.list;
-						// console.log(res.data, "resdata")
+						console.log(res.data, "resdata forecast")
                     } else {
                         console.log(res);
-						console.log("uuuuuuuu...")
                     }
                 })
                 .catch(err => {

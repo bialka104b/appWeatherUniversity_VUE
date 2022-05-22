@@ -45,7 +45,6 @@ export default {
             this.sunrise = moment.unix(this.sys.sunrise).format("YYYY-MM-DD, HH:mm")
             this.sunset = moment.unix(this.sys.sunset).format("YYYY-MM-DD, HH:mm")
             this.visible = this.visibility*0.001;
-            // console.log(this.sys)
         }
     }
 }
