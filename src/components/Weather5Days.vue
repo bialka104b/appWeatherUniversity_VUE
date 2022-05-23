@@ -118,7 +118,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 							</div>
 						</div>
 						<div class="col-12 bgOpacity my-2 bRadius">
-							<SunriseSunset :sys="sys" :visible="visibility"> </SunriseSunset>
+							<SunriseSunset :sys="sys" :visible="visibility"></SunriseSunset>
 						</div>
 					</div>
 				</div>
@@ -218,24 +218,22 @@ import SupportIcon from "./icons/IconSupport.vue";
 </template>
 
 <script>
-import cities from '../module/cities';
-import citiesWorld from '../module/citiesWorld';
-import lang from '../module/language';
+import cities from "../module/cities";
+import citiesWorld from "../module/citiesWorld";
+import lang from "../module/language";
 import axios from "axios";
 import Forecast1 from "./Forecast1.vue";
 import Temperature from "./Temperature.vue";
 
-import SunriseSunset from './SunriseSunset.vue';
-import VueMultiselect from 'vue-multiselect';
+import SunriseSunset from "./SunriseSunset.vue";
+import VueMultiselect from "vue-multiselect";
 export default {
 	setup() {},
 	components: {
-		// VueMultiselect,
-		// Header,
 		Forecast1,
 		Temperature,
 		SunriseSunset,
-		VueMultiselect
+		VueMultiselect,
 	},
 	data() {
 		return {
@@ -248,24 +246,24 @@ export default {
 			myCities: [],
 			myCitiesWorld: [],
 			city: {},
-			cityWorld:{ STOLICA: 'Rzeszów', PANSTWO: 'Polska', KONTYNENT: 'Europa'},
+			cityWorld: { STOLICA: "Rzeszów", PANSTWO: "Polska", KONTYNENT: "Europa" },
 			unitsTemp: null,
 			temperatureUnit: [
-				{key: 'metric', unit: 'Celciusza' },
-				{key: 'imperial', unit: 'Farenhajta' },
-				{key: '', unit: 'Kelwina' },
+				{ key: "metric", unit: "Celciusza" },
+				{ key: "imperial", unit: "Farenhajta" },
+				{ key: "", unit: "Kelwina" },
 			],
-			selectedTemperatureUnit: 'metric',
+			selectedTemperatureUnit: "metric",
 			myLang: [],
-			selectedLang:'pl',
+			selectedLang: "pl",
 
 			result: [],
-			lat: '',
-			lon:'',
-			cityName: 'Rzeszów',
+			lat: "",
+			lon: "",
+			cityName: "Rzeszów",
 			coord: {},
 			weather: [],
-			base: '',
+			base: "",
 			main: {},
 			visibility: 0,
 			wind: {},
@@ -274,99 +272,105 @@ export default {
 			sys: {},
 			timezone: 0,
 			id: 0,
-			name : "",
+			name: "",
 			cod: 0,
 
 			//API
-			API_KEY: '5baab241d44debf04d78944091967607',
+			API_KEY: "5baab241d44debf04d78944091967607",
 			// API_KEY: '1c7fbae096fe77971b1dc5aa8fcd17ae',
 			URLWeather: "https://api.openweathermap.org/data/2.5/weather?",
 			URLForecast: "https://api.openweathermap.org/data/2.5/forecast?",
 		};
 	},
-	async created(){
-      const resultCity = JSON.parse(cities());
-	  const resultCityWorld = JSON.parse(citiesWorld());
-      this.myCities = resultCity;
-      this.myCitiesWorld = resultCityWorld;
-      this.myLang = lang();
-      this.getWeather();
-	  await this.daily();
-    },
+	async created() {
+		const resultCity = JSON.parse(cities());
+		const resultCityWorld = JSON.parse(citiesWorld());
+		this.myCities = resultCity;
+		this.myCitiesWorld = resultCityWorld;
+		this.myLang = lang();
+		this.getWeather();
+		await this.daily();
+	},
 	methods: {
-		nameWithLang ({ STOLICA, PANSTWO, KONTYNENT }) {
-			return `${STOLICA}`
+		nameWithLang({ STOLICA, PANSTWO, KONTYNENT }) {
+			return `${STOLICA}`;
 		},
-		async selectCityWorld(e){
+		async selectCityWorld(e) {
 			this.cityName = e.STOLICA;
 			await this.getWeather();
 			await this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
 		},
 
-		async selectCity(e){
+		async selectCity(e) {
 			this.cityName = e.NAZWA;
 			await this.getWeather();
 			await this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
 		},
 
-		selectUnitTemp(e){
+		selectUnitTemp(e) {
 			this.selectedTemperatureUnit = e.key;
 			this.getWeather();
 			this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
 		},
 
-		selectLang(e){
+		selectLang(e) {
 			this.selectedLang = e.key;
 			this.getWeather();
 		},
 		async getWeather() {
-			await axios.get(`${this.URLWeather}q=${this.cityName}&lat=${this.lat}&lon=${this.lon}&appid=${this.API_KEY}&lang=${this.selectedLang}&units=${this.selectedTemperatureUnit}`)
-				.then(res => {
+			await axios
+				.get(
+					`${this.URLWeather}q=${this.cityName}&lat=${this.lat}&lon=${this.lon}&appid=${this.API_KEY}&lang=${this.selectedLang}&units=${this.selectedTemperatureUnit}`,
+				)
+				.then((res) => {
 					if (res.status == 200) {
 						this.result = res.data;
-						this.coord= res.data.coord;
-						this.weather= res.data.weather;
-						this.base= res.data.base;
-						this.main= res.data.main;
-						this.visibility= res.data.visibility;
-						this.wind= res.data.wind;
-						this.clouds= res.data.clouds;
-						this.dt= res.data.dt;
-						this.sys= res.data.sys;
-						this.timezone= res.data.timezone;
-						this.id= res.data.id;
+						this.coord = res.data.coord;
+						this.weather = res.data.weather;
+						this.base = res.data.base;
+						this.main = res.data.main;
+						this.visibility = res.data.visibility;
+						this.wind = res.data.wind;
+						this.clouds = res.data.clouds;
+						this.dt = res.data.dt;
+						this.sys = res.data.sys;
+						this.timezone = res.data.timezone;
+						this.id = res.data.id;
 						this.name = res.data.name;
-						this.cod= res.data.cod;
+						this.cod = res.data.cod;
 						this.lon = res.data.coord.lon;
 						this.lat = res.data.coord.lat;
 					} else {
-					}})
-				.catch(err => {
-					console.log(err);
+					}
 				})
+				.catch((err) => {
+					console.log(err);
+				});
 		},
 
 		// FORECAST
-		async daily(lat = 50.0413, lon = 21.999, units = 'metric'){
-            await axios.get(`${this.URLForecast}lat=${lat}&lon=${lon}&appid=${this.API_KEY}&units=${units}`)
-                .then(res => {
-                    if (res.status == 200) {
-                        this.listResultsForecast = res.data;
-                        this.cityInfoForecast = res.data.city;
+		async daily(lat = 50.0413, lon = 21.999, units = "metric") {
+			await axios
+				.get(
+					`${this.URLForecast}lat=${lat}&lon=${lon}&appid=${this.API_KEY}&units=${units}`,
+				)
+				.then((res) => {
+					if (res.status == 200) {
+						this.listResultsForecast = res.data;
+						this.cityInfoForecast = res.data.city;
 						this.listInfoForecast = res.data.list;
-						console.log(res.data, "resdata forecast")
-                    } else {
-                        console.log(res);
-                    }
-                })
-                .catch(err => {
-                    console.log(err, "forecast");
-                })
-        },
-		linkIcon(icon){
+						console.log(res.data, "resdata forecast");
+					} else {
+						console.log(res);
+					}
+				})
+				.catch((err) => {
+					console.log(err, "forecast");
+				});
+		},
+		linkIcon(icon) {
 			return `http://openweathermap.org/img/w/${icon}.png`;
 		},
-
 	},
 };
 </script>

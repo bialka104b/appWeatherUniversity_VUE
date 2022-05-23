@@ -18,7 +18,6 @@
 									</h5>
 								</div>
 								<div class="flex-fill">
-								
 									<h5
 										class="text-capitalize"
 										v-for="item in currentWeather.weather"
@@ -41,14 +40,18 @@
 							</div>
 						</div>
 						<div class="col-12 bgOpacity my-2 bRadius">
-							<div class="col-6">
-								<SunriseSunset :sys="sys" :visible="currentWeather.visibility">
-								</SunriseSunset>
-							</div>
-							<div class="col-6">
-								<div class="pb-2">
-									<img src="./../assets/icons/uv.svg" />Wskaźnik UV w południe
-									{{ currentWeather.uvi }}
+							<div class="row">
+								<div class="col-6">
+									<SunriseSunset :sys="sys" :visible="currentWeather.visibility">
+									</SunriseSunset>
+									<div class="pb-2">
+										<img src="./../assets/icons/uv.svg" />Wskaźnik UV w południe
+										{{ currentWeather.uvi }}
+									</div>
+								</div>
+								<div class="col-6">
+									Alerty pogodowe:
+									<Alerts :alerts="alertsWeather" />
 								</div>
 							</div>
 						</div>
@@ -115,7 +118,6 @@
 							:lon="15"
 							:table="hourlyWeather"
 						/>
-						<button>dd</button>
 					</div>
 				</div>
 			</div>
@@ -125,6 +127,7 @@
 
 <script>
 import SunriseSunset from "./SunriseSunset.vue";
+import Alerts from "./Alerts.vue";
 import VueMultiselect from "vue-multiselect";
 import cities from "../module/cities";
 import citiesWorld from "../module/citiesWorld";
@@ -139,6 +142,7 @@ export default {
 		SunriseSunset,
 		VueMultiselect,
 		Weather48Chart,
+		Alerts,
 	},
 	data() {
 		return {

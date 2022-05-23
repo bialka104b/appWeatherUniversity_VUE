@@ -1,93 +1,147 @@
-<script setup></script>
+<script setup>
+import WindDeg from "./WindDeg.vue";
+</script>
 
 <template>
 	<div class="row">
-		<div class="text-light col-3">
+		<div class="text-light col-2">
 			Kierunek wiatru stopnie meterologiczne
 			<table class="table table-sm table-striped table-dark">
 				<thead>
 					<tr>
 						<th scope="col" class="text-light">data</th>
-						<th scope="col" class="text-light">Jednostka</th>
-						<th scope="col" class="text-light">Jednostka</th>
+						<th scope="col" class="text-light">Kierunek wiatru</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr v-for="(value, index) in this.wind_degTab" :key="index">
-						<td class="text-light">{{this.daysTab[index]}}</td>
-						<td class="text-light">
-							<div :style="`transform: rotate(${value}deg); width:20px`">
-								<i class="uil uil-location-arrow-alt"></i>
-							</div>
+						<td class="text-light">{{ this.daysTab[index] }}</td>
+						<td class="text-light" v-if="(value >= 0 && value < 23) || value > 337">
+							<WindDeg :value="value" :symbol="'N'" />
 						</td>
-						<td class="text-light" v-if="value < 90">{{value}}&deg; NE</td>
-						<td class="text-light" v-if="value >= 90 && value < 180">{{value}}&deg; SE</td>
-						<td class="text-light" v-if="value >= 180 && value < 270">{{value}}&deg; SW</td>
-						<td class="text-light" v-if="value >= 270 && value < 360">{{value}}&deg; NW</td>
+						<td class="text-light" v-if="value >= 23 && value < 69">
+							<WindDeg :value="value" :symbol="'NE'" />
+						</td>
+						<td class="text-light" v-if="value >= 69 && value < 113">
+							<WindDeg :value="value" :symbol="'E'" />
+						</td>
+						<td class="text-light" v-if="value >= 113 && value < 158">
+							<WindDeg :value="value" :symbol="'SE'" />
+						</td>
+						<td class="text-light" v-if="value >= 158 && value < 203">
+							<WindDeg :value="value" :symbol="'S'" />
+						</td>
+						<td class="text-light" v-if="value >= 203 && value < 248">
+							<WindDeg :value="value" :symbol="'SW'" />
+						</td>
+						<td class="text-light" v-if="value >= 248 && value < 293">
+							<WindDeg :value="value" :symbol="'W'" />
+						</td>
+						<td class="text-light" v-if="value >= 293 && value < 338">
+							<WindDeg :value="value" :symbol="'NW'" />
+						</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
-		<div class="col-9">
+		<div class="col-10">
 			<div class="row">
-
 				<div class="text-dark col-9">
 					Zachmurzenie w %
-					<LineChart :chartData="chartDataCloudsHumidity" :chartOptions="returnChartOptions(0,100)" :height="350" />
+					<LineChart
+						:chartData="chartDataCloudsHumidity"
+						:chartOptions="returnChartOptions(0, 100)"
+						:height="350"
+					/>
 				</div>
 				<div class="col-3">
-					Wilgotność względna równa 0 oznacza powietrze całkowicie suche, zaś równa 1 oznacza powietrze całkowicie nasycone parą wodną. Przy wilgotności względnej równej 1 oziębienie powietrza daje początek skraplaniu pary wodnej.
-					<br>
-					<br>
+					Wilgotność względna równa 0 oznacza powietrze całkowicie suche, zaś równa 1
+					oznacza powietrze całkowicie nasycone parą wodną. Przy wilgotności względnej
+					równej 1 oziębienie powietrza daje początek skraplaniu pary wodnej.
+					<br />
+					<br />
 					Zachmurzenie – stopień pokrycia nieba przez chmury.
 				</div>
 				<div class="text-dark col-9">
 					Punkt rosy.
-					<LineChart :chartData="chartDataDewPointTemp" :chartOptions="returnChartOptions(0,10)" :height="350" />
+					<LineChart
+						:chartData="chartDataDewPointTemp"
+						:chartOptions="returnChartOptions(0, 10)"
+						:height="350"
+					/>
 				</div>
 				<div class="col-3">
-					Punkt rosy to - temperatura atmosfery (zmienna w zależności od ciśnienia i wilgotności), poniżej której zaczynają się skraplać krople wody i może tworzyć się rosa.
-					<br>
-					<br>
-					Temperatura odczuwalna – stan określający, jakie odczucie termiczne wystąpi przy danych warunkach pogodowych. Wyliczana jest w zależności od przyjętego modelu na podstawie takich parametrów, jak temperatura powietrza, siła wiatru, wilgotność i opady.
+					Punkt rosy to - temperatura atmosfery (zmienna w zależności od ciśnienia i
+					wilgotności), poniżej której zaczynają się skraplać krople wody i może tworzyć
+					się rosa.
+					<br />
+					<br />
+					Temperatura odczuwalna – stan określający, jakie odczucie termiczne wystąpi przy
+					danych warunkach pogodowych. Wyliczana jest w zależności od przyjętego modelu na
+					podstawie takich parametrów, jak temperatura powietrza, siła wiatru, wilgotność
+					i opady.
 				</div>
 				<div class="text-dark col-9">
 					Ciśnienie atmosferyczne
-					<LineChart :chartData="chartDataPressure" :chartOptions="returnChartOptions(1000,1013)" :height="250" />
+					<LineChart
+						:chartData="chartDataPressure"
+						:chartOptions="returnChartOptions(1000, 1013)"
+						:height="250"
+					/>
 				</div>
 				<div class="col-3">
-					Najwyższe na świecie zarejestrowano 19 grudnia roku 2001 w miejscowości Tosontsengel w Mongolii – wyniosło wtedy 1086 hPa. 
-					Natomiast najniższe znormalizowane ciśnienie atmosferyczne, wynoszące 870 hPa, spowodowane przejściem tajfunu Tip, zarejestrowano 12 października roku 1979 na Północnym Pacyfiku.
+					Najwyższe na świecie zarejestrowano 19 grudnia roku 2001 w miejscowości
+					Tosontsengel w Mongolii – wyniosło wtedy 1086 hPa. Natomiast najniższe
+					znormalizowane ciśnienie atmosferyczne, wynoszące 870 hPa, spowodowane
+					przejściem tajfunu Tip, zarejestrowano 12 października roku 1979 na Północnym
+					Pacyfiku.
 				</div>
 				<div class="text-dark col-9">
 					Deszcz 1mm3/mm2 lub 1l/m2
-					<LineChart :chartData="chartDataRainSnow" :chartOptions="returnChartOptions(0,1)" :height="250" />
+					<LineChart
+						:chartData="chartDataRainSnow"
+						:chartOptions="returnChartOptions(0, 1)"
+						:height="250"
+					/>
 				</div>
 				<div class="text-dark col-9">
 					Prędkość i podmuch wiatru
-					<LineChart :chartData="chartDataWindSpeedGust" :chartOptions="returnChartOptions(0,1)" :height="350" />
+					<LineChart
+						:chartData="chartDataWindSpeedGust"
+						:chartOptions="returnChartOptions(0, 1)"
+						:height="350"
+					/>
 				</div>
 				<div class="text-dark col-9">
 					Promieniowanie UV
-					<LineChart :chartData="chartDataUvi" :chartOptions="returnChartOptions(0,10)" :height="350" />
+					<LineChart
+						:chartData="chartDataUvi"
+						:chartOptions="returnChartOptions(0, 10)"
+						:height="350"
+					/>
 				</div>
 				<div class="col-3">
-					0–2	Brak zagrożeń dla zdrowego człowieka.
-					<br>
-					3–5	Średnie zagrożenie podczas dłuższego przebywania na słońcu.
-					<br>
-					6–7	Wysokie i bardzo wysokie zagrożenie podczas dłuższego przebywania na słońcu.
-					<br>
+					0–2 Brak zagrożeń dla zdrowego człowieka.
+					<br />
+					3–5 Średnie zagrożenie podczas dłuższego przebywania na słońcu.
+					<br />
+					6–7 Wysokie i bardzo wysokie zagrożenie podczas dłuższego przebywania na słońcu.
+					<br />
 					8–10 Bardzo wysokie zagrożenie podczas przebywania na słońcu.
-					<br>
-					11+	Ekstremalne zagrożenie podczas przebywania na słońcu.
+					<br />
+					11+ Ekstremalne zagrożenie podczas przebywania na słońcu.
 				</div>
 				<div class="text-dark col-9">
 					Widocznośc na drogach
-					<LineChart :chartData="chartDataVisibility" :chartOptions="returnChartOptions(1000,8000)" :height="350" />
+					<LineChart
+						:chartData="chartDataVisibility"
+						:chartOptions="returnChartOptions(1000, 8000)"
+						:height="350"
+					/>
 				</div>
 				<div class="col-3">
-					Średnia widoczność pokazana jest w metrachmetry. Maksymalna wartość widzialności to 10km czyli 10000m
+					Średnia widoczność pokazana jest w metrach. Maksymalna wartość widzialności to
+					10km czyli 10000m
 				</div>
 			</div>
 		</div>
@@ -100,9 +154,9 @@ import moment from "moment";
 import { setBlockTracking } from "vue";
 
 class Options {
-	constructor(labelsFontSize, labelsColor, suggestedMin, suggestedMax){
-		this.responsive= true;
-		this.maintainAspectRatio= false;
+	constructor(labelsFontSize, labelsColor, suggestedMin, suggestedMax) {
+		this.responsive = true;
+		this.maintainAspectRatio = false;
 		this.plugins = {
 			legend: {
 				labels: {
@@ -114,28 +168,28 @@ class Options {
 			},
 		};
 		this.scales = {};
-		this.scales.y= {
+		this.scales.y = {
 			suggestedMin: suggestedMin,
 			suggestedMax: suggestedMax, //<- tu by trzeba było podać opcje max
 			// color: 'black',
-			ticks:{
-				color: 'white',
+			ticks: {
+				color: "white",
 				font: {
-					weight: 'bold'
-				}
+					weight: "bold",
+				},
 				// major: {
 				// 	fontSize:50,
 				// 	enabled: true
 				// }
-			}
+			},
 		};
 		this.scales.x = {
 			ticks: {
-				color: 'white',
+				color: "white",
 				font: {
-					weight: 'bold'
-				}
-			}
+					weight: "bold",
+				},
+			},
 		};
 	}
 }
@@ -149,6 +203,7 @@ export default {
 	},
 	components: {
 		LineChart,
+		WindDeg,
 	},
 	data() {
 		return {
@@ -166,8 +221,8 @@ export default {
 			chartOptionsPop: {},
 			chartOptionsPressure: {},
 
-            cloudsTab: [],
-            dew_pointTab: [],
+			cloudsTab: [],
+			dew_pointTab: [],
 			dtTab: [],
 			feels_LikeTab: [],
 			humidityTab: [],
@@ -182,8 +237,8 @@ export default {
 			wind_gustTab: [],
 			wind_speedTab: [],
 
-            clouds: 0,
-			dew_point : 0,
+			clouds: 0,
+			dew_point: 0,
 			daysTab: 0,
 			feels_like: 0,
 			humidity: 0,
@@ -193,28 +248,28 @@ export default {
 			temp: 0,
 			wind_deg: 0,
 			wind_speed: 0,
-			wind_gust : 0,
+			wind_gust: 0,
 		};
 	},
-    updated(){},
-    created(){
-        this.setDataLocalStorage();
+	updated() {},
+	created() {
+		this.setDataLocalStorage();
 		this.getLocalStorage();
-        this.chartDataCloudsHumidity = this.returnChartDataCloudsHumidity();
-        this.chartOptionsClouds = this.returnChartOptions(0,100);
-        this.chartDataDewPointTemp = this.returnChartDataDewPointTemp();
-        this.chartOptionsDewPointTemp = this.returnChartOptions(15,15);
-        // this.chartDataPop = this.returnChartDataPop();
-        this.chartOptionsPop = this.returnChartOptions(0,100,20, "orange");
-        this.chartDataPressure = this.returnChartDataPressure();
-        this.chartDataRainSnow = this.returnChartDataRainSnow();
-        this.chartDataWindSpeedGust = this.returnChartDataWindSpeedGust();
-        this.chartDataUvi = this.returnChartDataUvi();
-        this.chartDataVisibility = this.returnChartDataVisibility();
-    },
-    methods: {
-        setDataLocalStorage(){
-            this.stworzTablice48(this.table);
+		this.chartDataCloudsHumidity = this.returnChartDataCloudsHumidity();
+		this.chartOptionsClouds = this.returnChartOptions(0, 100);
+		this.chartDataDewPointTemp = this.returnChartDataDewPointTemp();
+		this.chartOptionsDewPointTemp = this.returnChartOptions(15, 15);
+		// this.chartDataPop = this.returnChartDataPop();
+		this.chartOptionsPop = this.returnChartOptions(0, 100, 20, "orange");
+		this.chartDataPressure = this.returnChartDataPressure();
+		this.chartDataRainSnow = this.returnChartDataRainSnow();
+		this.chartDataWindSpeedGust = this.returnChartDataWindSpeedGust();
+		this.chartDataUvi = this.returnChartDataUvi();
+		this.chartDataVisibility = this.returnChartDataVisibility();
+	},
+	methods: {
+		setDataLocalStorage() {
+			this.stworzTablice48(this.table);
 			localStorage.setItem("cloudsTab", JSON.stringify(this.cloudsTab));
 			localStorage.setItem("dew_pointTab", JSON.stringify(this.dew_pointTab));
 			localStorage.setItem("dtTab", JSON.stringify(this.dtTab));
@@ -231,8 +286,8 @@ export default {
 			localStorage.setItem("wind_speedTab", JSON.stringify(this.wind_speedTab));
 			localStorage.setItem("wind_gustTab", JSON.stringify(this.wind_gustTab));
 			localStorage.setItem("uviTab", JSON.stringify(this.uviTab));
-        },
-        getLocalStorage(){
+		},
+		getLocalStorage() {
 			this.clouds = JSON.parse(localStorage.getItem("cloudsTab"));
 			this.dew_point = JSON.parse(localStorage.getItem("dew_pointTab"));
 			this.daysTab = JSON.parse(localStorage.getItem("dtTab"));
@@ -248,10 +303,10 @@ export default {
 			this.wind_deg = JSON.parse(localStorage.getItem("wind_degTab"));
 			this.wind_speed = JSON.parse(localStorage.getItem("wind_speedTab"));
 			this.wind_gust = JSON.parse(localStorage.getItem("wind_gustTab"));
-        },
-        stworzTablice48(tab) {
+		},
+		stworzTablice48(tab) {
 			this.cloudsTab.length = 0;
-            this.dew_pointTab.lenght = 0;
+			this.dew_pointTab.lenght = 0;
 			this.dtTab.length = 0;
 			this.feels_LikeTab.length = 0;
 			this.humidityTab.length = 0;
@@ -294,29 +349,29 @@ export default {
 				this.tempTab.push(x.temp);
 				this.uviTab.push(x.uvi);
 				this.visibilityTab.push(x.visibility);
-				this.wind_degTab.push(x.wind_deg );
+				this.wind_degTab.push(x.wind_deg);
 				this.wind_speedTab.push(((x.wind_speed * 1000) / 3600).toFixed(2));
 				this.wind_gustTab.push(((x.wind_gust * 1000) / 3600).toFixed(2));
 			});
 		},
-        returnChartOptions(min, max, fontSize = 20, color = 'blue'){
+		returnChartOptions(min, max, fontSize = 20, color = "blue") {
 			const obj = new Options(fontSize, color, min, max);
 			// const obj1 = new Options(20, 'red');
 			// console.log(obj);
 			return obj;
-        },
-		sortAndGetMin(minTab){
+		},
+		sortAndGetMin(minTab) {
 			const min = minTab.sort((a, b) => {
-                return a - b;
-            })[0];
+				return a - b;
+			})[0];
 			console.log(min);
 
 			return min;
 		},
-		sortAndGetMax(maxTab){
+		sortAndGetMax(maxTab) {
 			return maxTab.sort((a, b) => {
 				return a - b;
-			})[maxTab-1];
+			})[maxTab - 1];
 		},
 		returnChartDataWindSpeedGust() {
 			return {
@@ -341,7 +396,7 @@ export default {
 				],
 			};
 		},
-		returnChartDataRainSnow(){
+		returnChartDataRainSnow() {
 			return {
 				labels: this.daysTab,
 				datasets: [
@@ -360,11 +415,11 @@ export default {
 						borderColor: "lightblue",
 						tension: 0.5,
 						fill: true,
-					}
+					},
 				],
 			};
 		},
-		returnChartDataPressure(){
+		returnChartDataPressure() {
 			return {
 				labels: this.daysTab,
 				datasets: [
@@ -375,11 +430,11 @@ export default {
 						borderColor: "violet",
 						tension: 0.5,
 						fill: true,
-					}
+					},
 				],
 			};
 		},
-        returnChartDataUvi() {
+		returnChartDataUvi() {
 			return {
 				labels: this.daysTab,
 				datasets: [
@@ -394,7 +449,7 @@ export default {
 				],
 			};
 		},
-        returnChartDataVisibility() {
+		returnChartDataVisibility() {
 			return {
 				labels: this.daysTab,
 				datasets: [
@@ -409,7 +464,7 @@ export default {
 				],
 			};
 		},
-        returnChartDataDewPointTemp() {
+		returnChartDataDewPointTemp() {
 			return {
 				labels: this.daysTab,
 				datasets: [
@@ -421,7 +476,7 @@ export default {
 						tension: 0.5,
 						fill: true,
 					},
-						{
+					{
 						label: "Temperatura",
 						backgroundColor: "rgba(200,0,100, 0.2)",
 						data: this.temp,
@@ -441,7 +496,7 @@ export default {
 				],
 			};
 		},
-        returnChartDataCloudsHumidity() {
+		returnChartDataCloudsHumidity() {
 			return {
 				labels: this.daysTab,
 				datasets: [
@@ -472,7 +527,7 @@ export default {
 				],
 			};
 		},
-        zakresyNocy(num, max, min) {
+		zakresyNocy(num, max, min) {
 			let dayNight = 0;
 			if (num >= 21 || num < 6) {
 				dayNight = max;
@@ -481,15 +536,15 @@ export default {
 			}
 			return dayNight;
 		},
-    },
-    watch: {
-        table(){
-            this.setDataLocalStorage();
-            this.getLocalStorage();
-            this.chartDataCloudsHumidity = this.returnChartDataCloudsHumidity();
-			this.chartOptionsClouds = this.returnChartOptions(0,100);
+	},
+	watch: {
+		table() {
+			this.setDataLocalStorage();
+			this.getLocalStorage();
+			this.chartDataCloudsHumidity = this.returnChartDataCloudsHumidity();
+			this.chartOptionsClouds = this.returnChartOptions(0, 100);
 			this.chartDataDewPointTemp = this.returnChartDataDewPointTemp();
-			this.chartOptionsDewPointTemp = this.returnChartOptions(15,15);
+			this.chartOptionsDewPointTemp = this.returnChartOptions(15, 15);
 			// this.chartDataPop = this.returnChartDataPop();
 			// this.chartOptionsPop = this.returnChartOptions(0,100,20, "orange");
 			this.chartDataPressure = this.returnChartDataPressure();
@@ -497,7 +552,7 @@ export default {
 			this.chartDataWindSpeedGust = this.returnChartDataWindSpeedGust();
 			this.chartDataUvi = this.returnChartDataUvi();
 			this.chartDataVisibility = this.returnChartDataVisibility();
-        }
-    }
+		},
+	},
 };
 </script>
