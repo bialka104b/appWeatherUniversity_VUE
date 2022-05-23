@@ -1,8 +1,11 @@
 @import "./variables";
 @import "./component/inputs.scss";
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,800;1,800&display=swap');
 body {
   background-color: #0e141b;
-  font-family: GreycliffCF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 #app {
     // display: block;
@@ -60,7 +63,7 @@ a,
   &:hover {
     color: $color-light-blue;
     text-decoration: none;
-    
+
   }
 }
 
@@ -114,7 +117,7 @@ $color-dark-blue: #013C62;
 $color-primary: #0090EE;
 $color-light-blue:#4CB8FF;
 body::-webkit-scrollbar-thumb {
-  
+
   border-radius: 0px;
   background-image: -webkit-gradient(linear,
     left bottom,

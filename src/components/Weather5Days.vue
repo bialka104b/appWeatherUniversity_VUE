@@ -83,7 +83,7 @@ import SupportIcon from "./icons/IconSupport.vue";
       <a target="_blank" href="https://vuejs.org/sponsor/">becoming a sponsor</a>.
     </WelcomeItem>
 
-    
+
   </div> -->
 	<div>
 		<section class="container-fluid section">
@@ -118,7 +118,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 							</div>
 						</div>
 						<div class="col-12 bgOpacity my-2 bRadius">
-							<SunriseSunset :sys="sys" :visibility="visibility"> </SunriseSunset>
+							<SunriseSunset :sys="sys" :visible="visibility"> </SunriseSunset>
 						</div>
 					</div>
 				</div>
@@ -366,7 +366,7 @@ export default {
 		linkIcon(icon){
 			return `http://openweathermap.org/img/w/${icon}.png`;
 		},
-		
+
 	},
 };
 </script>
