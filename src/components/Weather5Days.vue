@@ -196,7 +196,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 		<section class="weather5Days">
 			<div class="container-fluid">
 				<div class="row m-0">
-					<div class="col-6">
+					<div class="col-12 m-auto">
 						<Forecast1
 							:cityName="cityName"
 							:lat="12"

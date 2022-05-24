@@ -1,6 +1,6 @@
 <template>
     <div id="forecast">
-        <h2>{{cityName}} - średnie dobowe temperatury</h2>
+        <h2 class="text-center">{{cityName}} - średnie dobowe temperatury</h2>
         <div class="">
             <div class="">
                 <h5>{{tempHeader}} &#x2103;</h5>

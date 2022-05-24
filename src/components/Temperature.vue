@@ -2,28 +2,28 @@
 
 <template>
 	<div>
-		<div class="text-dark">
-			Temperatura minimalna i maksymalna na 5 dni
+		<div class="text-dark my-5">
+			<h3 class="text-success text-center">Temperatura minimalna i maksymalna na 5 dni</h3>
 			<LineChart :chartData="chartData" :chartOptions="chartOptions" :height="350" />
 		</div>
-		<div class="text-dark">
-			Ciśnienie atmosferyczne
+		<div class="text-dark my-5">
+			<h3 class="text-success text-center">Ciśnienie atmosferyczne</h3>
 			<LineChart :chartData="chartDataPressure" :chartOptions="chartOptions" :height="250" />
 		</div>
-		<div class="text-dark">
-			Wilgotność
+		<div class="text-dark my-5">
+			<h3 class="text-success text-center">Wilgotność</h3>
 			<LineChart :chartData="chartDataHumidity" :chartOptions="chartOptions" :height="350" />
 		</div>
-		<div class="text-dark">
-			Zachmurzenie w %
+		<div class="text-dark my-5">
+			<h3 class="text-success text-center">Zachmurzenie w %</h3>
 			<LineChart :chartData="chartDataClouds" :chartOptions="chartOptions" :height="350" />
 		</div>
-		<div class="text-dark">
-			Opady deszczu i sniegu na m2
+		<div class="text-dark my-5">
+			<h3 class="text-success text-center">Opady deszczu i sniegu na m2</h3>
 			<LineChart :chartData="chartDataRainfall" :chartOptions="chartOptions" :height="350" />
 		</div>
-		<div class="text-dark">
-			Prędkość i podmuch wiatru
+		<div class="text-dark my-5">
+			<h3 class="text-success text-center">Prędkość i podmuch wiatru</h3>
 			<LineChart :chartData="chartDataWind" :chartOptions="chartOptions" :height="350" />
 		</div>
 	</div>

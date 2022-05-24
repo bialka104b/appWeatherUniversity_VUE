@@ -1,13 +1,13 @@
 <template>
 	<div>
-		<section class="container-fluid section">
+		<section class="container-fluid section py-5">
 			<div class="row m-0">
 				<div class="col-8">
 					<div class="row m-0">
 						<div class="col-12 bgOpacity my-2 bRadius">
 							<h2>
 								{{ name }}
-								<p class="h6 pt-2">Województwo: {{ city.WOJ }}</p>
+								<p class="h6 pt-2">Województwo: {{ city.WOJ != undefined ? city.WOJ : 'podkarpackie' }}</p>
 							</h2>
 
 							<div class="d-flex">
@@ -44,10 +44,7 @@
 								<div class="col-6">
 									<SunriseSunset :sys="sys" :visible="currentWeather.visibility">
 									</SunriseSunset>
-									<div class="pb-2">
-										<img src="./../assets/icons/uv.svg" />Wskaźnik UV w południe
-										{{ currentWeather.uvi }}
-									</div>
+									<UV :uvi="currentWeather.uvi"/>
 								</div>
 								<div class="col-6">
 									Alerty pogodowe:
@@ -95,13 +92,13 @@
 						</VueMultiselect>
 					</div>
 					<div class="container-fluid">
-						<router-link to="/weather48h" class="d-block fw-bold btn btn-primary my-2">Pogoda 48h</router-link>
+						<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">Pogoda 48h</router-link>
 						<router-link to="/" class="d-block fw-bold btn btn-primary my-2">Pogoda pięciodniowa</router-link>`
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="weather2Days">
+		<section class="weather2Days py-5">
 			<div class="container-fluid">
 				<div class="row m-0">
 					<div class="col-6">
@@ -130,6 +127,7 @@
 
 <script>
 import SunriseSunset from "./SunriseSunset.vue";
+import UV from "./UV.vue";
 import Alerts from "./Alerts.vue";
 import VueMultiselect from "vue-multiselect";
 import cities from "../module/cities";
@@ -146,6 +144,7 @@ export default {
 		VueMultiselect,
 		Weather48Chart,
 		Alerts,
+		UV,
 	},
 	data() {
 		return {

@@ -55,12 +55,14 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="col-3 text-white">
-					Wilgotność względna równa 0 oznacza powietrze całkowicie suche, zaś równa 1
-					oznacza powietrze całkowicie nasycone parą wodną. Przy wilgotności względnej
-					równej 1 oziębienie powietrza daje początek skraplaniu pary wodnej.
-					<br />
-					<br />
-					Zachmurzenie – stopień pokrycia nieba przez chmury.
+					<p class="text-justify">
+						Wilgotność względna równa 0 oznacza powietrze całkowicie suche, zaś równa 1
+						oznacza powietrze całkowicie nasycone parą wodną. Przy wilgotności względnej
+						równej 1 oziębienie powietrza daje początek skraplaniu pary wodnej.
+					</p>
+					<p class="text-justify">
+						Zachmurzenie – stopień pokrycia nieba przez chmury.
+					</p>
 				</div>
 				<div class="text-dark col-9">
 					Punkt rosy.
@@ -71,15 +73,17 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="col-3 text-white">
-					Punkt rosy to - temperatura atmosfery (zmienna w zależności od ciśnienia i
-					wilgotności), poniżej której zaczynają się skraplać krople wody i może tworzyć
-					się rosa.
-					<br />
-					<br />
-					Temperatura odczuwalna – stan określający, jakie odczucie termiczne wystąpi przy
-					danych warunkach pogodowych. Wyliczana jest w zależności od przyjętego modelu na
-					podstawie takich parametrów, jak temperatura powietrza, siła wiatru, wilgotność
-					i opady.
+					<p class="text-justify">
+						Punkt rosy to - temperatura atmosfery (zmienna w zależności od ciśnienia i
+						wilgotności), poniżej której zaczynają się skraplać krople wody i może tworzyć
+						się rosa.
+					</p>
+					<p class="text-justify">
+						Temperatura odczuwalna – stan określający, jakie odczucie termiczne wystąpi przy
+						danych warunkach pogodowych. Wyliczana jest w zależności od przyjętego modelu na
+						podstawie takich parametrów, jak temperatura powietrza, siła wiatru, wilgotność
+						i opady.
+					</p>
 				</div>
 				<div class="text-dark col-9">
 					Ciśnienie atmosferyczne
