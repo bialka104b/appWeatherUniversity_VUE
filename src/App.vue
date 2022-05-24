@@ -5,11 +5,8 @@ import { restElement } from '@babel/types';
 
 <template>
     <div class="">
-		<router-link to="/weather48h" class="d-block fw-bold btn-primary">Pogoda 48h</router-link>
-		<router-link to="/" class="d-block fw-bold btn-primary">Pogoda pięciodniowa</router-link>
-		<!-- <main id="main">
-                <router-view />
-        </main> -->
+		<!-- <router-link to="/weather48h" class="d-block fw-bold btn-primary">Pogoda 48h</router-link>
+		<router-link to="/" class="d-block fw-bold btn-primary">Pogoda pięciodniowa</router-link> -->
       	<Header />
         <main class="">
 			<router-view />
@@ -22,7 +19,7 @@ import { restElement } from '@babel/types';
 					szerokość geograficzna: {{coord.lat}}
 					</div>
 					<div class="col-4 weather" v-for="item in weather" :key="item">
-					
+
 					pogoda: {{item.description}}<br>
 					<img :src="linkIcon(item.icon)" alt=""><br>
 					pogoda główna: {{item.main}}
@@ -30,9 +27,9 @@ import { restElement } from '@babel/types';
 					<div class="col-4 base">Parametr wewnętrzny: {{base}}</div>
 				</div>
 				<div class="row border">
-					
+
 					<div class="col-4 visibility">widoczność: {{visibility}} meters</div>
-					
+
 				</div>
 				<div class="row border">
 					<div class="col-4 clouds">zachmurzenie: {{clouds.all}}%</div>
@@ -68,14 +65,14 @@ export default {
 	},
 	data() {
 		return {
-			
+
       	}
     },
 
     async created(){
     },
     methods: {
-		
+
   	},
 }
 </script>

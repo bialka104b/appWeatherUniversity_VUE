@@ -186,6 +186,10 @@ import SupportIcon from "./icons/IconSupport.vue";
 							@close="selectLang(selectedLang)"
 						/>
 					</div>
+					<div class="container-fluid">
+						<router-link to="/weather48h" class="d-block fw-bold btn btn-primary my-2">Pogoda 48h</router-link>
+						<router-link to="/" class="d-block fw-bold btn btn-primary my-2">Pogoda pięciodniowa</router-link>`
+					</div>
 				</div>
 			</div>
 		</section>

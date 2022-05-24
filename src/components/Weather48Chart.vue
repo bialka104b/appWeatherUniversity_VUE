@@ -354,6 +354,15 @@ export default {
 				this.wind_gustTab.push(((x.wind_gust * 1000) / 3600).toFixed(2));
 			});
 		},
+		compareNumbers(a, b) {
+			return a - b
+		},
+		min(tab){
+			return tab.sort(this.compareNumbers)[0];
+		},
+		max(tab){
+			return tab.sort(this.compareNumbers)[tab.length - 1];
+		},
 		returnChartOptions(min, max, fontSize = 20, color = "blue") {
 			const obj = new Options(fontSize, color, min, max);
 			// const obj1 = new Options(20, 'red');
