@@ -16,28 +16,28 @@ import WindDeg from "./WindDeg.vue";
 				<tbody>
 					<tr v-for="(value, index) in this.wind_degTab" :key="index">
 						<td class="text-light">{{ this.daysTab[index] }}</td>
-						<td class="text-light" v-if="(value >= 0 && value < 23) || value > 337">
+						<td class="text-light d-flex justify-content-between" v-if="(value >= 0 && value < 23) || value > 337">
 							<WindDeg :value="value" :symbol="'N'" />
 						</td>
-						<td class="text-light" v-if="value >= 23 && value < 69">
+						<td class="text-light d-flex justify-content-between" v-if="value >= 23 && value < 69">
 							<WindDeg :value="value" :symbol="'NE'" />
 						</td>
-						<td class="text-light" v-if="value >= 69 && value < 113">
+						<td class="text-light d-flex justify-content-between" v-if="value >= 69 && value < 113">
 							<WindDeg :value="value" :symbol="'E'" />
 						</td>
-						<td class="text-light" v-if="value >= 113 && value < 158">
+						<td class="text-light d-flex justify-content-between" v-if="value >= 113 && value < 158">
 							<WindDeg :value="value" :symbol="'SE'" />
 						</td>
-						<td class="text-light" v-if="value >= 158 && value < 203">
+						<td class="text-light d-flex justify-content-between" v-if="value >= 158 && value < 203">
 							<WindDeg :value="value" :symbol="'S'" />
 						</td>
-						<td class="text-light" v-if="value >= 203 && value < 248">
+						<td class="text-light d-flex justify-content-between" v-if="value >= 203 && value < 248">
 							<WindDeg :value="value" :symbol="'SW'" />
 						</td>
-						<td class="text-light" v-if="value >= 248 && value < 293">
+						<td class="text-light d-flex justify-content-between" v-if="value >= 248 && value < 293">
 							<WindDeg :value="value" :symbol="'W'" />
 						</td>
-						<td class="text-light" v-if="value >= 293 && value < 338">
+						<td class="text-light d-flex justify-content-between" v-if="value >= 293 && value < 338">
 							<WindDeg :value="value" :symbol="'NW'" />
 						</td>
 					</tr>
@@ -54,7 +54,7 @@ import WindDeg from "./WindDeg.vue";
 						:height="350"
 					/>
 				</div>
-				<div class="col-3">
+				<div class="col-3 text-white">
 					Wilgotność względna równa 0 oznacza powietrze całkowicie suche, zaś równa 1
 					oznacza powietrze całkowicie nasycone parą wodną. Przy wilgotności względnej
 					równej 1 oziębienie powietrza daje początek skraplaniu pary wodnej.
@@ -70,7 +70,7 @@ import WindDeg from "./WindDeg.vue";
 						:height="350"
 					/>
 				</div>
-				<div class="col-3">
+				<div class="col-3 text-white">
 					Punkt rosy to - temperatura atmosfery (zmienna w zależności od ciśnienia i
 					wilgotności), poniżej której zaczynają się skraplać krople wody i może tworzyć
 					się rosa.
@@ -89,7 +89,7 @@ import WindDeg from "./WindDeg.vue";
 						:height="250"
 					/>
 				</div>
-				<div class="col-3">
+				<div class="col-3 text-white">
 					Najwyższe na świecie zarejestrowano 19 grudnia roku 2001 w miejscowości
 					Tosontsengel w Mongolii – wyniosło wtedy 1086 hPa. Natomiast najniższe
 					znormalizowane ciśnienie atmosferyczne, wynoszące 870 hPa, spowodowane
@@ -120,7 +120,7 @@ import WindDeg from "./WindDeg.vue";
 						:height="350"
 					/>
 				</div>
-				<div class="col-3">
+				<div class="col-3 text-white">
 					0–2 Brak zagrożeń dla zdrowego człowieka.
 					<br />
 					3–5 Średnie zagrożenie podczas dłuższego przebywania na słońcu.
@@ -139,7 +139,7 @@ import WindDeg from "./WindDeg.vue";
 						:height="350"
 					/>
 				</div>
-				<div class="col-3">
+				<div class="col-3 text-white">
 					Średnia widoczność pokazana jest w metrach. Maksymalna wartość widzialności to
 					10km czyli 10000m
 				</div>
