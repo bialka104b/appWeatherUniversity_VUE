@@ -58,10 +58,25 @@ export default {
 				plugins: {
 					legend: {
 						labels: {
-							color: "red",
+							color: "white",
 						},
 					},
 				},
+
+				scales: {
+					y: {
+
+						// suggestedMin: 0,
+						// suggestedMax: 100, //<- tu by trzeba było podać opcje max
+						// color: 'black',
+						ticks: {
+							color: "white",
+							font: {
+								weight: "bold",
+							},
+						},
+					}
+				}
 			},
 
 			daysTab: [],
@@ -217,17 +232,18 @@ export default {
 				datasets: [
 					{
 						label: "Opady deszczu w l/m2",
-						backgroundColor: "rgba(255,140,0, 0.2)",
+						backgroundColor: "rgb(38, 130, 121, 0.5)",
 						data: this.rain,
-						borderColor: "rgb(255,140,0)",
+						borderColor: "rgb(38, 130, 121)",
+						borderWidth: 2,
 						tension: 0.5,
 						fill: true,
 					},
 					{
 						label: "Opady sniegu w mm",
-						backgroundColor: "rgba(255,140,0, 0.2)",
+						backgroundColor: "rgb(199, 252, 255, 0.8)",
 						data: this.snow,
-						borderColor: "rgb(255,140,0)",
+						borderColor: "rgb(199, 252, 255)",
 						tension: 0.5,
 						fill: true,
 					},
@@ -249,7 +265,7 @@ export default {
 				datasets: [
 					{
 						label: "Zachmurzenie w %",
-						backgroundColor: "rgba(255,140,0, 0.2)",
+						backgroundColor: "rgb(0, 0, 34, 0.2)",
 						data: this.clouds,
 						borderColor: "rgb(255,140,0)",
 						tension: 0.5,

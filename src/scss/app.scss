@@ -7,10 +7,10 @@
 
 * {
   cursor: url(./assets/icons/cursor.png), auto !important;
-  cursor: -webkit-image-set( url(./assets/icons/cursor.png) 1x), pointer;
+  cursor: -webkit-image-set( url(./assets/icons/cursor.png) 1x), auto;
 }
 body {
-  background-color: $color-primary-0;
+  background-color: $color-primary-dark;
   // font-family:'Quicksand', sans-serif;
   font-family:'Courgette', cursive;
 
@@ -126,5 +126,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 .table-dark {
-  background: $color-primary-0;
+  background: $color-primary-dark;
 }

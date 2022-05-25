@@ -15,11 +15,11 @@ $color-light:#EEEEEE;
 
 // As hex codes */
 
-$color-primary-0: #00000F; // Main Primary color */
-$color-primary-1: #93BFFB;
-$color-primary-2: #3F618A;
-$color-primary-3: rgb(0, 0, 1);
-$color-primary-4: #000000;
+$color-primary-dark: #000022; // Main Primary color */
+$color-primary-green: #268279; //rgb(38, 130, 121)
+$color-primary-lightblue: #C7FCFF;//rgb(199, 252, 255)
+$color-primary-pink: #DB5E9C;//rgb(219, 94, 156)
+$color-primary-badge: #EDD3C2;//rgb(237, 211, 194)
 
 $color-secondary-pink-0: #1E0E1B; // Main Secondary color (1) */
 $color-secondary-pink-1: #C241A5;
@@ -77,4 +77,3 @@ $success: $rgba-secondary-pink-1 !default;
 // $light: $gray-100 !default;
 // $dark: $gray-900 !default;
 @import "node_modules/bootstrap/scss/bootstrap";
-

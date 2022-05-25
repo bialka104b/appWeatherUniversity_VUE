@@ -94,11 +94,13 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="col-3 text-white">
-					Najwyższe na świecie zarejestrowano 19 grudnia roku 2001 w miejscowości
-					Tosontsengel w Mongolii – wyniosło wtedy 1086 hPa. Natomiast najniższe
-					znormalizowane ciśnienie atmosferyczne, wynoszące 870 hPa, spowodowane
-					przejściem tajfunu Tip, zarejestrowano 12 października roku 1979 na Północnym
-					Pacyfiku.
+					<p class="text-justify">
+						Najwyższe na świecie zarejestrowano 19 grudnia roku 2001 w miejscowości
+						Tosontsengel w Mongolii – wyniosło wtedy 1086 hPa. Natomiast najniższe
+						znormalizowane ciśnienie atmosferyczne, wynoszące 870 hPa, spowodowane
+						przejściem tajfunu Tip, zarejestrowano 12 października roku 1979 na Północnym
+						Pacyfiku.
+					</p>
 				</div>
 				<div class="text-dark col-9">
 					Deszcz 1mm3/mm2 lub 1l/m2
@@ -125,15 +127,21 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="col-3 text-white">
-					0–2 Brak zagrożeń dla zdrowego człowieka.
-					<br />
-					3–5 Średnie zagrożenie podczas dłuższego przebywania na słońcu.
-					<br />
-					6–7 Wysokie i bardzo wysokie zagrożenie podczas dłuższego przebywania na słońcu.
-					<br />
-					8–10 Bardzo wysokie zagrożenie podczas przebywania na słońcu.
-					<br />
-					11+ Ekstremalne zagrożenie podczas przebywania na słońcu.
+					<p class="text-justify">
+						0–2 Brak zagrożeń dla zdrowego człowieka.
+					</p>
+					<p class="text-justify">
+						3–5 Średnie zagrożenie podczas dłuższego przebywania na słońcu.
+					</p>
+					<p class="text-justify">
+						6–7 Wysokie i bardzo wysokie zagrożenie podczas dłuższego przebywania na słońcu.
+					</p>
+					<p class="text-justify">
+						8–10 Bardzo wysokie zagrożenie podczas przebywania na słońcu.
+					</p>
+					<p class="text-justify">
+						11+ Ekstremalne zagrożenie podczas przebywania na słońcu.
+					</p>
 				</div>
 				<div class="text-dark col-9">
 					Widocznośc na drogach
@@ -144,8 +152,10 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="col-3 text-white">
-					Średnia widoczność pokazana jest w metrach. Maksymalna wartość widzialności to
-					10km czyli 10000m
+					<p class="text-justify">
+						Średnia widoczność pokazana jest w metrach. Maksymalna wartość widzialności to
+						10km czyli 10000m
+					</p>
 				</div>
 			</div>
 		</div>
