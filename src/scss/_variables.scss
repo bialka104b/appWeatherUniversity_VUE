@@ -17,63 +17,16 @@ $color-light:#EEEEEE;
 
 $color-primary-dark: #000022; // Main Primary color */
 $color-primary-green: #268279; //rgb(38, 130, 121)
-$color-primary-lightblue: #C7FCFF;//rgb(199, 252, 255)
-$color-primary-pink: #DB5E9C;//rgb(219, 94, 156)
-$color-primary-badge: #EDD3C2;//rgb(237, 211, 194)
+$color-primary-lightblue: #C7FCFF; //rgb(199, 252, 255)
+$color-primary-pink: #DB5E9C; //rgb(219, 94, 156)
+$color-primary-badge: #EDD3C2; //rgb(237, 211, 194)
 
-$color-secondary-pink-0: #1E0E1B; // Main Secondary color (1) */
-$color-secondary-pink-1: #C241A5;
-$color-secondary-pink-2: #9A3F86;
-$color-secondary-pink-3: #010001;
-$color-secondary-pink-4: #000000;
-
-$color-secondary-green-0: #222713; // Main Secondary color (2) */
-$color-secondary-green-1: #CEF451;
-$color-secondary-green-2: #AEC952;
-$color-secondary-green-3: #010100;
-$color-secondary-green-4: #000000;
-
-$color-complement-0: #292114; // Main Complement color */
-$color-complement-1: #FFBD55;
-$color-complement-2: #D3A356;
-$color-complement-3: #010100;
-$color-complement-4: #000000;
-
-
-
-// As RGBa codes */
-
-$rgba-primary-0: #00000F; // Main Primary color */
-$rgba-primary-1: rgba(69, 118, 177, 1);
-$rgba-primary-2: rgba(63, 97, 138, 1);
-$rgba-primary-3: rgba(0, 0, 1, 1);
-$rgba-primary-4: rgba(0, 0, 0, 1);
-
-$rgba-secondary-pink-0: rgba(30, 14, 27, 1); // Main Secondary color (1) */
-$rgba-secondary-pink-1: rgba(194, 65, 165, 1);
-$rgba-secondary-pink-2: rgba(154, 63, 134, 1);
-$rgba-secondary-pink-3: rgba(1, 0, 1, 1);
-$rgba-secondary-pink-4: rgba(0, 0, 0, 1);
-
-$rgba-secondary-green-0: rgba(34, 39, 19, 1); // Main Secondary color (2) */
-$rgba-secondary-green-1: rgba(206, 244, 81, 1);
-$rgba-secondary-green-2: rgba(174, 201, 82, 1);
-$rgba-secondary-green-3: rgba(1, 1, 0, 1);
-$rgba-secondary-green-4: rgba(0, 0, 0, 1);
-
-$rgba-complement-0: rgba(41, 33, 20, 1); // Main Complement color */
-$rgba-complement-1: rgba(255, 189, 85, 1);
-$rgba-complement-2: rgba(211, 163, 86, 1);
-$rgba-complement-3: rgba(1, 1, 0, 1);
-$rgba-complement-4: rgba(0, 0, 0, 1);
-
-
-$primary: $color-primary !default;
-// $secondary: $gray-600 !default;
-$success: $rgba-secondary-pink-1 !default;
-// $info: $cyan !default;
+$primary: $color-primary-dark !default;
+$info: $color-primary-green !default;
+$secondary:$color-primary-lightblue !default;
+$success: $color-primary-pink !default;
+$warning: $color-primary-badge !default;
 // $warning: $yellow !default;
 // $danger: $red !default;
-// $light: $gray-100 !default;
 // $dark: $gray-900 !default;
 @import "node_modules/bootstrap/scss/bootstrap";

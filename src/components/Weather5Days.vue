@@ -87,10 +87,10 @@ import SupportIcon from "./icons/IconSupport.vue";
   </div> -->
 	<div>
 		<section class="container-fluid section">
-			<div class="row m-0">
-				<div class="col-8">
-					<div class="row m-0">
-						<div class="col-12 bgOpacity my-2 bRadius">
+			<div class="row m-0 pr-5">
+				<div class="col-8 p-0">
+					<div class="row m-0 mx-5">
+						<div class="col-12 bgOpacity my-4 bRadius">
 							<h2>
 								{{ name }}
 								<p class="h6 pt-2">Województwo: {{ city.WOJ }}</p>
@@ -117,12 +117,12 @@ import SupportIcon from "./icons/IconSupport.vue";
 								</div>
 							</div>
 						</div>
-						<div class="col-12 bgOpacity my-2 bRadius">
+						<div class="col-12 bgOpacity my-4 bRadius">
 							<SunriseSunset :sys="sys" :visible="visibility"></SunriseSunset>
 						</div>
 					</div>
 				</div>
-				<div class="col-4 my-2 bgOpacity bRadius">
+				<div class="col-4 my-4 bgOpacity bRadius">
 					<div class="container-fluid py-1">
 						<label for="">Wybierz miasto Polski</label>
 						<VueMultiselect
@@ -131,6 +131,8 @@ import SupportIcon from "./icons/IconSupport.vue";
 							:close-on-select="true"
 							:clear-on-select="false"
 							:placeholder="'Select City'"
+							:hideSelected="true"
+							:show-labels="false"
 							label="NAZWA"
 							track-by="NAZWA"
 							@close="selectCity(city)"
@@ -145,17 +147,18 @@ import SupportIcon from "./icons/IconSupport.vue";
 							:clear-on-select="false"
 							:placeholder="'Select City'"
 							:custom-label="nameWithLang"
+							:hideSelected="true"
+							:show-labels="false"
 							label="STOLICA"
 							track-by="STOLICA"
 							@close="selectCityWorld(cityWorld)"
-							:show-labels="false"
 						>
 							<!-- :show-labels="false" -->
 							<template v-slot:option="{ option }">
 								<div class="">
 									<p class="mb-0 w-100">{{ option.STOLICA }}</p>
-									<span class="">{{ option.PANSTWO }} - </span>
-									<span class="">{{ option.KONTYNENT }}</span>
+									<div class="country">{{ option.PANSTWO }}</div>
+									<div class="">{{ option.KONTYNENT }}</div>
 								</div>
 							</template>
 						</VueMultiselect>
@@ -168,6 +171,8 @@ import SupportIcon from "./icons/IconSupport.vue";
 							:close-on-select="true"
 							:clear-on-select="false"
 							placeholder="Select unit temperature"
+							:hideSelected="true"
+							:show-labels="false"
 							label="unit"
 							track-by="unit"
 							@close="selectUnitTemp(unitsTemp)"
@@ -181,14 +186,16 @@ import SupportIcon from "./icons/IconSupport.vue";
 							:close-on-select="true"
 							:clear-on-select="false"
 							placeholder="Select Lang"
+							:hideSelected="true"
+							:show-labels="false"
 							label="lang"
 							track-by="lang"
 							@close="selectLang(selectedLang)"
 						/>
 					</div>
 					<div class="container-fluid">
-						<router-link to="/weather48h" class="d-block fw-bold btn btn-primary my-2">Pogoda 48h</router-link>
-						<router-link to="/" class="d-block fw-bold btn btn-primary my-2">Pogoda pięciodniowa</router-link>`
+						<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">Pogoda 48h</router-link>
+						<router-link to="/" class="d-block fw-bold btn btn-info my-2">Pogoda pięciodniowa</router-link>`
 					</div>
 				</div>
 			</div>

@@ -3,8 +3,8 @@
 		<section class="container-fluid section py-5">
 			<div class="row m-0">
 				<div class="col-8">
-					<div class="row m-0">
-						<div class="col-12 bgOpacity my-2 bRadius">
+					<div class="row m-0 mx-5">
+						<div class="col-12 bgOpacity my-4 bRadius">
 							<h2>
 								{{ name }}
 								<p class="h6 pt-2">Województwo: {{ city.WOJ != undefined ? city.WOJ : 'podkarpackie' }}</p>
@@ -39,7 +39,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 bgOpacity my-2 bRadius">
+						<div class="col-12 bgOpacity my-4 bRadius">
 							<div class="row">
 								<div class="col-6">
 									<SunriseSunset :sys="sys" :visible="currentWeather.visibility">
@@ -54,7 +54,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-4 my-2 bgOpacity bRadius">
+				<div class="col-4 my-4 bgOpacity bRadius">
 					<div class="container-fluid py-1">
 						<label for="">Wybierz miasto Polski</label>
 						<VueMultiselect
@@ -93,7 +93,7 @@
 					</div>
 					<div class="container-fluid">
 						<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">Pogoda 48h</router-link>
-						<router-link to="/" class="d-block fw-bold btn btn-primary my-2">Pogoda pięciodniowa</router-link>`
+						<router-link to="/" class="d-block fw-bold btn btn-info my-2">Pogoda pięciodniowa</router-link>`
 					</div>
 				</div>
 			</div>

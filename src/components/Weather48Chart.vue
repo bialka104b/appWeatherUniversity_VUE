@@ -4,7 +4,7 @@ import WindDeg from "./WindDeg.vue";
 
 <template>
 	<div class="row">
-		<div class="text-light col-2">
+		<div class="text-light col-3">
 			Kierunek wiatru stopnie meterologiczne
 			<table class="table table-sm table-striped table-dark">
 				<thead>
@@ -44,10 +44,10 @@ import WindDeg from "./WindDeg.vue";
 				</tbody>
 			</table>
 		</div>
-		<div class="col-10">
+		<div class="col-9">
 			<div class="row">
 				<div class="text-dark col-9">
-					Zachmurzenie w %
+					<h3 class="text-success text-center">Zachmurzenie w %</h3>
 					<LineChart
 						:chartData="chartDataCloudsHumidity"
 						:chartOptions="returnChartOptions(0, 100)"
@@ -65,7 +65,7 @@ import WindDeg from "./WindDeg.vue";
 					</p>
 				</div>
 				<div class="text-dark col-9">
-					Punkt rosy.
+					<h3 class="text-success text-center">Punkt rosy</h3>
 					<LineChart
 						:chartData="chartDataDewPointTemp"
 						:chartOptions="returnChartOptions(0, 10)"
@@ -86,7 +86,7 @@ import WindDeg from "./WindDeg.vue";
 					</p>
 				</div>
 				<div class="text-dark col-9">
-					Ciśnienie atmosferyczne
+					<h3 class="text-success text-center">Ciśnienie atmosferyczne</h3>
 					<LineChart
 						:chartData="chartDataPressure"
 						:chartOptions="returnChartOptions(1000, 1013)"
@@ -103,7 +103,7 @@ import WindDeg from "./WindDeg.vue";
 					</p>
 				</div>
 				<div class="text-dark col-9">
-					Deszcz 1mm3/mm2 lub 1l/m2
+					<h3 class="text-success text-center">Opady deszczu i sniegu na litr/m2</h3>
 					<LineChart
 						:chartData="chartDataRainSnow"
 						:chartOptions="returnChartOptions(0, 1)"
@@ -111,7 +111,7 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="text-dark col-9">
-					Prędkość i podmuch wiatru
+					<h3 class="text-success text-center">Prędkość i podmuch wiatru</h3>
 					<LineChart
 						:chartData="chartDataWindSpeedGust"
 						:chartOptions="returnChartOptions(0, 1)"
@@ -119,7 +119,7 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="text-dark col-9">
-					Promieniowanie UV
+					<h3 class="text-success text-center">Promieniowanie UV</h3>
 					<LineChart
 						:chartData="chartDataUvi"
 						:chartOptions="returnChartOptions(0, 10)"
@@ -144,7 +144,7 @@ import WindDeg from "./WindDeg.vue";
 					</p>
 				</div>
 				<div class="text-dark col-9">
-					Widocznośc na drogach
+					<h3 class="text-success text-center">Widocznośc na drogach</h3>
 					<LineChart
 						:chartData="chartDataVisibility"
 						:chartOptions="returnChartOptions(1000, 8000)"
