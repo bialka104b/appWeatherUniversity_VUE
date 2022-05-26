@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<section class="container-fluid section py-5">
-			<div class="row m-0">
+			<div class="row m-0 pr-5">
 				<div class="col-8">
 					<div class="row m-0 mx-5">
 						<div class="col-12 bgOpacity my-4 bRadius">
@@ -41,12 +41,12 @@
 						</div>
 						<div class="col-12 bgOpacity my-4 bRadius">
 							<div class="row">
-								<div class="col-6">
+								<div class="col-7">
 									<SunriseSunset :sys="sys" :visible="currentWeather.visibility">
 									</SunriseSunset>
 									<UV :uvi="currentWeather.uvi"/>
 								</div>
-								<div class="col-6">
+								<div class="col-5">
 									Alerty pogodowe:
 									<Alerts :alerts="alertsWeather" />
 								</div>

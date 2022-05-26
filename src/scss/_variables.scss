@@ -15,11 +15,20 @@ $color-light:#EEEEEE;
 
 // As hex codes */
 
-$color-primary-dark: #000022; // Main Primary color */
-$color-primary-green: #268279; //rgb(38, 130, 121)
-$color-primary-lightblue: #C7FCFF; //rgb(199, 252, 255)
-$color-primary-pink: #DB5E9C; //rgb(219, 94, 156)
-$color-primary-badge: #EDD3C2; //rgb(237, 211, 194)
+// $color-primary-dark: #000022; // Main Primary color */
+// $color-primary-green: #268279; //rgb(38, 130, 121)
+// $color-primary-lightblue: #C7FCFF; //rgb(199, 252, 255)
+// $color-primary-pink: #DB5E9C; //rgb(219, 94, 156)
+// $color-primary-badge: #EDD3C2; //rgb(237, 211, 194)
+$color-primary-dark: rgb(27, 4, 38); // Main Primary color */
+$color-primary-green: rgb(64, 10, 58); //rgb(38, 130, 121)
+$color-primary-lightblue: #FFD0D0; //rgb(199, 252, 255)
+$color-primary-pink: rgb(247, 79, 118); //rgb(219, 94, 156)
+$color-primary-badge: rgb(252, 237, 215); //rgb(237, 211, 194)
+$color-wykres-noc: rgb(132, 132, 130);
+$pink :rgb(255, 0, 108); //pink;
+$blekitny: rgb(0, 111, 166); //green jasny
+$citrin:rgb(227, 190, 54); //cytrynowy
 
 $primary: $color-primary-dark !default;
 $info: $color-primary-green !default;

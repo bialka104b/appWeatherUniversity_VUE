@@ -1,30 +1,48 @@
 <script setup></script>
 
 <template>
-	<div>
+	<div class="container">
 		<div class="text-dark my-5">
 			<h3 class="text-success text-center">Temperatura minimalna i maksymalna na 5 dni</h3>
-			<LineChart :chartData="chartData" :chartOptions="chartOptions" :height="350" />
+			<LineChart 
+			:chartData="chartData" 
+			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
+			:chartOptions="chartOptions" :height="350" />
 		</div>
 		<div class="text-dark my-5">
 			<h3 class="text-success text-center">Ciśnienie atmosferyczne</h3>
-			<LineChart :chartData="chartDataPressure" :chartOptions="chartOptions" :height="250" />
+			<LineChart 
+			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
+			:chartData="chartDataPressure" :chartOptions="chartOptions" 
+			:height="250" />
 		</div>
 		<div class="text-dark my-5">
 			<h3 class="text-success text-center">Wilgotność</h3>
-			<LineChart :chartData="chartDataHumidity" :chartOptions="chartOptions" :height="350" />
+			<LineChart 
+			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
+			:chartData="chartDataHumidity" :chartOptions="chartOptions" 
+			:height="350" />
 		</div>
 		<div class="text-dark my-5">
 			<h3 class="text-success text-center">Zachmurzenie w %</h3>
-			<LineChart :chartData="chartDataClouds" :chartOptions="chartOptions" :height="350" />
+			<LineChart 
+			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
+			:chartData="chartDataClouds" :chartOptions="chartOptions" 
+			:height="350" />
 		</div>
 		<div class="text-dark my-5">
 			<h3 class="text-success text-center">Opady deszczu i sniegu na m2</h3>
-			<LineChart :chartData="chartDataRainfall" :chartOptions="chartOptions" :height="350" />
+			<LineChart 
+			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
+			:chartData="chartDataRainfall" :chartOptions="chartOptions" 
+			:height="350" />
 		</div>
 		<div class="text-dark my-5">
 			<h3 class="text-success text-center">Prędkość i podmuch wiatru</h3>
-			<LineChart :chartData="chartDataWind" :chartOptions="chartOptions" :height="350" />
+			<LineChart 
+			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
+			:chartData="chartDataWind" :chartOptions="chartOptions" 
+			:height="350" />
 		</div>
 	</div>
 </template>
@@ -58,7 +76,10 @@ export default {
 				plugins: {
 					legend: {
 						labels: {
-							color: "white",
+							color: "rgb(64, 10, 58)",
+							font: {
+								weight: "bold",
+							},
 						},
 					},
 				},
@@ -70,7 +91,19 @@ export default {
 						// suggestedMax: 100, //<- tu by trzeba było podać opcje max
 						// color: 'black',
 						ticks: {
-							color: "white",
+							color: "rgb(27, 4, 38)",
+							font: {
+								weight: "bold",
+							},
+						},
+					},
+					x: {
+
+						// suggestedMin: 0,
+						// suggestedMax: 100, //<- tu by trzeba było podać opcje max
+						// color: 'black',
+						ticks: {
+							color: "rgb(27, 4, 38)",
 							font: {
 								weight: "bold",
 							},
@@ -200,23 +233,23 @@ export default {
 				datasets: [
 					{
 						label: "prędkość wiatru m/s",
-						backgroundColor: "rgba(255,140,0, 0.2)",
+						backgroundColor: "rgba(64, 10, 58, 0.7)",
 						data: this.speedWind,
-						borderColor: "rgb(255,140,0)",
+						borderColor: "rgb(64, 10, 58)",
 						tension: 0.5,
 						fill: true,
 					},
 					{
 						label: "Podmuch wiatru m/s",
-						backgroundColor: "rgba(255,0,0, 0.2)",
+						backgroundColor: "rgb(255, 0, 108, 0.2)",
 						data: this.gustWind,
-						borderColor: "rgb(255,0,0)",
+						borderColor: "rgb(255, 0, 108)",
 						tension: 0.5,
 						fill: true,
 					},
 					{
 						label: "Noc w polskiej strefie czasowej",
-						backgroundColor: "rgba(199,199,199, 0.5)",
+						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightRain,
 						tension: 0.5,
 						fill: true,
@@ -249,7 +282,7 @@ export default {
 					},
 					{
 						label: "Noc w polskiej strefie czasowej",
-						backgroundColor: "rgba(199,199,199, 0.5)",
+						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightRain,
 						tension: 0.5,
 						fill: true,
@@ -264,24 +297,24 @@ export default {
 				labels: this.daysTab,
 				datasets: [
 					{
-						label: "Zachmurzenie w %",
-						backgroundColor: "rgb(0, 0, 34, 0.2)",
-						data: this.clouds,
-						borderColor: "rgb(255,140,0)",
+						label: "Prawdopodobieństwo opadów w %",
+						backgroundColor: "rgb(38, 130, 121, 0.2)",
+						data: this.pop,
+						borderColor: "rgb(38, 130, 121)",
 						tension: 0.5,
 						fill: true,
 					},
 					{
-						label: "Prawdopodobieństwo opadów w %",
-						backgroundColor: "rgba(255,0,0, 0.2)",
-						data: this.pop,
-						borderColor: "rgb(255,0,0)",
+						label: "Zachmurzenie w %",
+						backgroundColor: "rgb(64, 10, 58, 0.7)",
+						data: this.clouds,
+						borderColor: "rgb(64, 10, 58)",
 						tension: 0.5,
 						fill: true,
 					},
 					{
 						label: "Noc w polskiej strefie czasowej",
-						backgroundColor: "rgba(199,199,199, 0.5)",
+						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightHumidity,
 						tension: 0.5,
 						fill: true,
@@ -295,18 +328,20 @@ export default {
 			return {
 				labels: this.daysTab,
 				datasets: [
+					
 					{
 						label: "Wilgotność w %",
-						backgroundColor: "rgba(0,0,255, 0.2)",
+						backgroundColor: "rgb(247, 79, 118, 0.7)",
 						data: this.humidity,
-						borderColor: "blue",
+						borderColor: "rgb(247, 79, 118)",
 						tension: 0.5,
 						fill: true,
 						// stepped: true
 					},
+					
 					{
 						label: "Noc w polskiej strefie czasowej",
-						backgroundColor: "rgba(199,199,199, 0.5)",
+						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightHumidity,
 						// borderColor: 'blue',
 						// lineTension:0,
@@ -323,28 +358,29 @@ export default {
 				labels: this.daysTab,
 				datasets: [
 					{
-						label: "Ciśnienie",
-						backgroundColor: "rgba(0,0,255, 0.2)",
-						data: this.pressure,
-						borderColor: "blue",
+						label: "Ciśnienie na poziomie gruntu",
+						backgroundColor: "rgb(0, 111, 166,0.2)",
+						data: this.grndLevel,
+						borderColor: "rgb(0, 111, 166)",
 						// lineTension:0,
 						tension: 0.5,
 						fill: true,
 						// stepped: true
 					},
 					{
-						label: "Ciśnienie na poziomie gruntu",
-						backgroundColor: "rgba(0,160,0, 0.2)",
-						data: this.grndLevel,
-						borderColor: "rgb(0,160,0)",
+						label: "Ciśnienie",
+						backgroundColor: "rgb(64, 10, 58, 0.7)",
+						data: this.pressure,
+						borderColor: "rgb(64, 10, 58)",
 						// lineTension:0,
 						tension: 0.5,
 						fill: true,
 						// stepped: true
 					},
+					
 					{
 						label: "Noc w polskiej strefie czasowej",
-						backgroundColor: "rgba(199,199,199, 0.5)",
+						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightPressure,
 						// borderColor: 'blue',
 						// lineTension:0,
@@ -361,37 +397,27 @@ export default {
 				labels: this.daysTab,
 				datasets: [
 					{
-						label: "Temperatura maksymalna",
-						backgroundColor: "rgba(200,0,100, 0.2)",
-						data: this.tempMax,
-						borderColor: "violet",
-						tension: 0.5,
-						fill: true,
-						// stepped: true
-					},
-					{
-						label: "Temperatura Minimalna",
-						backgroundColor: "rgba(255,0,0, 0.2)",
-						data: this.tempMin,
-						borderColor: "red",
-						// lineTension:0,
-						tension: 0.5,
-						fill: false,
-						// stepped: true
-					},
-					{
 						label: "Temperatura odczuwalna",
-						backgroundColor: "rgba(0,255,100, 0.2)",
+						backgroundColor: "rgb(64, 10, 58, 0.2)",
 						data: this.tempFeelsLike,
-						borderColor: "green",
+						borderColor: "rgb(64, 10, 58)",
 						tension: 0.5,
 						fill: false,
 						// stepped: true
 						pointRadius: 0,
 					},
 					{
+						label: "Temperatura maksymalna",
+						backgroundColor: "rgba(247, 79, 118, 0.7)",
+						data: this.tempMax,
+						borderColor: "rgb(247, 79, 118)",
+						tension: 0.5,
+						fill: true,
+						// stepped: true
+					},
+					{
 						label: "Noc w polskiej strefie czasowej",
-						backgroundColor: "rgba(199,199,199, 0.5)",
+						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightTemperature,
 						// borderColor: 'blue',
 						// lineTension:0,

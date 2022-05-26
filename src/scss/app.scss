@@ -21,7 +21,7 @@ body {
     // display: block;
     width: 100%;
     #forecast {
-      background-color: $secondary;
+      // background-color: $secondary;
     }
     // max-width: 1280px;
     // margin: 0 auto;
@@ -197,4 +197,16 @@ body::-webkit-scrollbar-thumb {
     .multiselect__content-wrapper::-webkit-scrollbar-thumb {
       background: $info;
     }
+}
+
+//WYKRESY
+.boxShadow {
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.608);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.608);
+    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.608);
+}
+
+//opisy do wykresów
+.pFirst{
+    padding-top: 52px;
 }

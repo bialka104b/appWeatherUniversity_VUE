@@ -4,40 +4,64 @@ import WindDeg from "./WindDeg.vue";
 
 <template>
 	<div class="row">
-		<div class="text-light col-3">
-			Kierunek wiatru stopnie meterologiczne
-			<table class="table table-sm table-striped table-dark">
+		<div class="text-secondary col-3 mt-5">
+			<h6 class="text-success">Kierunek wiatru stopnie meterologiczne</h6>
+			<table class="table table-sm">
 				<thead>
-					<tr>
-						<th scope="col" class="text-light">data</th>
-						<th scope="col" class="text-light">Kierunek wiatru</th>
+					<tr class="">
+						<th scope="col" class="text-secondary text-center">data</th>
+						<th scope="col" class="text-secondary text-center">Kierunek wiatru</th>
 					</tr>
 				</thead>
 				<tbody>
-					<tr v-for="(value, index) in this.wind_degTab" :key="index">
-						<td class="text-light">{{ this.daysTab[index] }}</td>
-						<td class="text-light d-flex justify-content-between" v-if="(value >= 0 && value < 23) || value > 337">
+					<tr v-for="(value, index) in this.wind_degTab" :key="index" class="">
+						<td class="text-secondary text-center">{{ this.daysTab[index] }}</td>
+						<td
+							class="text-light d-flex justify-content-between table-secondary"
+							v-if="(value >= 0 && value < 23) || value > 337"
+						>
 							<WindDeg :value="value" :symbol="'N'" />
 						</td>
-						<td class="text-light d-flex justify-content-between" v-if="value >= 23 && value < 69">
+						<td
+							class="text-secondary d-flex justify-content-around"
+							v-if="value >= 23 && value < 69"
+						>
 							<WindDeg :value="value" :symbol="'NE'" />
 						</td>
-						<td class="text-light d-flex justify-content-between" v-if="value >= 69 && value < 113">
+						<td
+							class="text-secondary d-flex justify-content-around"
+							v-if="value >= 69 && value < 113"
+						>
 							<WindDeg :value="value" :symbol="'E'" />
 						</td>
-						<td class="text-light d-flex justify-content-between" v-if="value >= 113 && value < 158">
+						<td
+							class="text-secondary d-flex justify-content-around"
+							v-if="value >= 113 && value < 158"
+						>
 							<WindDeg :value="value" :symbol="'SE'" />
 						</td>
-						<td class="text-light d-flex justify-content-between" v-if="value >= 158 && value < 203">
+						<td
+							class="text-secondary d-flex justify-content-around"
+							v-if="value >= 158 && value < 203"
+						>
 							<WindDeg :value="value" :symbol="'S'" />
 						</td>
-						<td class="text-light d-flex justify-content-between" v-if="value >= 203 && value < 248">
+						<td
+							class="text-secondary d-flex justify-content-around"
+							v-if="value >= 203 && value < 248"
+						>
 							<WindDeg :value="value" :symbol="'SW'" />
 						</td>
-						<td class="text-light d-flex justify-content-between" v-if="value >= 248 && value < 293">
+						<td
+							class="text-secondary d-flex justify-content-around"
+							v-if="value >= 248 && value < 293"
+						>
 							<WindDeg :value="value" :symbol="'W'" />
 						</td>
-						<td class="text-light d-flex justify-content-between" v-if="value >= 293 && value < 338">
+						<td
+							class="text-secondary d-flex justify-content-around"
+							v-if="value >= 293 && value < 338"
+						>
 							<WindDeg :value="value" :symbol="'NW'" />
 						</td>
 					</tr>
@@ -46,95 +70,94 @@ import WindDeg from "./WindDeg.vue";
 		</div>
 		<div class="col-9">
 			<div class="row">
-				<div class="text-dark col-9">
+				<div class="text-dark col-9 mt-5">
 					<h3 class="text-success text-center">Zachmurzenie w %</h3>
 					<LineChart
+						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataCloudsHumidity"
 						:chartOptions="returnChartOptions(0, 100)"
 						:height="350"
 					/>
 				</div>
-				<div class="col-3 text-white">
-					<p class="text-justify">
+				<div class="col-3 text-secondary mt-5">
+					<p class="text-justify pFirst">
 						Wilgotność względna równa 0 oznacza powietrze całkowicie suche, zaś równa 1
 						oznacza powietrze całkowicie nasycone parą wodną. Przy wilgotności względnej
 						równej 1 oziębienie powietrza daje początek skraplaniu pary wodnej.
 					</p>
-					<p class="text-justify">
-						Zachmurzenie – stopień pokrycia nieba przez chmury.
-					</p>
+					<p class="text-justify">Zachmurzenie – stopień pokrycia nieba przez chmury.</p>
 				</div>
-				<div class="text-dark col-9">
+				<div class="text-dark col-9 mt-5">
 					<h3 class="text-success text-center">Punkt rosy</h3>
 					<LineChart
+						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataDewPointTemp"
 						:chartOptions="returnChartOptions(0, 10)"
 						:height="350"
 					/>
 				</div>
-				<div class="col-3 text-white">
-					<p class="text-justify">
-						Punkt rosy to - temperatura atmosfery (zmienna w zależności od ciśnienia i
-						wilgotności), poniżej której zaczynają się skraplać krople wody i może tworzyć
-						się rosa.
+				<div class="col-3 text-secondary mt-5">
+					<p class="text-justify pFirst">
+						Punkt rosy to - temperatura atmosfery poniżej której zaczynają się skraplać krople wody i może
+						tworzyć się rosa.
 					</p>
 					<p class="text-justify">
-						Temperatura odczuwalna – stan określający, jakie odczucie termiczne wystąpi przy
-						danych warunkach pogodowych. Wyliczana jest w zależności od przyjętego modelu na
-						podstawie takich parametrów, jak temperatura powietrza, siła wiatru, wilgotność
-						i opady.
+						Temperatura odczuwalna wyliczana jest w zależności od przyjętego
+						modelu na podstawie takich parametrów, jak temperatura powietrza, siła
+						wiatru, wilgotność i opady.
 					</p>
 				</div>
-				<div class="text-dark col-9">
+				<div class="text-dark col-9 mt-5">
 					<h3 class="text-success text-center">Ciśnienie atmosferyczne</h3>
 					<LineChart
+						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataPressure"
 						:chartOptions="returnChartOptions(1000, 1013)"
-						:height="250"
+						:height="350"
 					/>
 				</div>
-				<div class="col-3 text-white">
-					<p class="text-justify">
-						Najwyższe na świecie zarejestrowano 19 grudnia roku 2001 w miejscowości
-						Tosontsengel w Mongolii – wyniosło wtedy 1086 hPa. Natomiast najniższe
-						znormalizowane ciśnienie atmosferyczne, wynoszące 870 hPa, spowodowane
-						przejściem tajfunu Tip, zarejestrowano 12 października roku 1979 na Północnym
-						Pacyfiku.
+				<div class="col-3 text-secondary mt-5">
+					<p class="text-justify pFirst">
+						19.12.2001r. Tosontsengel w Mongolii - zarejestrowano najwyższe na świecie ciśnienie 1086 hPa.
+						12.10.1979r. Północny Pacyfik - zarejestrowano najniższe na świecie ciśnienie 870 hPa, spowodowane
+						przejściem tajfunu Tip.
 					</p>
 				</div>
-				<div class="text-dark col-9">
+				<div class="text-dark col-12 mt-5">
 					<h3 class="text-success text-center">Opady deszczu i sniegu na litr/m2</h3>
 					<LineChart
+						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataRainSnow"
 						:chartOptions="returnChartOptions(0, 1)"
-						:height="250"
+						:height="350"
 					/>
 				</div>
-				<div class="text-dark col-9">
+				<div class="text-dark col-12 mt-5">
 					<h3 class="text-success text-center">Prędkość i podmuch wiatru</h3>
 					<LineChart
+						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataWindSpeedGust"
 						:chartOptions="returnChartOptions(0, 1)"
 						:height="350"
 					/>
 				</div>
-				<div class="text-dark col-9">
+				<div class="text-dark col-9 mt-5">
 					<h3 class="text-success text-center">Promieniowanie UV</h3>
 					<LineChart
+						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataUvi"
 						:chartOptions="returnChartOptions(0, 10)"
 						:height="350"
 					/>
 				</div>
-				<div class="col-3 text-white">
-					<p class="text-justify">
-						0–2 Brak zagrożeń dla zdrowego człowieka.
-					</p>
+				<div class="col-3 text-secondary mt-5">
+					<p class="text-justify pFirst">0–2 Brak zagrożeń dla zdrowego człowieka.</p>
 					<p class="text-justify">
 						3–5 Średnie zagrożenie podczas dłuższego przebywania na słońcu.
 					</p>
 					<p class="text-justify">
-						6–7 Wysokie i bardzo wysokie zagrożenie podczas dłuższego przebywania na słońcu.
+						6–7 Wysokie i bardzo wysokie zagrożenie podczas dłuższego przebywania na
+						słońcu.
 					</p>
 					<p class="text-justify">
 						8–10 Bardzo wysokie zagrożenie podczas przebywania na słońcu.
@@ -143,18 +166,19 @@ import WindDeg from "./WindDeg.vue";
 						11+ Ekstremalne zagrożenie podczas przebywania na słońcu.
 					</p>
 				</div>
-				<div class="text-dark col-9">
-					<h3 class="text-success text-center">Widocznośc na drogach</h3>
+				<div class="text-dark col-9 mt-5">
+					<h3 class="text-success text-center">Widoczność na drogach</h3>
 					<LineChart
+						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataVisibility"
 						:chartOptions="returnChartOptions(1000, 8000)"
 						:height="350"
 					/>
 				</div>
-				<div class="col-3 text-white">
-					<p class="text-justify">
-						Średnia widoczność pokazana jest w metrach. Maksymalna wartość widzialności to
-						10km czyli 10000m
+				<div class="col-3 text-secondary mt-5">
+					<p class="text-justify pFirst">
+						Średnia widoczność pokazana jest w metrach. Maksymalna wartość widzialności
+						to 10km czyli 10000m
 					</p>
 				</div>
 			</div>
@@ -178,6 +202,9 @@ class Options {
 					boxWidth: 20,
 					fontFamily: "'Roboto'",
 					fontSize: labelsFontSize,
+					font: {
+						weight: "bold",
+					},
 				},
 			},
 		};
@@ -187,7 +214,7 @@ class Options {
 			suggestedMax: suggestedMax, //<- tu by trzeba było podać opcje max
 			// color: 'black',
 			ticks: {
-				color: "white",
+				color: labelsColor,
 				font: {
 					weight: "bold",
 				},
@@ -199,7 +226,7 @@ class Options {
 		};
 		this.scales.x = {
 			ticks: {
-				color: "white",
+				color: labelsColor,
 				font: {
 					weight: "bold",
 				},
@@ -369,15 +396,15 @@ export default {
 			});
 		},
 		compareNumbers(a, b) {
-			return a - b
+			return a - b;
 		},
-		min(tab){
+		min(tab) {
 			return tab.sort(this.compareNumbers)[0];
 		},
-		max(tab){
+		max(tab) {
 			return tab.sort(this.compareNumbers)[tab.length - 1];
 		},
-		returnChartOptions(min, max, fontSize = 20, color = "blue") {
+		returnChartOptions(min, max, fontSize = 20, color = "rgb(64, 10, 58)") {
 			const obj = new Options(fontSize, color, min, max);
 			// const obj1 = new Options(20, 'red');
 			// console.log(obj);
@@ -402,17 +429,17 @@ export default {
 				datasets: [
 					{
 						label: "Prędkość km/h",
-						backgroundColor: "rgba(200,0,100, 0.2)",
+						backgroundColor: "rgba(64, 10, 58, 0.7)",
 						data: this.wind_speed,
-						borderColor: "yellow",
+						borderColor: "rgb(64, 10, 58)",
 						tension: 0.5,
 						fill: true,
 					},
 					{
-						label: " podmuch km/h",
-						backgroundColor: "rgba(200,0,100, 0.2)",
+						label: "Podmuch km/h",
+						backgroundColor: "rgb(255, 0, 108, 0.2)",
 						data: this.wind_gust,
-						borderColor: "red",
+						borderColor: "rgb(255, 0, 108)",
 						tension: 0.5,
 						fill: true,
 					},
@@ -424,18 +451,18 @@ export default {
 				labels: this.daysTab,
 				datasets: [
 					{
-						label: "Deszcz litr/na metr kwadratowy",
-						backgroundColor: "rgba(200,0,100, 0.2)",
+						label: "Opady deszczu w l/m2",
+						backgroundColor: "rgb(38, 130, 121, 0.5)",
 						data: this.rain,
-						borderColor: "blue",
+						borderColor: "rgb(38, 130, 121)",
 						tension: 0.5,
 						fill: true,
 					},
 					{
 						label: "Śnieg litr/na metr kwadratowy",
-						backgroundColor: "rgba(200,0,100, 0.2)",
+						backgroundColor: "rgb(199, 252, 255, 0.8)",
 						data: this.snow,
-						borderColor: "lightblue",
+						borderColor: "rgb(199, 252, 255)",
 						tension: 0.5,
 						fill: true,
 					},
@@ -448,9 +475,9 @@ export default {
 				datasets: [
 					{
 						label: "Ciśnienie",
-						backgroundColor: "rgba(200,0,100, 0.2)",
+						backgroundColor: "rgb(64, 10, 58, 0.7)",
 						data: this.pressure,
-						borderColor: "violet",
+						borderColor: "rgb(64, 10, 58)",
 						tension: 0.5,
 						fill: true,
 					},
@@ -463,9 +490,9 @@ export default {
 				datasets: [
 					{
 						label: "Promieniowanie UV",
-						backgroundColor: "rgba(200,0,100, 0.2)",
+						backgroundColor: "rgb(255, 0, 108, 0.7)",
 						data: this.uvi,
-						borderColor: "green",
+						borderColor: "rgb(255, 0, 108)",
 						tension: 0.5,
 						fill: true,
 					},
@@ -478,9 +505,9 @@ export default {
 				datasets: [
 					{
 						label: "Widoczność na drogach",
-						backgroundColor: "rgba(200,0,100, 0.2)",
+						backgroundColor: "rgb(38, 130, 121, 0.5)",
 						data: this.visibility,
-						borderColor: "green",
+						borderColor: "rgb(38, 130, 121)",
 						tension: 0.5,
 						fill: true,
 					},
@@ -493,28 +520,28 @@ export default {
 				datasets: [
 					{
 						label: "Punkt rosy",
-						backgroundColor: "rgba(9, 209, 89,0.2)",
+						backgroundColor: "rgb(0, 111, 166,0.2)",
 						data: this.dew_point,
-						borderColor: "green",
-						tension: 0.5,
-						fill: true,
-					},
-					{
-						label: "Temperatura",
-						backgroundColor: "rgba(200,0,100, 0.2)",
-						data: this.temp,
-						borderColor: "pink",
+						borderColor: "rgb(0, 111, 166)",
 						tension: 0.5,
 						fill: true,
 					},
 					{
 						label: "Temperatura odczuwalna",
-						backgroundColor: "rgba(0,255,100, 0.2)",
+						backgroundColor: "rgb(64, 10, 58, 0.2)",
 						data: this.feels_like,
-						borderColor: "red",
+						borderColor: "rgb(64, 10, 58)",
 						tension: 0.5,
 						fill: false,
 						pointRadius: 0,
+					},
+					{
+						label: "Temperatura",
+						backgroundColor: "rgba(247, 79, 118, 0.7)",
+						data: this.temp,
+						borderColor: "rgb(247, 79, 118)",
+						tension: 0.5,
+						fill: true,
 					},
 				],
 			};
@@ -524,26 +551,26 @@ export default {
 				labels: this.daysTab,
 				datasets: [
 					{
-						label: "Zachmurzenie w %",
-						backgroundColor: "rgba(200,0,100, 0.2)",
-						data: this.clouds,
-						borderColor: "violet",
+						label: "Prawdopodobieñstwo opadów w %",
+						backgroundColor: "rgb(38, 130, 121, 0.2)",
+						data: this.pop,
+						borderColor: "rgb(38, 130, 121)",
 						tension: 0.5,
 						fill: true,
 					},
 					{
 						label: "WILGOTNOŚĆ W %",
-						backgroundColor: "rgba(173, 216, 230, 0.2)",
+						backgroundColor: "rgb(247, 79, 118, 0.2)",
 						data: this.humidity,
-						borderColor: "blue",
+						borderColor: "rgb(247, 79, 118)",
 						tension: 0.5,
 						fill: true,
 					},
 					{
-						label: "Prawdopodobieñstwo opadów w %",
-						backgroundColor: "rgba(200,0,100, 0.2)",
-						data: this.pop,
-						borderColor: "green",
+						label: "Zachmurzenie w %",
+						backgroundColor: "rgb(64, 10, 58, 0.7)",
+						data: this.clouds,
+						borderColor: "rgb(64, 10, 58)",
 						tension: 0.5,
 						fill: true,
 					},
