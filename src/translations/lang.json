@@ -1,0 +1,28 @@
+{
+    "en": {
+        "few clouds": "Few clouds",
+        "clear sky": "Clear sky",
+        "light rain": "Light rain",
+        "broken clouds": "Broken clouds",
+        "overcast clouds": "Overcast clouds",
+        "scattered clouds": "Scattered clouds",
+        "shower rain": "Shower rain",
+        "rain": "Rain",
+        "thunderstorm": "Thunderstorm",
+        "snow": "Snow",
+        "mist": "Mist"
+    },
+    "pl": {
+        "few clouds": "Nieliczne chmury",
+        "clear sky": "Czyste niebo",
+        "light rain": "Lekki deszcz",
+        "broken clouds": "Rozbite chmury",
+        "overcast clouds": "Pochmurno",
+        "scattered clouds": "Rozproszone chmury",
+        "shower rain": "Lekki deszcz",
+        "rain": "Deszcz",
+        "thunderstorm": "Burza z piorunami",
+        "snow": "Śnieg",
+        "mist": "Mgła"
+    }
+}

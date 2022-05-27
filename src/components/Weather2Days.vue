@@ -63,6 +63,8 @@
 							:close-on-select="true"
 							:clear-on-select="false"
 							:placeholder="'Select City'"
+							:hideSelected="true"
+							:show-labels="false"
 							label="NAZWA"
 							track-by="NAZWA"
 							@close="selectCity(city)"
@@ -99,7 +101,7 @@
 			</div>
 		</section>
 		<section class="weather2Days py-5">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row m-0">
 					<div class="col-6">
 						<!-- <Forecast1
@@ -187,6 +189,7 @@ export default {
 
 		async selectCityWorld(e) {
 			this.cityName = e.STOLICA;
+			this.city.WOJ = '';
 			await this.getWeather();
 			await this.daily48h(this.coord.lat, this.coord.lon);
 		},

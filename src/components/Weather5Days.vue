@@ -308,6 +308,7 @@ export default {
 		},
 		async selectCityWorld(e) {
 			this.cityName = e.STOLICA;
+			this.city.WOJ = '';
 			await this.getWeather();
 			await this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
 		},
@@ -327,6 +328,7 @@ export default {
 		selectLang(e) {
 			this.selectedLang = e.key;
 			this.getWeather();
+			this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
 		},
 		async getWeather() {
 			await axios

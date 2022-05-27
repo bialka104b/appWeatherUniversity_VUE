@@ -70,7 +70,7 @@ import WindDeg from "./WindDeg.vue";
 		</div>
 		<div class="col-9">
 			<div class="row">
-				<div class="text-dark col-9 mt-5">
+				<div class="text-dark col-12 mt-5">
 					<h3 class="text-success text-center">Zachmurzenie w %</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
@@ -79,15 +79,15 @@ import WindDeg from "./WindDeg.vue";
 						:height="350"
 					/>
 				</div>
-				<div class="col-3 text-secondary mt-5">
-					<p class="text-justify pFirst">
+				<div class="col-12 text-secondary mt-2">
+					<p class="text-justify mb-2">
 						Wilgotność względna równa 0 oznacza powietrze całkowicie suche, zaś równa 1
 						oznacza powietrze całkowicie nasycone parą wodną. Przy wilgotności względnej
 						równej 1 oziębienie powietrza daje początek skraplaniu pary wodnej.
 					</p>
-					<p class="text-justify">Zachmurzenie – stopień pokrycia nieba przez chmury.</p>
+					<p class="text-justify mb-2">Zachmurzenie – stopień pokrycia nieba przez chmury.</p>
 				</div>
-				<div class="text-dark col-9 mt-5">
+				<div class="text-dark col-12 mt-5">
 					<h3 class="text-success text-center">Punkt rosy</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
@@ -96,18 +96,18 @@ import WindDeg from "./WindDeg.vue";
 						:height="350"
 					/>
 				</div>
-				<div class="col-3 text-secondary mt-5">
-					<p class="text-justify pFirst">
-						Punkt rosy to - temperatura atmosfery poniżej której zaczynają się skraplać krople wody i może
-						tworzyć się rosa.
+				<div class="col-12 text-secondary mt-2">
+					<p class="text-justify mb-2">
+						Punkt rosy to - temperatura atmosfery poniżej której zaczynają się skraplać
+						krople wody i może tworzyć się rosa.
 					</p>
-					<p class="text-justify">
-						Temperatura odczuwalna wyliczana jest w zależności od przyjętego
-						modelu na podstawie takich parametrów, jak temperatura powietrza, siła
-						wiatru, wilgotność i opady.
+					<p class="text-justify mb-2">
+						Temperatura odczuwalna wyliczana jest w zależności od przyjętego modelu na
+						podstawie takich parametrów, jak temperatura powietrza, siła wiatru,
+						wilgotność i opady.
 					</p>
 				</div>
-				<div class="text-dark col-9 mt-5">
+				<div class="text-dark col-12 mt-5">
 					<h3 class="text-success text-center">Ciśnienie atmosferyczne</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
@@ -116,11 +116,12 @@ import WindDeg from "./WindDeg.vue";
 						:height="350"
 					/>
 				</div>
-				<div class="col-3 text-secondary mt-5">
-					<p class="text-justify pFirst">
-						19.12.2001r. Tosontsengel w Mongolii - zarejestrowano najwyższe na świecie ciśnienie 1086 hPa.
-						12.10.1979r. Północny Pacyfik - zarejestrowano najniższe na świecie ciśnienie 870 hPa, spowodowane
-						przejściem tajfunu Tip.
+				<div class="col-12 text-secondary mt-2">
+					<p class="text-justify mb-2">
+						19.12.2001r. Tosontsengel w Mongolii - zarejestrowano najwyższe na świecie
+						ciśnienie 1086 hPa. <br />
+						12.10.1979r. Północny Pacyfik - zarejestrowano najniższe na świecie
+						ciśnienie 870 hPa, spowodowane przejściem tajfunu Tip.
 					</p>
 				</div>
 				<div class="text-dark col-12 mt-5">
@@ -141,7 +142,7 @@ import WindDeg from "./WindDeg.vue";
 						:height="350"
 					/>
 				</div>
-				<div class="text-dark col-9 mt-5">
+				<div class="text-dark col-12 mt-5">
 					<h3 class="text-success text-center">Promieniowanie UV</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
@@ -150,36 +151,14 @@ import WindDeg from "./WindDeg.vue";
 						:height="350"
 					/>
 				</div>
-				<div class="col-3 text-secondary mt-5">
-					<p class="text-justify pFirst">0–2 Brak zagrożeń dla zdrowego człowieka.</p>
-					<p class="text-justify">
-						3–5 Średnie zagrożenie podczas dłuższego przebywania na słońcu.
-					</p>
-					<p class="text-justify">
-						6–7 Wysokie i bardzo wysokie zagrożenie podczas dłuższego przebywania na
-						słońcu.
-					</p>
-					<p class="text-justify">
-						8–10 Bardzo wysokie zagrożenie podczas przebywania na słońcu.
-					</p>
-					<p class="text-justify">
-						11+ Ekstremalne zagrożenie podczas przebywania na słońcu.
-					</p>
-				</div>
-				<div class="text-dark col-9 mt-5">
+				<div class="text-dark col-12 mt-5">
 					<h3 class="text-success text-center">Widoczność na drogach</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataVisibility"
-						:chartOptions="returnChartOptions(1000, 8000)"
+						:chartOptions="returnChartOptions(0, 10)"
 						:height="350"
 					/>
-				</div>
-				<div class="col-3 text-secondary mt-5">
-					<p class="text-justify pFirst">
-						Średnia widoczność pokazana jest w metrach. Maksymalna wartość widzialności
-						to 10km czyli 10000m
-					</p>
 				</div>
 			</div>
 		</div>
@@ -204,6 +183,38 @@ class Options {
 					fontSize: labelsFontSize,
 					font: {
 						weight: "bold",
+					},
+				},
+			},
+			tooltip: {
+				callbacks: {
+					label: function (context) {
+						let label = context.dataset.label || "";
+
+						if (label == "Promieniowanie UV" && context.parsed.y !== null) {
+							label += ": ";
+							if (context.parsed.y < 3) {
+								label += `${context.parsed.y} Brak zagrożeń dla zdrowego człowieka.`;
+							} else if (context.parsed.y >= 3 && context.parsed.y < 6) {
+								label += `${context.parsed.y} Średnie zagrożenie podczas dłuższego przebywania na słońcu.`;
+							} else if (context.parsed.y >= 6 && context.parsed.y < 8) {
+								label += `${context.parsed.y} Wysokie i bardzo wysokie zagrożenie podczas dłuższego przebywania na słońcu.`;
+							} else if (context.parsed.y >= 8 && context.parsed.y < 11) {
+								label += `${context.parsed.y} Bardzo wysokie zagrożenie podczas przebywania na słońcu.`;
+							} else {
+								label += `${context.parsed.y} Ekstremalne zagrożenie podczas przebywania na słońcu.`;
+							}
+						} else {
+							label += `: ${context.parsed.y}`;
+						}
+						//     if (label == 'Promieniowanie UV' && context.parsed.y !== null) {
+						// 		console.log(context.parsed.y);
+						// 		if (context.parsed.y <= 2) {
+						// 			label += `${context.parsed.y} Brak zagrożeń dla zdrowego człowieka.`;
+						// 		}
+						// //         label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+						//     }
+						return label;
 					},
 				},
 			},
@@ -389,7 +400,7 @@ export default {
 				//2.2mm => 1000*1000*2.2 = 2 200 000 mm3 => 2,2l
 				this.tempTab.push(x.temp);
 				this.uviTab.push(x.uvi);
-				this.visibilityTab.push(x.visibility);
+				this.visibilityTab.push(x.visibility * 0.001);
 				this.wind_degTab.push(x.wind_deg);
 				this.wind_speedTab.push(((x.wind_speed * 1000) / 3600).toFixed(2));
 				this.wind_gustTab.push(((x.wind_gust * 1000) / 3600).toFixed(2));
@@ -504,7 +515,7 @@ export default {
 				labels: this.daysTab,
 				datasets: [
 					{
-						label: "Widoczność na drogach",
+						label: "Widoczność na drogach w km",
 						backgroundColor: "rgb(38, 130, 121, 0.5)",
 						data: this.visibility,
 						borderColor: "rgb(38, 130, 121)",
