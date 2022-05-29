@@ -13,13 +13,18 @@
                 
                 <nav class="d-flex flex-fill justify-content-around">
                     <div>
-                        <a href="">Home</a>
+                        <a href="" class="nav-link">Home</a>
                     </div>
                     <div>
-                        <a href="">Photos</a>
+                        <a href="" class="nav-link">Photos</a>
                     </div>
                     <div>
-                        <a href="">Contacts</a>
+                        <a href="" class="nav-link">Contacts</a>
+                    </div>
+                    <div class="navLink locale-changer">
+                        <select v-model="$i18n.locale">
+                        <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
+                        </select>
                     </div>
                 </nav>
             </div>

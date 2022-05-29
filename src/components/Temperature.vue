@@ -17,7 +17,7 @@
 			:height="250" />
 		</div>
 		<div class="text-dark my-5">
-			<h3 class="text-success text-center">Wilgotność</h3>
+			<h3 class="text-success text-center">{{ $t('Humidity')}}</h3>
 			<LineChart 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartData="chartDataHumidity" :chartOptions="chartOptions" 
@@ -232,7 +232,7 @@ export default {
 				labels: this.daysTab,
 				datasets: [
 					{
-						label: "prędkość wiatru m/s",
+						label: this.$t(`${'wind speed'}`) + " m/s",
 						backgroundColor: "rgba(64, 10, 58, 0.7)",
 						data: this.speedWind,
 						borderColor: "rgb(64, 10, 58)",

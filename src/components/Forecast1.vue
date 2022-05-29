@@ -6,8 +6,8 @@
                 <h5>{{tempHeader}} &#x2103;</h5>
             </div> -->
 			<div class="d-flex justify-content-around p-3">
-				<div class="text-center" v-for="(temp, index) in tableDayTemp" :key="index">
-					<p>{{ getDay(index) }}</p>
+				<div class="text-center px-2 flexBasis20" v-for="(temp, index) in tableDayTemp" :key="index">
+					<p>{{ $t(`${getDay(index)}`).toUpperCase() }}</p>
 					<h6>{{ temp }}&deg;</h6>
 					<img :src="`${urlTemplate}${tableImageIcon[index].icon}.png`" alt="" />
 					<p>{{ $t(`${tableImageIcon[index].description}`) }}</p>
@@ -61,19 +61,19 @@ export default {
 		getDay(index) {
 			const todayDate = new Date();
 			const tableNamesOfDays = [
-				"N",
-				"PN",
-				"WT",
-				"ŚR",
-				"CZW",
-				"PT",
-				"SO",
-				"N",
-				"PN",
-				"WT",
-				"ŚR",
-				"CZW",
-				"PT",
+				"Sunday",
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday",
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
 			];
 			return tableNamesOfDays[todayDate.getDay() + index];
 		},

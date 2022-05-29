@@ -93,7 +93,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 						<div class="col-12 bgOpacity my-4 bRadius">
 							<h2>
 								{{ name }}
-								<p class="h6 pt-2">Województwo: {{ city.WOJ }}</p>
+								<p class="h6 pt-2">{{$t('province')}}: {{ city.WOJ != undefined ? city.WOJ : 'podkarpackie' }}</p>
 							</h2>
 
 							<div class="d-flex">
@@ -103,16 +103,16 @@ import SupportIcon from "./icons/IconSupport.vue";
 								</div>
 								<div class="flex-fill">
 									<h5 class="text-capitalize" v-for="item in weather" :key="item">
-										{{ item.description }}
+										{{ $t(`${item.description}` )}}
 										<img
 											:src="linkIcon(item.icon)"
 											alt=""
 											style="background: pink"
 										/>
 									</h5>
-									<p class="text-capitalize">wilgotność: {{ main.humidity }} %</p>
+									<p class="text-capitalize">{{ $t('Humidity')}}: {{ main.humidity }} %</p>
 									<p class="text-capitalize">
-										prędkość wiatru: {{ wind.speed }} m/s
+										{{$t(`${'wind speed'}`)}}: {{ wind.speed }} m/s
 									</p>
 								</div>
 							</div>
@@ -124,13 +124,13 @@ import SupportIcon from "./icons/IconSupport.vue";
 				</div>
 				<div class="col-4 my-4 bgOpacity bRadius">
 					<div class="container-fluid py-1">
-						<label for="">Wybierz miasto Polski</label>
+						<label for="">{{$t('selectCityInPoland')}}</label>
 						<VueMultiselect
 							v-model="city"
 							:options="myCities"
 							:close-on-select="true"
 							:clear-on-select="false"
-							:placeholder="'Select City'"
+							:placeholder="$t('selectCityInPoland')"
 							:hideSelected="true"
 							:show-labels="false"
 							label="NAZWA"
@@ -139,13 +139,13 @@ import SupportIcon from "./icons/IconSupport.vue";
 						/>
 					</div>
 					<div class="container-fluid py-1">
-						<label for="">Wybierz stolice świata</label>
+						<label for="">{{$t('selectCityWorld')}}</label>
 						<VueMultiselect
 							v-model="cityWorld"
 							:options="myCitiesWorld"
 							:close-on-select="true"
 							:clear-on-select="false"
-							:placeholder="'Select City'"
+							:placeholder="$t('selectCityWorld')"
 							:custom-label="nameWithLang"
 							:hideSelected="true"
 							:show-labels="false"
@@ -194,8 +194,8 @@ import SupportIcon from "./icons/IconSupport.vue";
 						/>
 					</div>
 					<div class="container-fluid">
-						<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">Pogoda 48h</router-link>
-						<router-link to="/" class="d-block fw-bold btn btn-info my-2">Pogoda pięciodniowa</router-link>`
+						<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">{{$t('Weather48h')}}</router-link>
+						<router-link to="/" class="d-block fw-bold btn btn-info my-2">{{$t('WeatherFor5Days')}}</router-link>`
 					</div>
 				</div>
 			</div>
@@ -256,8 +256,8 @@ export default {
 
 			myCities: [],
 			myCitiesWorld: [],
-			city: {},
-			cityWorld: { STOLICA: "Rzeszów", PANSTWO: "Polska", KONTYNENT: "Europa" },
+			city: {NAZWA: "Rzeszów"},
+			cityWorld: { STOLICA: this.$t('selectCityWorld'), PANSTWO: "Polska", KONTYNENT: "Europa" },
 			unitsTemp: null,
 			temperatureUnit: [
 				{ key: "metric", unit: "Celciusza" },
@@ -266,7 +266,7 @@ export default {
 			],
 			selectedTemperatureUnit: "metric",
 			myLang: [],
-			selectedLang: "pl",
+			selectedLang: "en",
 
 			result: [],
 			lat: "",
@@ -353,6 +353,7 @@ export default {
 						this.cod = res.data.cod;
 						this.lon = res.data.coord.lon;
 						this.lat = res.data.coord.lat;
+						console.log(res.data, "data");
 					} else {
 					}
 				})

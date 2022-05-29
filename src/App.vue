@@ -5,8 +5,6 @@ import { restElement } from '@babel/types';
 
 <template>
     <div class="">
-		<!-- <router-link to="/weather48h" class="d-block fw-bold btn-primary">Pogoda 48h</router-link>
-		<router-link to="/" class="d-block fw-bold btn-primary">Pogoda pięciodniowa</router-link> -->
       	<Header />
         <main class="">
 			<router-view />

@@ -7,7 +7,7 @@
 						<div class="col-12 bgOpacity my-4 bRadius">
 							<h2>
 								{{ name }}
-								<p class="h6 pt-2">Województwo: {{ city.WOJ != undefined ? city.WOJ : 'podkarpackie' }}</p>
+								<p class="h6 pt-2">{{$t('province')}}: {{ city.WOJ != undefined ? city.WOJ : 'podkarpackie' }}</p>
 							</h2>
 
 							<div class="d-flex">
@@ -27,14 +27,14 @@
 										<img
 											:src="linkIcon(item.icon)"
 											alt=""
-											style="background: pink"
+											class="bg-secondary"
 										/>
 									</h5>
 									<p class="text-capitalize">
-										wilgotność: {{ currentWeather.humidity }} %
+										{{ $t('Humidity')}}: {{ currentWeather.humidity }} %
 									</p>
 									<p class="text-capitalize">
-										prędkość wiatru: {{ currentWeather.wind_speed }} m/s
+										{{$t(`${'wind speed'}`)}}: {{ currentWeather.wind_speed }} m/s
 									</p>
 								</div>
 							</div>
@@ -56,13 +56,13 @@
 				</div>
 				<div class="col-4 my-4 bgOpacity bRadius">
 					<div class="container-fluid py-1">
-						<label for="">Wybierz miasto Polski</label>
+						<label for="">{{$t('selectCityInPoland')}}</label>
 						<VueMultiselect
 							v-model="city"
 							:options="myCities"
 							:close-on-select="true"
 							:clear-on-select="false"
-							:placeholder="'Select City'"
+							:placeholder="$t('selectCityInPoland')"
 							:hideSelected="true"
 							:show-labels="false"
 							label="NAZWA"
@@ -71,13 +71,13 @@
 						></VueMultiselect>
 					</div>
 					<div class="container-fluid py-1">
-						<label for="">Wybierz stolice świata</label>
+						<label for="">{{$t('selectCityWorld')}}</label>
 						<VueMultiselect
 							v-model="cityWorld"
 							:options="myCitiesWorld"
 							:close-on-select="true"
 							:clear-on-select="false"
-							:placeholder="'Select City'"
+							:placeholder="$t('selectCityWorld')"
 							:custom-label="nameWithLang"
 							label="STOLICA"
 							track-by="STOLICA"
@@ -94,8 +94,8 @@
 						</VueMultiselect>
 					</div>
 					<div class="container-fluid">
-						<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">Pogoda 48h</router-link>
-						<router-link to="/" class="d-block fw-bold btn btn-info my-2">Pogoda pięciodniowa</router-link>`
+						<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">{{$t('Weather48h')}}</router-link>
+						<router-link to="/" class="d-block fw-bold btn btn-info my-2">{{$t('WeatherFor5Days')}}</router-link>`
 					</div>
 				</div>
 			</div>
@@ -152,7 +152,7 @@ export default {
 		return {
 			result: [],
 			cityName: "Rzeszów",
-			city: {},
+			city: { NAZWA: 'Rzeszów'},
 			coord: {},
 			sys: {},
 			name: "",
@@ -165,7 +165,7 @@ export default {
 
 			myCities: [],
 			myCitiesWorld: [],
-			cityWorld: { STOLICA: "Rzeszów", PANSTWO: "Polska", KONTYNENT: "Europa" },
+			cityWorld: { STOLICA: this.$t('selectCityWorld'), PANSTWO: "Polska", KONTYNENT: "Europa" },
 
 			//API
 			API_KEY: "5baab241d44debf04d78944091967607",
@@ -247,5 +247,10 @@ export default {
 				});
 		},
 	},
+	watch: {
+		cityPoland(){
+			this.cityPoland = $t('selectCityInPoland');
+		}
+	}
 };
 </script>
