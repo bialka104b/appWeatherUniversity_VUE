@@ -5,19 +5,19 @@ import WindDeg from "./WindDeg.vue";
 <template>
 	<div class="row">
 		<div class="text-secondary col-3 mt-5">
-			<h6 class="text-success">Kierunek wiatru stopnie meterologiczne</h6>
+			<h6 class="text-success text-center">{{$t("windDirection")}}</h6>
 			<table class="table table-sm">
 				<thead>
 					<tr class="">
-						<th scope="col" class="text-secondary text-center">data</th>
-						<th scope="col" class="text-secondary text-center">Kierunek wiatru</th>
+						<th scope="col" class="text-secondary text-center">{{$t("date")}}</th>
+						<th scope="col" class="text-secondary text-center">{{$t("windDirection")}}</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr v-for="(value, index) in this.wind_degTab" :key="index" class="">
 						<td class="text-secondary text-center">{{ this.daysTab[index] }}</td>
 						<td
-							class="text-light d-flex justify-content-between table-secondary"
+							class="text-secondary d-flex justify-content-around"
 							v-if="(value >= 0 && value < 23) || value > 337"
 						>
 							<WindDeg :value="value" :symbol="'N'" />
@@ -71,7 +71,7 @@ import WindDeg from "./WindDeg.vue";
 		<div class="col-9">
 			<div class="row">
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">Zachmurzenie w %</h3>
+					<h3 class="text-success text-center">{{$t("cloudy")}}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataCloudsHumidity"
@@ -81,14 +81,12 @@ import WindDeg from "./WindDeg.vue";
 				</div>
 				<div class="col-12 text-secondary mt-2">
 					<p class="text-justify mb-2">
-						Wilgotność względna równa 0 oznacza powietrze całkowicie suche, zaś równa 1
-						oznacza powietrze całkowicie nasycone parą wodną. Przy wilgotności względnej
-						równej 1 oziębienie powietrza daje początek skraplaniu pary wodnej.
+						{{$t("descriptionHumidity")}}
 					</p>
-					<p class="text-justify mb-2">Zachmurzenie – stopień pokrycia nieba przez chmury.</p>
+					<p class="text-justify mb-2">{{$t("descriptionCloudiness")}}</p>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">Punkt rosy</h3>
+					<h3 class="text-success text-center">{{$t("dewPoint")}}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataDewPointTemp"
@@ -98,17 +96,14 @@ import WindDeg from "./WindDeg.vue";
 				</div>
 				<div class="col-12 text-secondary mt-2">
 					<p class="text-justify mb-2">
-						Punkt rosy to - temperatura atmosfery poniżej której zaczynają się skraplać
-						krople wody i może tworzyć się rosa.
+						{{$t("descriptionDewPoint")}}
 					</p>
 					<p class="text-justify mb-2">
-						Temperatura odczuwalna wyliczana jest w zależności od przyjętego modelu na
-						podstawie takich parametrów, jak temperatura powietrza, siła wiatru,
-						wilgotność i opady.
+						{{$t("descriptionTemperature")}}
 					</p>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">Ciśnienie atmosferyczne</h3>
+					<h3 class="text-success text-center">{{$t("atmosphericPressure")}}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataPressure"
@@ -118,14 +113,12 @@ import WindDeg from "./WindDeg.vue";
 				</div>
 				<div class="col-12 text-secondary mt-2">
 					<p class="text-justify mb-2">
-						19.12.2001r. Tosontsengel w Mongolii - zarejestrowano najwyższe na świecie
-						ciśnienie 1086 hPa. <br />
-						12.10.1979r. Północny Pacyfik - zarejestrowano najniższe na świecie
-						ciśnienie 870 hPa, spowodowane przejściem tajfunu Tip.
+						{{$t("descriptionPressureMin")}} <br />
+						{{$t("descriptionPressureMax")}}
 					</p>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">Opady deszczu i sniegu na litr/m2</h3>
+					<h3 class="text-success text-center">{{$t("rainAndSnowfall")}}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataRainSnow"
@@ -134,7 +127,7 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">Prędkość i podmuch wiatru</h3>
+					<h3 class="text-success text-center">{{$t("windSpeedAndGust")}}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataWindSpeedGust"
@@ -143,7 +136,7 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">Promieniowanie UV</h3>
+					<h3 class="text-success text-center">{{$t("UVradiation")}}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataUvi"
@@ -152,7 +145,7 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">Widoczność na drogach</h3>
+					<h3 class="text-success text-center">{{$t("visibilityOnRoads")}}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataVisibility"

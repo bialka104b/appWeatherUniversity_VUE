@@ -1,7 +1,6 @@
 <template>
-	<div class="pb-2">
-		<img src="./../assets/icons/uv.svg" />Wskaźnik UV w południe
-		{{ uv }}
+	<div class="pb-2 text-capitalize">
+		<img src="./../assets/icons/uv.svg" />{{$t("UVIndicator")}}: {{ uv }}
 	</div>
 </template>
 

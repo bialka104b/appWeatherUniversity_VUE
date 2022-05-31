@@ -1,16 +1,16 @@
 <template>
 	<div>
-		<div class="pb-2">
+		<div class="pb-2 text-capitalize">
 			<img src="./../assets/icons/sunrise.svg" />
-			Wschód: {{ sunrise }}
+			{{$t("sunrise")}}: {{ sunrise }}
 		</div>
-		<div class="pb-2">
+		<div class="pb-2 text-capitalize">
 			<img src="./../assets/icons/sunset.svg" />
-			Zachód: {{ sunset }}
+			{{$t("sunset")}}: {{ sunset }}
 		</div>
-		<div class="">
+		<div class="text-capitalize">
 			<img src="./../assets/icons/visibility.svg" />
-			Widoczność na drogach {{ visible * 0.001 }} km
+			{{$t('visibility')}}: {{ visible * 0.001 }} km
 		</div>
 	</div>
 </template>

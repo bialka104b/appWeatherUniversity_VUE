@@ -3,14 +3,16 @@
 <template>
 	<div class="container">
 		<div class="text-dark my-5">
-			<h3 class="text-success text-center">Temperatura minimalna i maksymalna na 5 dni</h3>
+			<h3 class="text-success text-center">
+				{{$t("minAndMaxTemperature")}}
+			</h3>
 			<LineChart 
 			:chartData="chartData" 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartOptions="chartOptions" :height="350" />
 		</div>
 		<div class="text-dark my-5">
-			<h3 class="text-success text-center">Ciśnienie atmosferyczne</h3>
+			<h3 class="text-success text-center">{{$t("atmosphericPressure")}}</h3>
 			<LineChart 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartData="chartDataPressure" :chartOptions="chartOptions" 
@@ -24,21 +26,21 @@
 			:height="350" />
 		</div>
 		<div class="text-dark my-5">
-			<h3 class="text-success text-center">Zachmurzenie w %</h3>
+			<h3 class="text-success text-center text-capitalize">{{$t("cloudy")}}</h3>
 			<LineChart 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartData="chartDataClouds" :chartOptions="chartOptions" 
 			:height="350" />
 		</div>
 		<div class="text-dark my-5">
-			<h3 class="text-success text-center">Opady deszczu i sniegu na m2</h3>
+			<h3 class="text-success text-center">{{$t("rainAndSnowfall")}}</h3>
 			<LineChart 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartData="chartDataRainfall" :chartOptions="chartOptions" 
 			:height="350" />
 		</div>
 		<div class="text-dark my-5">
-			<h3 class="text-success text-center">Prędkość i podmuch wiatru</h3>
+			<h3 class="text-success text-center">{{$t("windSpeedAndGust")}}</h3>
 			<LineChart 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartData="chartDataWind" :chartOptions="chartOptions" 

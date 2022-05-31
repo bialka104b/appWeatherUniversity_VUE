@@ -122,87 +122,80 @@ import SupportIcon from "./icons/IconSupport.vue";
 						</div>
 					</div>
 				</div>
-				<div class="col-4 my-4 bgOpacity bRadius">
-					<div class="container-fluid py-1">
-						<label for="">{{$t('selectCityInPoland')}}</label>
-						<VueMultiselect
-							v-model="city"
-							:options="myCities"
-							:close-on-select="true"
-							:clear-on-select="false"
-							:placeholder="$t('selectCityInPoland')"
-							:hideSelected="true"
-							:show-labels="false"
-							label="NAZWA"
-							track-by="NAZWA"
-							@close="selectCity(city)"
-						/>
-					</div>
-					<div class="container-fluid py-1">
-						<label for="">{{$t('selectCityWorld')}}</label>
-						<VueMultiselect
-							v-model="cityWorld"
-							:options="myCitiesWorld"
-							:close-on-select="true"
-							:clear-on-select="false"
-							:placeholder="$t('selectCityWorld')"
-							:custom-label="nameWithLang"
-							:hideSelected="true"
-							:show-labels="false"
-							label="STOLICA"
-							track-by="STOLICA"
-							@close="selectCityWorld(cityWorld)"
-						>
-							<!-- :show-labels="false" -->
-							<template v-slot:option="{ option }">
-								<div class="">
-									<p class="mb-0 w-100">{{ option.STOLICA }}</p>
-									<div class="country">{{ option.PANSTWO }}</div>
-									<div class="">{{ option.KONTYNENT }}</div>
-								</div>
-							</template>
-						</VueMultiselect>
-					</div>
-					<div class="container-fluid py-1">
-						<label for="">Wybierz jednostkę temperatury</label>
-						<VueMultiselect
-							v-model="unitsTemp"
-							:options="temperatureUnit"
-							:close-on-select="true"
-							:clear-on-select="false"
-							placeholder="Select unit temperature"
-							:hideSelected="true"
-							:show-labels="false"
-							label="unit"
-							track-by="unit"
-							@close="selectUnitTemp(unitsTemp)"
-						/>
-					</div>
-					<div class="container-fluid py-1">
-						<label for="">Wybierz język</label>
-						<VueMultiselect
-							v-model="selectedLang"
-							:options="myLang"
-							:close-on-select="true"
-							:clear-on-select="false"
-							placeholder="Select Lang"
-							:hideSelected="true"
-							:show-labels="false"
-							label="lang"
-							track-by="lang"
-							@close="selectLang(selectedLang)"
-						/>
-					</div>
-					<div class="container-fluid">
-						<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">{{$t('Weather48h')}}</router-link>
-						<router-link to="/" class="d-block fw-bold btn btn-info my-2">{{$t('WeatherFor5Days')}}</router-link>`
+				<div class="col-4 my-4 d-flex flex-column">
+					<div class="row mx-5 mx-lg-0 h-100 ">
+						<div class="col-12 bgOpacity bRadius d-flex flex-column">
+
+							<div class="container-fluid py-1">
+								<label for="">{{$t('selectCityInPoland')}}</label>
+								<VueMultiselect
+									v-model="city"
+									:options="myCities"
+									:close-on-select="true"
+									:clear-on-select="false"
+									:placeholder="$t('selectCityInPoland')"
+									:hideSelected="true"
+									:show-labels="false"
+									label="NAZWA"
+									track-by="NAZWA"
+									@close="selectCity(city)"
+								/>
+							</div>
+							<div class="container-fluid py-1">
+								<label for="">{{$t('selectCityWorld')}}</label>
+								<VueMultiselect
+									v-model="cityWorld"
+									:options="myCitiesWorld"
+									:close-on-select="true"
+									:clear-on-select="false"
+									:placeholder="$t('selectCityWorld')"
+									:custom-label="nameWithLang"
+									:hideSelected="true"
+									:show-labels="false"
+									label="STOLICA"
+									track-by="STOLICA"
+									@close="selectCityWorld(cityWorld)"
+								>
+									<!-- :show-labels="false" -->
+									<template v-slot:option="{ option }">
+										<div class="">
+											<p class="mb-0 w-100">{{ option.STOLICA }}</p>
+											<div class="country">{{ option.PANSTWO }}</div>
+											<div class="">{{ option.KONTYNENT }}</div>
+										</div>
+									</template>
+								</VueMultiselect>
+							</div>
+							<div class="container-fluid py-1">
+								<label for="" class="text-capitalize">{{$t("selectTemperatureUnit")}}</label>
+								<VueMultiselect
+									v-model="unitsTemp"
+									:options="temperatureUnit"
+									:close-on-select="true"
+									:clear-on-select="false"
+									placeholder="Select unit temperature"
+									:hideSelected="true"
+									:show-labels="false"
+									label="unit"
+									track-by="unit"
+									@close="selectUnitTemp(unitsTemp)"
+								/>
+							</div>
+							<div class="container-fluid mt-auto">
+								<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">{{$t('Weather48h')}}</router-link>
+								<router-link to="/" class="d-block fw-bold btn btn-info my-2">{{$t('WeatherFor5Days')}}</router-link>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="weather5Days">
+		<section class="weather5Days py-5">
 			<div class="container-fluid">
 				<div class="row m-0">
+					<div class="col-12">
+						<h1 class="text-center text-secondary text-decoration-underline">{{$t("forecastFor5Days")}}</h1>
+					</div>
 					<div class="col-12 m-auto">
 						<Forecast1
 							:cityName="cityName"
@@ -220,7 +213,6 @@ import SupportIcon from "./icons/IconSupport.vue";
 							:lon="15"
 							:table="listInfoForecast"
 						/>
-						<button>dd</button>
 					</div>
 				</div>
 			</div>
@@ -266,7 +258,6 @@ export default {
 			],
 			selectedTemperatureUnit: "metric",
 			myLang: [],
-			selectedLang: "en",
 
 			result: [],
 			lat: "",
@@ -324,16 +315,10 @@ export default {
 			this.getWeather();
 			this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
 		},
-
-		selectLang(e) {
-			this.selectedLang = e.key;
-			this.getWeather();
-			this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
-		},
 		async getWeather() {
 			await axios
 				.get(
-					`${this.URLWeather}q=${this.cityName}&lat=${this.lat}&lon=${this.lon}&appid=${this.API_KEY}&lang=${this.selectedLang}&units=${this.selectedTemperatureUnit}`,
+					`${this.URLWeather}q=${this.cityName}&lat=${this.lat}&lon=${this.lon}&appid=${this.API_KEY}&lang=en&units=${this.selectedTemperatureUnit}`,
 				)
 				.then((res) => {
 					if (res.status == 200) {

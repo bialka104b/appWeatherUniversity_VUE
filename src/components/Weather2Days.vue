@@ -1,13 +1,16 @@
 <template>
 	<div>
 		<section class="container-fluid section py-5">
-			<div class="row m-0 pr-5">
-				<div class="col-8">
+			<div class="row m-0 pr-0 pr-lg-5">
+				<div class="col-12 col-lg-8">
 					<div class="row m-0 mx-5">
 						<div class="col-12 bgOpacity my-4 bRadius">
 							<h2>
 								{{ name }}
-								<p class="h6 pt-2">{{$t('province')}}: {{ city.WOJ != undefined ? city.WOJ : 'podkarpackie' }}</p>
+								<p class="h6 pt-2">
+									{{ $t("province") }}:
+									{{ city.WOJ != undefined ? city.WOJ : "podkarpackie" }}
+								</p>
 							</h2>
 
 							<div class="d-flex">
@@ -23,7 +26,7 @@
 										v-for="item in currentWeather.weather"
 										:key="item"
 									>
-										{{ item.description }}
+										{{ $t(`${item.description}`) }}
 										<img
 											:src="linkIcon(item.icon)"
 											alt=""
@@ -31,71 +34,86 @@
 										/>
 									</h5>
 									<p class="text-capitalize">
-										{{ $t('Humidity')}}: {{ currentWeather.humidity }} %
+										{{ $t("Humidity") }}: {{ currentWeather.humidity }} %
 									</p>
 									<p class="text-capitalize">
-										{{$t(`${'wind speed'}`)}}: {{ currentWeather.wind_speed }} m/s
+										{{ $t(`${"wind speed"}`) }}:
+										{{ currentWeather.wind_speed }} m/s
 									</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-12 bgOpacity my-4 bRadius">
-							<div class="row">
-								<div class="col-7">
+							<div class="row m-0">
+								<div class="col-12 col-xl-7">
 									<SunriseSunset :sys="sys" :visible="currentWeather.visibility">
 									</SunriseSunset>
-									<UV :uvi="currentWeather.uvi"/>
+									<UV :uvi="currentWeather.uvi" />
 								</div>
-								<div class="col-5">
-									Alerty pogodowe:
+								<hr class="hr d-xl-none" />
+								<div class="col-12 col-xl-5 text-capitalize mt-3 mt-xl-0">
+									{{ $t("weatherAlerts") }}:
 									<Alerts :alerts="alertsWeather" />
+									<span v-if="alertsWeather == undefined">{{
+										$t("noAlerts")
+									}}</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-4 my-4 bgOpacity bRadius">
-					<div class="container-fluid py-1">
-						<label for="">{{$t('selectCityInPoland')}}</label>
-						<VueMultiselect
-							v-model="city"
-							:options="myCities"
-							:close-on-select="true"
-							:clear-on-select="false"
-							:placeholder="$t('selectCityInPoland')"
-							:hideSelected="true"
-							:show-labels="false"
-							label="NAZWA"
-							track-by="NAZWA"
-							@close="selectCity(city)"
-						></VueMultiselect>
-					</div>
-					<div class="container-fluid py-1">
-						<label for="">{{$t('selectCityWorld')}}</label>
-						<VueMultiselect
-							v-model="cityWorld"
-							:options="myCitiesWorld"
-							:close-on-select="true"
-							:clear-on-select="false"
-							:placeholder="$t('selectCityWorld')"
-							:custom-label="nameWithLang"
-							label="STOLICA"
-							track-by="STOLICA"
-							@close="selectCityWorld(cityWorld)"
-							:show-labels="false"
-						>
-							<template v-slot:option="{ option }">
-								<div class="">
-									<p class="mb-0 w-100">{{ option.STOLICA }}</p>
-									<span class="">{{ option.PANSTWO }} - </span>
-									<span class="">{{ option.KONTYNENT }}</span>
-								</div>
-							</template>
-						</VueMultiselect>
-					</div>
-					<div class="container-fluid">
-						<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">{{$t('Weather48h')}}</router-link>
-						<router-link to="/" class="d-block fw-bold btn btn-info my-2">{{$t('WeatherFor5Days')}}</router-link>`
+				<div class="col-12 col-lg-4 my-4">
+					<div class="row mx-5 mx-lg-0 h-100 ">
+						<div class="col-12 bgOpacity bRadius d-flex flex-column">
+							<div class="container-fluid py-1">
+								<label for="">{{ $t("selectCityInPoland") }}</label>
+								<VueMultiselect
+									v-model="city"
+									:options="myCities"
+									:close-on-select="true"
+									:clear-on-select="false"
+									:placeholder="$t('selectCityInPoland')"
+									:hideSelected="true"
+									:show-labels="false"
+									label="NAZWA"
+									track-by="NAZWA"
+									@close="selectCity(city)"
+								></VueMultiselect>
+							</div>
+							<div class="container-fluid py-1">
+								<label for="">{{ $t("selectCityWorld") }}</label>
+								<VueMultiselect
+									v-model="cityWorld"
+									:options="myCitiesWorld"
+									:close-on-select="true"
+									:clear-on-select="false"
+									:placeholder="$t('selectCityWorld')"
+									:custom-label="nameWithLang"
+									label="STOLICA"
+									track-by="STOLICA"
+									@close="selectCityWorld(cityWorld)"
+									:show-labels="false"
+								>
+									<template v-slot:option="{ option }">
+										<div class="">
+											<p class="mb-0 w-100">{{ option.STOLICA }}</p>
+											<span class="">{{ option.PANSTWO }} - </span>
+											<span class="">{{ option.KONTYNENT }}</span>
+										</div>
+									</template>
+								</VueMultiselect>
+							</div>
+							<div class="container-fluid mt-auto">
+								<router-link
+									to="/weather48h"
+									class="d-block fw-bold btn btn-success my-2"
+									>{{ $t("Weather48h") }}</router-link
+								>
+								<router-link to="/" class="d-block fw-bold btn btn-info my-2">{{
+									$t("WeatherFor5Days")
+								}}</router-link>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -103,15 +121,10 @@
 		<section class="weather2Days py-5">
 			<div class="container">
 				<div class="row m-0">
-					<div class="col-6">
-						<!-- <Forecast1
-							:cityName="cityName"
-							:lat="12"
-							:lon="15"
-							:table="listInfoForecast"
-							:tempHeader="main.temp"
-							:defaultTableDayTemp="defaultTable"
-						/> -->
+					<div class="col-12">
+						<h1 class="text-center text-secondary text-decoration-underline">
+							{{ $t("forecastFor48Hour") }}
+						</h1>
 					</div>
 					<div class="col-12">
 						<Weather48Chart
@@ -152,7 +165,7 @@ export default {
 		return {
 			result: [],
 			cityName: "Rzeszów",
-			city: { NAZWA: 'Rzeszów'},
+			city: { NAZWA: "Rzeszów" },
 			coord: {},
 			sys: {},
 			name: "",
@@ -165,7 +178,11 @@ export default {
 
 			myCities: [],
 			myCitiesWorld: [],
-			cityWorld: { STOLICA: this.$t('selectCityWorld'), PANSTWO: "Polska", KONTYNENT: "Europa" },
+			cityWorld: {
+				STOLICA: this.$t("selectCityWorld"),
+				PANSTWO: "Polska",
+				KONTYNENT: "Europa",
+			},
 
 			//API
 			API_KEY: "5baab241d44debf04d78944091967607",
@@ -189,7 +206,7 @@ export default {
 
 		async selectCityWorld(e) {
 			this.cityName = e.STOLICA;
-			this.city.WOJ = '';
+			this.city.WOJ = "";
 			await this.getWeather();
 			await this.daily48h(this.coord.lat, this.coord.lon);
 		},
@@ -207,7 +224,7 @@ export default {
 		async getWeather() {
 			await axios
 				.get(
-					`${this.URLWeather}q=${this.cityName}&lat=${this.lat}&lon=${this.lon}&appid=${this.API_KEY}&lang=${this.selectedLang}&units=metric`,
+					`${this.URLWeather}q=${this.cityName}&lat=${this.lat}&lon=${this.lon}&appid=${this.API_KEY}&lang=en&units=metric`,
 				)
 				.then((res) => {
 					if (res.status == 200) {
@@ -227,7 +244,7 @@ export default {
 		async daily48h(lat = 50.0413, lon = 21.999) {
 			await axios
 				.get(
-					`${this.URLOneCall}lat=${lat}&lon=${lon}&exclude=&units=metric&lang=pl&appid=${this.API_KEY}`,
+					`${this.URLOneCall}lat=${lat}&lon=${lon}&exclude=&units=metric&lang=en&appid=${this.API_KEY}`,
 				)
 				.then((res) => {
 					if (res.status == 200) {
@@ -248,9 +265,9 @@ export default {
 		},
 	},
 	watch: {
-		cityPoland(){
-			this.cityPoland = $t('selectCityInPoland');
-		}
-	}
+		cityPoland() {
+			this.cityPoland = $t("selectCityInPoland");
+		},
+	},
 };
 </script>

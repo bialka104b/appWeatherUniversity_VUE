@@ -1,11 +1,11 @@
 <template>
 	<div id="forecast" class="container my-5">
-		<h2 class="text-center text-success">{{ cityName }} - średnie dobowe temperatury</h2>
+		<h2 class="text-center text-success">{{ cityName }} - {{$t("averageDailyTemperatures")}}</h2>
 		<div class="bg-secondary rounded">
 			<!-- <div class="">
                 <h5>{{tempHeader}} &#x2103;</h5>
             </div> -->
-			<div class="d-flex justify-content-around p-3">
+			<div class="d-flex justify-content-around p-3 text-primary">
 				<div class="text-center px-2 flexBasis20" v-for="(temp, index) in tableDayTemp" :key="index">
 					<p>{{ $t(`${getDay(index)}`).toUpperCase() }}</p>
 					<h6>{{ temp }}&deg;</h6>
