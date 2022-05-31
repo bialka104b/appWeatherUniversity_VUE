@@ -2,13 +2,13 @@
     "en": {
         "thunderstorm": "Thunderstorm",
         "thunderstorm with light rain": "Thunderstorm with light rain",
-    	"thunderstorm with rain": "Thunderstorm with rain",
-    	"thunderstorm with heavy rain": "Thunderstorm with heavy rain",
-    	"light thunderstorm": "Light thunderstorm",
-    	"heavy thunderstorm": "Heavy thunderstorm",
-    	"thunderstorm with light drizzle": "Thunderstorm with light drizzle",
-    	"thunderstorm with drizzle": "Thunderstorm with drizzle",
-    	"thunderstorm with heavy drizzle": "Thunderstorm with heavy drizzle",
+        "thunderstorm with rain": "Thunderstorm with rain",
+        "thunderstorm with heavy rain": "Thunderstorm with heavy rain",
+        "light thunderstorm": "Light thunderstorm",
+        "heavy thunderstorm": "Heavy thunderstorm",
+        "thunderstorm with light drizzle": "Thunderstorm with light drizzle",
+        "thunderstorm with drizzle": "Thunderstorm with drizzle",
+        "thunderstorm with heavy drizzle": "Thunderstorm with heavy drizzle",
         "light intensity drizzle": "Light intensity drizzle",
         "drizzle": "Drizzle",
         "heavy intensity drizzle": "Heavy intensity drizzle",
@@ -67,7 +67,6 @@
         "Friday": "Fri",
         "Saturday": "Sat",
         "Sunday": "Sun",
-
         "Humidity": "Humidity",
         "wind speed": "Wind speed",
         "province": "Province",
@@ -163,8 +162,6 @@
         "broken clouds: 51-84%": "Zachmurzenie umiarkowane: 51-84%",
         "overcast clouds": "Zachmurzenie duże",
         "overcast clouds: 85-100%": "Zachmurzenie duże 85-100%",
-        
-
         "Monday": "Pn",
         "Tuesday": "Wt",
         "Wednesday": "Śr",
@@ -172,7 +169,6 @@
         "Friday": "Pt",
         "Saturday": "So",
         "Sunday": "N",
-
         "Humidity": "Wilgotność",
         "wind speed": "Prędkość wiatru",
         "province": "Województwo",

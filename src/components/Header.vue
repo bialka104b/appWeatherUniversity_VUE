@@ -30,6 +30,7 @@
 							:options="lang"
 							:close-on-select="true"
 							:clear-on-select="false"
+                            :hideSelected="true"
 							:placeholder="$i18n.locale"
 							:show-labels="false"
 						></VueMultiselect>
