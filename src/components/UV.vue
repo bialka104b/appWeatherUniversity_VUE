@@ -1,14 +1,13 @@
 <template>
 	<div class="pb-2 text-capitalize">
-		<img src="./../assets/icons/uv.svg" />{{$t("UVIndicator")}}: {{ uv }}
+		<img src="./../assets/icons/uv.svg" class="mr-2" />{{ $t("UVIndicator") }}: {{ uv }}
 	</div>
 </template>
 
 <script>
-
 export default {
 	props: {
-		uvi: Number
+		uvi: Number,
 	},
 	components: {},
 	data() {

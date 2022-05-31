@@ -63,7 +63,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-lg-4 my-4">
-					<div class="row mx-5 mx-lg-0 h-100 ">
+					<div class="row mx-5 mx-lg-0 h-100">
 						<div class="col-12 bgOpacity bRadius d-flex flex-column">
 							<div class="container-fluid py-1">
 								<label for="">{{ $t("selectCityInPoland") }}</label>
@@ -97,8 +97,8 @@
 									<template v-slot:option="{ option }">
 										<div class="">
 											<p class="mb-0 w-100">{{ option.STOLICA }}</p>
-											<span class="">{{ option.PANSTWO }} - </span>
-											<span class="">{{ option.KONTYNENT }}</span>
+											<span class="fontSmall">{{ option.PANSTWO }} - </span>
+											<span class="fontSmall">{{ option.KONTYNENT }}</span>
 										</div>
 									</template>
 								</VueMultiselect>

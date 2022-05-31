@@ -3,14 +3,16 @@ import WindDeg from "./WindDeg.vue";
 </script>
 
 <template>
-	<div class="row">
-		<div class="text-secondary col-3 mt-5">
-			<h6 class="text-success text-center">{{$t("windDirection")}}</h6>
+	<div class="row flex-wrap-reverse flex-lg-wrap">
+		<div class="text-secondary col-12 col-lg-3 mt-5">
+			<h6 class="text-success text-center">{{ $t("windDirection") }}</h6>
 			<table class="table table-sm">
 				<thead>
 					<tr class="">
-						<th scope="col" class="text-secondary text-center">{{$t("date")}}</th>
-						<th scope="col" class="text-secondary text-center">{{$t("windDirection")}}</th>
+						<th scope="col" class="text-secondary text-center">{{ $t("date") }}</th>
+						<th scope="col" class="text-secondary text-center">
+							{{ $t("windDirection") }}
+						</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -68,10 +70,10 @@ import WindDeg from "./WindDeg.vue";
 				</tbody>
 			</table>
 		</div>
-		<div class="col-9">
+		<div class="col-12 col-lg-9">
 			<div class="row">
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">{{$t("cloudy")}}</h3>
+					<h3 class="text-success text-center">{{ $t("cloudy") }}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataCloudsHumidity"
@@ -81,12 +83,12 @@ import WindDeg from "./WindDeg.vue";
 				</div>
 				<div class="col-12 text-secondary mt-2">
 					<p class="text-justify mb-2">
-						{{$t("descriptionHumidity")}}
+						{{ $t("descriptionHumidity") }}
 					</p>
-					<p class="text-justify mb-2">{{$t("descriptionCloudiness")}}</p>
+					<p class="text-justify mb-2">{{ $t("descriptionCloudiness") }}</p>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">{{$t("dewPoint")}}</h3>
+					<h3 class="text-success text-center">{{ $t("dewPoint") }}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataDewPointTemp"
@@ -96,14 +98,14 @@ import WindDeg from "./WindDeg.vue";
 				</div>
 				<div class="col-12 text-secondary mt-2">
 					<p class="text-justify mb-2">
-						{{$t("descriptionDewPoint")}}
+						{{ $t("descriptionDewPoint") }}
 					</p>
 					<p class="text-justify mb-2">
-						{{$t("descriptionTemperature")}}
+						{{ $t("descriptionTemperature") }}
 					</p>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">{{$t("atmosphericPressure")}}</h3>
+					<h3 class="text-success text-center">{{ $t("atmosphericPressure") }}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataPressure"
@@ -113,12 +115,12 @@ import WindDeg from "./WindDeg.vue";
 				</div>
 				<div class="col-12 text-secondary mt-2">
 					<p class="text-justify mb-2">
-						{{$t("descriptionPressureMin")}} <br />
-						{{$t("descriptionPressureMax")}}
+						{{ $t("descriptionPressureMin") }} <br />
+						{{ $t("descriptionPressureMax") }}
 					</p>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">{{$t("rainAndSnowfall")}}</h3>
+					<h3 class="text-success text-center">{{ $t("rainAndSnowfall") }}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataRainSnow"
@@ -127,7 +129,7 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">{{$t("windSpeedAndGust")}}</h3>
+					<h3 class="text-success text-center">{{ $t("windSpeedAndGust") }}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataWindSpeedGust"
@@ -136,7 +138,7 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">{{$t("UVradiation")}}</h3>
+					<h3 class="text-success text-center">{{ $t("UVradiation") }}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataUvi"
@@ -145,7 +147,7 @@ import WindDeg from "./WindDeg.vue";
 					/>
 				</div>
 				<div class="text-dark col-12 mt-5">
-					<h3 class="text-success text-center">{{$t("visibilityOnRoads")}}</h3>
+					<h3 class="text-success text-center">{{ $t("visibilityOnRoads") }}</h3>
 					<LineChart
 						:cssClasses="'bg-secondary rounded boxShadow py-3 px-1'"
 						:chartData="chartDataVisibility"

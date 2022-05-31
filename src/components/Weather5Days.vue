@@ -93,7 +93,10 @@ import SupportIcon from "./icons/IconSupport.vue";
 						<div class="col-12 bgOpacity my-4 bRadius">
 							<h2>
 								{{ name }}
-								<p class="h6 pt-2">{{$t('province')}}: {{ city.WOJ != undefined ? city.WOJ : 'podkarpackie' }}</p>
+								<p class="h6 pt-2">
+									{{ $t("province") }}:
+									{{ city.WOJ != undefined ? city.WOJ : "podkarpackie" }}
+								</p>
 							</h2>
 
 							<div class="d-flex">
@@ -103,16 +106,18 @@ import SupportIcon from "./icons/IconSupport.vue";
 								</div>
 								<div class="flex-fill">
 									<h5 class="text-capitalize" v-for="item in weather" :key="item">
-										{{ $t(`${item.description}` )}}
+										{{ $t(`${item.description}`) }}
 										<img
 											:src="linkIcon(item.icon)"
 											alt=""
 											style="background: pink"
 										/>
 									</h5>
-									<p class="text-capitalize">{{ $t('Humidity')}}: {{ main.humidity }} %</p>
 									<p class="text-capitalize">
-										{{$t(`${'wind speed'}`)}}: {{ wind.speed }} m/s
+										{{ $t("Humidity") }}: {{ main.humidity }} %
+									</p>
+									<p class="text-capitalize">
+										{{ $t(`${"wind speed"}`) }}: {{ wind.speed }} m/s
 									</p>
 								</div>
 							</div>
@@ -123,11 +128,10 @@ import SupportIcon from "./icons/IconSupport.vue";
 					</div>
 				</div>
 				<div class="col-4 my-4 d-flex flex-column">
-					<div class="row mx-5 mx-lg-0 h-100 ">
+					<div class="row mx-5 mx-lg-0 h-100">
 						<div class="col-12 bgOpacity bRadius d-flex flex-column">
-
 							<div class="container-fluid py-1">
-								<label for="">{{$t('selectCityInPoland')}}</label>
+								<label for="">{{ $t("selectCityInPoland") }}</label>
 								<VueMultiselect
 									v-model="city"
 									:options="myCities"
@@ -142,7 +146,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 								/>
 							</div>
 							<div class="container-fluid py-1">
-								<label for="">{{$t('selectCityWorld')}}</label>
+								<label for="">{{ $t("selectCityWorld") }}</label>
 								<VueMultiselect
 									v-model="cityWorld"
 									:options="myCitiesWorld"
@@ -160,14 +164,18 @@ import SupportIcon from "./icons/IconSupport.vue";
 									<template v-slot:option="{ option }">
 										<div class="">
 											<p class="mb-0 w-100">{{ option.STOLICA }}</p>
-											<div class="country">{{ option.PANSTWO }}</div>
-											<div class="">{{ option.KONTYNENT }}</div>
+											<div class="fontSmall country">
+												{{ option.PANSTWO }}
+											</div>
+											<div class="fontSmall">{{ option.KONTYNENT }}</div>
 										</div>
 									</template>
 								</VueMultiselect>
 							</div>
 							<div class="container-fluid py-1">
-								<label for="" class="text-capitalize">{{$t("selectTemperatureUnit")}}</label>
+								<label for="" class="text-capitalize">{{
+									$t("selectTemperatureUnit")
+								}}</label>
 								<VueMultiselect
 									v-model="unitsTemp"
 									:options="temperatureUnit"
@@ -182,8 +190,14 @@ import SupportIcon from "./icons/IconSupport.vue";
 								/>
 							</div>
 							<div class="container-fluid mt-auto">
-								<router-link to="/weather48h" class="d-block fw-bold btn btn-success my-2">{{$t('Weather48h')}}</router-link>
-								<router-link to="/" class="d-block fw-bold btn btn-info my-2">{{$t('WeatherFor5Days')}}</router-link>
+								<router-link
+									to="/weather48h"
+									class="d-block fw-bold btn btn-success my-2"
+									>{{ $t("Weather48h") }}</router-link
+								>
+								<router-link to="/" class="d-block fw-bold btn btn-info my-2">{{
+									$t("WeatherFor5Days")
+								}}</router-link>
 							</div>
 						</div>
 					</div>
@@ -194,7 +208,9 @@ import SupportIcon from "./icons/IconSupport.vue";
 			<div class="container-fluid">
 				<div class="row m-0">
 					<div class="col-12">
-						<h1 class="text-center text-secondary text-decoration-underline">{{$t("forecastFor5Days")}}</h1>
+						<h1 class="text-center text-secondary text-decoration-underline">
+							{{ $t("forecastFor5Days") }}
+						</h1>
 					</div>
 					<div class="col-12 m-auto">
 						<Forecast1
@@ -248,8 +264,12 @@ export default {
 
 			myCities: [],
 			myCitiesWorld: [],
-			city: {NAZWA: "Rzeszów"},
-			cityWorld: { STOLICA: this.$t('selectCityWorld'), PANSTWO: "Polska", KONTYNENT: "Europa" },
+			city: { NAZWA: "Rzeszów" },
+			cityWorld: {
+				STOLICA: this.$t("selectCityWorld"),
+				PANSTWO: "Polska",
+				KONTYNENT: "Europa",
+			},
 			unitsTemp: null,
 			temperatureUnit: [
 				{ key: "metric", unit: "Celciusza" },
@@ -299,7 +319,7 @@ export default {
 		},
 		async selectCityWorld(e) {
 			this.cityName = e.STOLICA;
-			this.city.WOJ = '';
+			this.city.WOJ = "";
 			await this.getWeather();
 			await this.daily(this.coord.lat, this.coord.lon, this.selectedTemperatureUnit);
 		},
