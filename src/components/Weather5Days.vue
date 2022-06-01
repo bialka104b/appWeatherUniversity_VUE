@@ -86,9 +86,9 @@ import SupportIcon from "./icons/IconSupport.vue";
 
   </div> -->
 	<div>
-		<section class="container-fluid section">
-			<div class="row m-0 pr-5">
-				<div class="col-8 p-0">
+		<section class="container-fluid section py-5">
+			<div class="row m-0 pr-0 pr-lg-5 mt-5">
+				<div class="col-12 col-lg-8">
 					<div class="row m-0 mx-5">
 						<div class="col-12 bgOpacity my-4 bRadius">
 							<h2>
@@ -110,7 +110,7 @@ import SupportIcon from "./icons/IconSupport.vue";
 										<img
 											:src="linkIcon(item.icon)"
 											alt=""
-											style="background: pink"
+											class="bg-secondary"
 										/>
 									</h5>
 									<p class="text-capitalize">
@@ -123,11 +123,15 @@ import SupportIcon from "./icons/IconSupport.vue";
 							</div>
 						</div>
 						<div class="col-12 bgOpacity my-4 bRadius">
-							<SunriseSunset :sys="sys" :visible="visibility"></SunriseSunset>
+							<div class="row m-0">
+								<div class="col-12 col-xl-7">
+									<SunriseSunset :sys="sys" :visible="visibility"></SunriseSunset>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-4 my-4 d-flex flex-column">
+				<div class="col-12 col-lg-4 my-4">
 					<div class="row mx-5 mx-lg-0 h-100">
 						<div class="col-12 bgOpacity bRadius d-flex flex-column">
 							<div class="container-fluid py-1">
@@ -160,7 +164,6 @@ import SupportIcon from "./icons/IconSupport.vue";
 									track-by="STOLICA"
 									@close="selectCityWorld(cityWorld)"
 								>
-									<!-- :show-labels="false" -->
 									<template v-slot:option="{ option }">
 										<div class="">
 											<p class="mb-0 w-100">{{ option.STOLICA }}</p>

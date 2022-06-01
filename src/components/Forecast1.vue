@@ -1,10 +1,10 @@
 <template>
-	<div id="forecast" class="container my-5">
+	<div id="forecast" class="container my-2 my-md-5">
 		<h2 class="text-center text-success">
 			{{ cityName }} - {{ $t("averageDailyTemperatures") }}
 		</h2>
 		<div class="bg-secondary rounded">
-			<div class="d-flex justify-content-around p-3 text-primary">
+			<div class="d-flex justify-content-around p-3 text-primary flex-wrap">
 				<div
 					class="text-center px-2 flexBasis20"
 					v-for="(temp, index) in tableDayTemp"

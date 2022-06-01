@@ -2,7 +2,7 @@
 
 <template>
 	<div class="container">
-		<div class="text-dark my-5">
+		<div class="text-dark my-3 my-md-5">
 			<h3 class="text-success text-center">
 				{{$t("minAndMaxTemperature")}}
 			</h3>
@@ -11,35 +11,35 @@
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartOptions="chartOptions" :height="350" />
 		</div>
-		<div class="text-dark my-5">
+		<div class="text-dark my-3 my-md-5">
 			<h3 class="text-success text-center">{{$t("atmosphericPressure")}}</h3>
 			<LineChart 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartData="chartDataPressure" :chartOptions="chartOptions" 
 			:height="250" />
 		</div>
-		<div class="text-dark my-5">
+		<div class="text-dark my-3 my-md-5">
 			<h3 class="text-success text-center">{{ $t('Humidity')}}</h3>
 			<LineChart 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartData="chartDataHumidity" :chartOptions="chartOptions" 
 			:height="350" />
 		</div>
-		<div class="text-dark my-5">
+		<div class="text-dark my-3 my-md-5">
 			<h3 class="text-success text-center text-capitalize">{{$t("cloudy")}}</h3>
 			<LineChart 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartData="chartDataClouds" :chartOptions="chartOptions" 
 			:height="350" />
 		</div>
-		<div class="text-dark my-5">
+		<div class="text-dark my-3 my-md-5">
 			<h3 class="text-success text-center">{{$t("rainAndSnowfall")}}</h3>
 			<LineChart 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 
 			:chartData="chartDataRainfall" :chartOptions="chartOptions" 
 			:height="350" />
 		</div>
-		<div class="text-dark my-5">
+		<div class="text-dark my-3 my-md-5">
 			<h3 class="text-success text-center">{{$t("windSpeedAndGust")}}</h3>
 			<LineChart 
 			:cssClasses="'bg-secondary rounded boxShadow py-3'" 

@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<section class="container-fluid section py-5">
-			<div class="row m-0 pr-0 pr-lg-5">
+		<section class="container-fluid section py-5 mt-2">
+			<div class="row m-0 pr-0 pr-lg-5 mt-5">
 				<div class="col-12 col-lg-8">
 					<div class="row m-0 mx-5">
 						<div class="col-12 bgOpacity my-4 bRadius">
@@ -97,8 +97,8 @@
 									<template v-slot:option="{ option }">
 										<div class="">
 											<p class="mb-0 w-100">{{ option.STOLICA }}</p>
-											<span class="fontSmall">{{ option.PANSTWO }} - </span>
-											<span class="fontSmall">{{ option.KONTYNENT }}</span>
+											<div class="fontSmall country">{{ option.PANSTWO }} - </div>
+											<div class="fontSmall">{{ option.KONTYNENT }}</div>
 										</div>
 									</template>
 								</VueMultiselect>
