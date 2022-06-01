@@ -33,10 +33,10 @@
 											class="bg-secondary"
 										/>
 									</h5>
-									<p class="text-capitalize">
+									<p class="text-capitalize mb-1 mb-md-3">
 										{{ $t("Humidity") }}: {{ currentWeather.humidity }} %
 									</p>
-									<p class="text-capitalize">
+									<p class="text-capitalize mb-1 mb-md-3">
 										{{ $t(`${"wind speed"}`) }}:
 										{{ currentWeather.wind_speed }} m/s
 									</p>
@@ -51,7 +51,7 @@
 									<UV :uvi="currentWeather.uvi" />
 								</div>
 								<hr class="hr d-xl-none" />
-								<div class="col-12 col-xl-5 text-capitalize mt-3 mt-xl-0">
+								<div class="col-12 col-xl-5 text-capitalize mt-0 mt-md-3 mt-xl-0">
 									{{ $t("weatherAlerts") }}:
 									<Alerts :alerts="alertsWeather" />
 									<span v-if="alertsWeather == undefined">{{

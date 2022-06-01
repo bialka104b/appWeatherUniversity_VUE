@@ -1,6 +1,6 @@
 <template>
 	<div class="pb-2 text-capitalize">
-		<img src="./../assets/icons/uv.svg" class="mr-2" />{{ $t("UVIndicator") }}: {{ uv }}
+		<img src="./../assets/icons/uv.svg" class="mr-2 sunriseSunsetIcon" />{{ $t("UVIndicator") }}: {{ uv }}
 	</div>
 </template>
 

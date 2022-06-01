@@ -1,14 +1,14 @@
 <template>
 	<div>
 		<div class="pb-2 text-capitalize">
-			<img src="./../assets/icons/sunrise.svg" class="mr-2" />{{ $t("sunrise") }}:
+			<img src="./../assets/icons/sunrise.svg" class="mr-2 sunriseSunsetIcon" />{{ $t("sunrise") }}:
 			{{ sunrise }}
 		</div>
 		<div class="pb-2 text-capitalize">
-			<img src="./../assets/icons/sunset.svg" class="mr-2" />{{ $t("sunset") }}: {{ sunset }}
+			<img src="./../assets/icons/sunset.svg" class="mr-2 sunriseSunsetIcon" />{{ $t("sunset") }}: {{ sunset }}
 		</div>
 		<div class="text-capitalize">
-			<img src="./../assets/icons/visibility.svg" class="mr-2" />{{ $t("visibility") }}:
+			<img src="./../assets/icons/visibility.svg" class="mr-2 sunriseSunsetIcon" />{{ $t("visibility") }}:
 			{{ visible * 0.001 }} km
 		</div>
 	</div>

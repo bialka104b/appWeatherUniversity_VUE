@@ -256,3 +256,11 @@ body::-webkit-scrollbar-thumb {
 		// height: 100%;
 	}
 }
+
+.sunriseSunsetIcon{
+
+	@media only screen and (max-width: 767px) {
+		height: 30px;
+		
+	}
+}
