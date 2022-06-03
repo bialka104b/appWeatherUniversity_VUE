@@ -40,14 +40,11 @@ export default {
 	setup() {},
 	methods: {
 		tableChange() {
-			console.log(this.table);
-
 			if (this.table != []) {
 				this.tableDayTemp.length = 0;
 				this.tableImageIcon.length = 0;
 				const list = this.table;
 				const resultLodash = lodash.chunk(list, 8);
-				console.log(resultLodash, "resultLodash");
 				let averageTemp = 0;
 				for (let index = 0; index < resultLodash.length; index++) {
 					const element = resultLodash[index];

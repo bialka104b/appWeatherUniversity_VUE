@@ -361,7 +361,6 @@ export default {
 						this.cod = res.data.cod;
 						this.lon = res.data.coord.lon;
 						this.lat = res.data.coord.lat;
-						console.log(res.data, "data");
 					} else {
 					}
 				})
@@ -381,7 +380,6 @@ export default {
 						this.listResultsForecast = res.data;
 						this.cityInfoForecast = res.data.city;
 						this.listInfoForecast = res.data.list;
-						console.log(res.data, "resdata forecast");
 					} else {
 						console.log(res);
 					}

@@ -390,7 +390,7 @@ export default {
 				this.popTab.push(x.pop * 100); //prawdopodobieństwo opadów
 				this.pressureTab.push(x.pressure); //ciśnienie
 				this.snowTab.push(x.snow ? x.snow["1h"] : 0); // śnieg w mm
-				
+
 				this.rainTab.push(x.rain ? x.rain["1h"] : 0); // deszczu w mm3/1mm2
 				//1mm deszczu => 1000 mm * 1000 mm * 1 mm = 1 000 000 mm 3 = 1 litr
 				//2.2mm => 1000*1000*2.2 = 2 200 000 mm3 => 2,2l
@@ -401,40 +401,40 @@ export default {
 				this.wind_speedTab.push(((x.wind_speed * 1000) / 3600).toFixed(2));
 				this.wind_gustTab.push(((x.wind_gust * 1000) / 3600).toFixed(2));
 			});
-			
-			this.dayNightRainTab = this.zakresyNocy(
-				this.numberHours, 
+
+			this.dayNightRainTab = this.scopeNights(
+				this.numberHours,
 				night(this.rainTab, this.snowTab, this.snowTab ),
 				night(this.rainTab, this.snowTab, this.snowTab )
 			);
-			
-			this.dayNightHumidityTab = this.zakresyNocy(
-				this.numberHours, 
+
+			this.dayNightHumidityTab = this.scopeNights(
+				this.numberHours,
 				night(this.humidityTab,	this.cloudsTab,	this.popTab),
 				day( this.humidityTab, this.cloudsTab,  this.popTab ),
 			);
-			this.dayNightPressureTab = this.zakresyNocy(
-				this.numberHours, 
+			this.dayNightPressureTab = this.scopeNights(
+				this.numberHours,
 				night(this.pressureTab,	this.pressureTab, this.pressureTab),
 				day(this.pressureTab,	this.pressureTab, this.pressureTab)
 			);
-			this.dayNightTemperatureTab = this.zakresyNocy(
-				this.numberHours, 
+			this.dayNightTemperatureTab = this.scopeNights(
+				this.numberHours,
 				night(this.dew_pointTab,	this.tempTab, this.feels_LikeTab),
 				day(this.dew_pointTab,	this.tempTab, this.feels_LikeTab)
 			);
-			this.dayNightWindSpeedGustTab = this.zakresyNocy(
-				this.numberHours, 
+			this.dayNightWindSpeedGustTab = this.scopeNights(
+				this.numberHours,
 				night(this.wind_gustTab,	this.wind_speedTab, this.wind_gustTab),
 				day(this.wind_gustTab,	this.wind_speedTab, this.wind_gustTab)
 			);
-			this.dayNightUviTab = this.zakresyNocy(
-				this.numberHours, 
+			this.dayNightUviTab = this.scopeNights(
+				this.numberHours,
 				night(this.uviTab,	this.uviTab, this.uviTab),
 				day(this.uviTab,	this.uviTab, this.uviTab)
 			);
-			this.dayNightVisibilityTab = this.zakresyNocy(
-				this.numberHours, 
+			this.dayNightVisibilityTab = this.scopeNights(
+				this.numberHours,
 				night(this.visibilityTab,	this.visibilityTab, this.visibilityTab),
 				day(this.visibilityTab,	this.visibilityTab, this.visibilityTab)
 			);
@@ -660,7 +660,7 @@ export default {
 				],
 			};
 		},
-		zakresyNocy(arrayNumHours, arrayDayNightTabMax, arrayDayNightTabMin) {
+		scopeNights(arrayNumHours, arrayDayNightTabMax, arrayDayNightTabMin) {
 			return arrayNumHours.map((val, index) => {
 				if (val >= 21 || val < 6) {
 					return Math.ceil(max(arrayDayNightTabMax));

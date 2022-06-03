@@ -70,7 +70,6 @@ export default {
 	methods: {
 		handleShowDropdown() {
 			this.showDropdown = !this.showDropdown;
-			console.log("click", this.showDropdown);
 		},
 	},
 };
