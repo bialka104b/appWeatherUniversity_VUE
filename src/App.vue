@@ -4,9 +4,9 @@ import { restElement } from '@babel/types';
 </script>
 
 <template>
-    <div class="">
-      	<Header />
-        <main class="">
+	<div class="">
+		<Header />
+		<main class="">
 			<router-view />
 
 			<!-- <section>
@@ -46,8 +46,14 @@ import { restElement } from '@babel/types';
 				</div>
 				</div>
 			</section> -->
-    	</main>
-  	</div>
+		</main>
+		<Footer />
+		<div class="scroolTop">
+			<a href="#mainContainer">
+				<i class="uil uil-top-arrow-to-top"></i>
+			</a>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -55,24 +61,21 @@ import cities from './module/cities';
 import citiesWorld from './module/citiesWorld';
 import lang from './module/language';
 import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 export default {
-	name: "app",
+	name: 'app',
 	components: {
 		Header,
+		Footer,
 	},
 	data() {
-		return {
+		return {};
+	},
 
-      	}
-    },
-
-    async created(){
-    },
-    methods: {
-
-  	},
-}
+	async created() {},
+	methods: {},
+};
 </script>
 <style src="vue-multiselect/dist/vue-multiselect.css"></style>
 <style lang="scss">
@@ -80,11 +83,11 @@ export default {
 @import './scss/app.scss';
 
 .col-4 {
-    // background-image: url("./assets/images/sunset.jpg");
-    background-size: cover;
+	// background-image: url("./assets/images/sunset.jpg");
+	background-size: cover;
 }
 .multiselect__content {
 	min-width: 0;
-	width:100%
+	width: 100%;
 }
 </style>
