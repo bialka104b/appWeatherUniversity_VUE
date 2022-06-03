@@ -33,20 +33,20 @@
 							:show-labels="false"
 						></VueMultiselect>
 					</div>
-					<button class="btn btn-primary d-md-none" @click="handleShowDropdown()">
-						<i class="uil uil-align-justify text-white"></i>
+					<button class="btn bg-none d-md-none shadowNone" @click="handleShowDropdown()">
+						<i class="uil uil-align-justify text-secondary"></i>
 					</button>
 				</nav>
 				<div class="dropdownDiv d-md-none" v-show="showDropdown">
 					<ul class="list-group bg-primary dropdown-menu">
 						<li class="list-group-item bg-primary">
-							<a href="" class="nav-link">Home</a>
+							<a href="" class="nav-link p-0 text-center">Home</a>
 						</li>
 						<li class="list-group-item bg-primary">
-							<a href="" class="nav-link">Home</a>
+							<a href="" class="nav-link p-0 text-center">Home</a>
 						</li>
 						<li class="list-group-item bg-primary">
-							<a href="" class="nav-link">Contacts</a>
+							<a href="" class="nav-link p-0 text-center">Contacts</a>
 						</li>
 					</ul>
 				</div>

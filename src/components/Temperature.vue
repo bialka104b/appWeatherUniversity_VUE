@@ -250,7 +250,7 @@ export default {
 						fill: true,
 					},
 					{
-						label: "Noc w polskiej strefie czasowej",
+						label: "Noc w lokalnej strefie czasowej",
 						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightRain,
 						tension: 0.5,
@@ -283,7 +283,7 @@ export default {
 						fill: true,
 					},
 					{
-						label: "Noc w polskiej strefie czasowej",
+						label: "Noc w lokalnej strefie czasowej",
 						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightRain,
 						tension: 0.5,
@@ -315,7 +315,7 @@ export default {
 						fill: true,
 					},
 					{
-						label: "Noc w polskiej strefie czasowej",
+						label: "Noc w lokalnej strefie czasowej",
 						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightHumidity,
 						tension: 0.5,
@@ -342,7 +342,7 @@ export default {
 					},
 					
 					{
-						label: "Noc w polskiej strefie czasowej",
+						label: "Noc w lokalnej strefie czasowej",
 						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightHumidity,
 						// borderColor: 'blue',
@@ -381,7 +381,7 @@ export default {
 					},
 					
 					{
-						label: "Noc w polskiej strefie czasowej",
+						label: "Noc w lokalnej strefie czasowej",
 						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightPressure,
 						// borderColor: 'blue',
@@ -418,7 +418,7 @@ export default {
 						// stepped: true
 					},
 					{
-						label: "Noc w polskiej strefie czasowej",
+						label: "Noc w lokalnej strefie czasowej",
 						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightTemperature,
 						// borderColor: 'blue',

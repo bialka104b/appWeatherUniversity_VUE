@@ -164,6 +164,7 @@ import WindDeg from "./WindDeg.vue";
 import LineChart from "./../chart/LineChart";
 import moment from "moment";
 import { setBlockTracking } from "vue";
+import { night, day, min, max}  from '../module/nightAndDay';
 
 class Options {
 	constructor(labelsFontSize, labelsColor, suggestedMin, suggestedMax) {
@@ -216,9 +217,8 @@ class Options {
 		};
 		this.scales = {};
 		this.scales.y = {
-			suggestedMin: suggestedMin,
-			suggestedMax: suggestedMax, //<- tu by trzeba było podać opcje max
-			// color: 'black',
+			// suggestedMin: suggestedMin,
+			// suggestedMax: suggestedMax, //<- tu by trzeba było podać opcje max
 			ticks: {
 				color: labelsColor,
 				font: {
@@ -256,7 +256,6 @@ export default {
 		return {
 			chartDataCloudsHumidity: {},
 			chartDataDewPointTemp: {},
-			// chartDataPop: {},
 			chartDataWindDeg: {},
 			chartDataRainSnow: {},
 			chartDataWindSpeedGust: {},
@@ -264,10 +263,8 @@ export default {
 			chartDataVisibility: {},
 
 			chartOptionsClouds: {},
-			chartOptionsDewPointTemp: {},
 			chartOptionsPop: {},
 			chartOptionsPressure: {},
-
 			cloudsTab: [],
 			dew_pointTab: [],
 			dtTab: [],
@@ -283,6 +280,14 @@ export default {
 			wind_degTab: [],
 			wind_gustTab: [],
 			wind_speedTab: [],
+			dayNightRainTab:[],
+			dayNightHumidityTab:[],
+			dayNightPressureTab:[],
+			dayNightTemperatureTab:[],
+			dayNightWindSpeedGustTab:[],
+			dayNightUviTab:[],
+			dayNightVisibilityTab:[],
+			numberHours:[],
 
 			clouds: 0,
 			dew_point: 0,
@@ -305,8 +310,6 @@ export default {
 		this.chartDataCloudsHumidity = this.returnChartDataCloudsHumidity();
 		this.chartOptionsClouds = this.returnChartOptions(0, 100);
 		this.chartDataDewPointTemp = this.returnChartDataDewPointTemp();
-		this.chartOptionsDewPointTemp = this.returnChartOptions(15, 15);
-		// this.chartDataPop = this.returnChartDataPop();
 		this.chartOptionsPop = this.returnChartOptions(0, 100, 20, "orange");
 		this.chartDataPressure = this.returnChartDataPressure();
 		this.chartDataRainSnow = this.returnChartDataRainSnow();
@@ -353,7 +356,7 @@ export default {
 		},
 		stworzTablice48(tab) {
 			this.cloudsTab.length = 0;
-			this.dew_pointTab.lenght = 0;
+			this.dew_pointTab.length = 0;
 			this.dtTab.length = 0;
 			this.feels_LikeTab.length = 0;
 			this.humidityTab.length = 0;
@@ -367,29 +370,27 @@ export default {
 			this.wind_degTab.length = 0;
 			this.wind_gustTab.length = 0;
 			this.wind_speedTab.length = 0;
-			// this.dayNightHumidityTab.length = 0;
-			// this.dayNightPressureTab.length = 0;
-			// this.dayNightRainTab.length = 0;
+			this.dayNightHumidityTab.length = 0;
+			this.dayNightPressureTab.length = 0;
+			this.dayNightRainTab.length = 0;
+			this.dayNightTemperatureTab.length = 0;
+			this.dayNightWindSpeedGustTab.length = 0;
+			this.dayNightUviTab.length = 0;
+			this.dayNightVisibilityTab.length = 0;
+			this.numberHours.length = 0;
 			tab.map((x) => {
 				const dt = moment.unix(x.dt).format("DD-MM, HH:mm");
-				// const dayNight = Number(moment(x.dt).format("HH"));
-				// const dayNightHum = this.zakresyNocy(dayNight, 100, 0);
-				// const dayNightRain = this.zakresyNocy(dayNight, 2, 0);
-				// const dayNightPre = this.zakresyNocy(dayNight, 1040, 970);
-				// const dayNightTmp = this.zakresyNocy(dayNight, 35, 0);
-				// this.dayNightTemperatureTab.push(dayNightTmp);
-				// this.dayNightPressureTab.push(dayNightPre);
-				// this.dayNightHumidityTab.push(dayNightHum);
-				// this.dayNightRainTab.push(dayNightRain);
+				const numDay = Number(moment.unix(x.dt).format("HH"));
+				this.numberHours.push(numDay);
 				this.cloudsTab.push(x.clouds); //zachmurzenie
 				this.dew_pointTab.push(x.dew_point);
 				this.dtTab.push(dt); //data
 				this.feels_LikeTab.push(x.feels_like); //temperatura odczuwalna
 				this.humidityTab.push(x.humidity); //wilgotność
-				// this.popTab.push(x.pop); //wilgotność
 				this.popTab.push(x.pop * 100); //prawdopodobieństwo opadów
 				this.pressureTab.push(x.pressure); //ciśnienie
 				this.snowTab.push(x.snow ? x.snow["1h"] : 0); // śnieg w mm
+				
 				this.rainTab.push(x.rain ? x.rain["1h"] : 0); // deszczu w mm3/1mm2
 				//1mm deszczu => 1000 mm * 1000 mm * 1 mm = 1 000 000 mm 3 = 1 litr
 				//2.2mm => 1000*1000*2.2 = 2 200 000 mm3 => 2,2l
@@ -400,34 +401,47 @@ export default {
 				this.wind_speedTab.push(((x.wind_speed * 1000) / 3600).toFixed(2));
 				this.wind_gustTab.push(((x.wind_gust * 1000) / 3600).toFixed(2));
 			});
-		},
-		compareNumbers(a, b) {
-			return a - b;
-		},
-		min(tab) {
-			return tab.sort(this.compareNumbers)[0];
-		},
-		max(tab) {
-			return tab.sort(this.compareNumbers)[tab.length - 1];
+			
+			this.dayNightRainTab = this.zakresyNocy(
+				this.numberHours, 
+				night(this.rainTab, this.snowTab, this.snowTab ),
+				night(this.rainTab, this.snowTab, this.snowTab )
+			);
+			
+			this.dayNightHumidityTab = this.zakresyNocy(
+				this.numberHours, 
+				night(this.humidityTab,	this.cloudsTab,	this.popTab),
+				day( this.humidityTab, this.cloudsTab,  this.popTab ),
+			);
+			this.dayNightPressureTab = this.zakresyNocy(
+				this.numberHours, 
+				night(this.pressureTab,	this.pressureTab, this.pressureTab),
+				day(this.pressureTab,	this.pressureTab, this.pressureTab)
+			);
+			this.dayNightTemperatureTab = this.zakresyNocy(
+				this.numberHours, 
+				night(this.dew_pointTab,	this.tempTab, this.feels_LikeTab),
+				day(this.dew_pointTab,	this.tempTab, this.feels_LikeTab)
+			);
+			this.dayNightWindSpeedGustTab = this.zakresyNocy(
+				this.numberHours, 
+				night(this.wind_gustTab,	this.wind_speedTab, this.wind_gustTab),
+				day(this.wind_gustTab,	this.wind_speedTab, this.wind_gustTab)
+			);
+			this.dayNightUviTab = this.zakresyNocy(
+				this.numberHours, 
+				night(this.uviTab,	this.uviTab, this.uviTab),
+				day(this.uviTab,	this.uviTab, this.uviTab)
+			);
+			this.dayNightVisibilityTab = this.zakresyNocy(
+				this.numberHours, 
+				night(this.visibilityTab,	this.visibilityTab, this.visibilityTab),
+				day(this.visibilityTab,	this.visibilityTab, this.visibilityTab)
+			);
 		},
 		returnChartOptions(min, max, fontSize = 20, color = "rgb(64, 10, 58)") {
 			const obj = new Options(fontSize, color, min, max);
-			// const obj1 = new Options(20, 'red');
-			// console.log(obj);
 			return obj;
-		},
-		sortAndGetMin(minTab) {
-			const min = minTab.sort((a, b) => {
-				return a - b;
-			})[0];
-			console.log(min);
-
-			return min;
-		},
-		sortAndGetMax(maxTab) {
-			return maxTab.sort((a, b) => {
-				return a - b;
-			})[maxTab - 1];
 		},
 		returnChartDataWindSpeedGust() {
 			return {
@@ -448,6 +462,15 @@ export default {
 						borderColor: "rgb(255, 0, 108)",
 						tension: 0.5,
 						fill: true,
+					},
+					{
+						label: "Noc w lokalnej strefie czasowej",
+						backgroundColor: "rgb(132,132,130, 0.5)",
+						data: this.dayNightWindSpeedGustTab,
+						tension: 0.5,
+						fill: true,
+						stepped: true,
+						pointRadius: 0,
 					},
 				],
 			};
@@ -472,6 +495,15 @@ export default {
 						tension: 0.5,
 						fill: true,
 					},
+					{
+						label: "Noc w lokalnej strefie czasowej",
+						backgroundColor: "rgb(132,132,130, 0.5)",
+						data: this.dayNightRainTab,
+						tension: 0.5,
+						fill: true,
+						stepped: true,
+						pointRadius: 0,
+					},
 				],
 			};
 		},
@@ -486,6 +518,15 @@ export default {
 						borderColor: "rgb(64, 10, 58)",
 						tension: 0.5,
 						fill: true,
+					},
+					{
+						label: "Noc w lokalnej strefie czasowej",
+						backgroundColor: "rgb(132,132,130, 0.5)",
+						data: this.dayNightPressureTab,
+						tension: 0.5,
+						fill: true,
+						stepped: true,
+						pointRadius: 0,
 					},
 				],
 			};
@@ -502,6 +543,15 @@ export default {
 						tension: 0.5,
 						fill: true,
 					},
+					{
+						label: "Noc w lokalnej strefie czasowej",
+						backgroundColor: "rgb(132,132,130, 0.5)",
+						data: this.dayNightUviTab,
+						tension: 0.5,
+						fill: true,
+						stepped: true,
+						pointRadius: 0,
+					},
 				],
 			};
 		},
@@ -516,6 +566,15 @@ export default {
 						borderColor: "rgb(38, 130, 121)",
 						tension: 0.5,
 						fill: true,
+					},
+					{
+						label: "Noc w lokalnej strefie czasowej",
+						backgroundColor: "rgb(132,132,130, 0.5)",
+						data: this.dayNightVisibilityTab,
+						tension: 0.5,
+						fill: true,
+						stepped: true,
+						pointRadius: 0,
 					},
 				],
 			};
@@ -549,6 +608,15 @@ export default {
 						tension: 0.5,
 						fill: true,
 					},
+					{
+						label: "Noc w lokalnej strefie czasowej",
+						backgroundColor: "rgb(132,132,130, 0.5)",
+						data: this.dayNightTemperatureTab,
+						tension: 0.5,
+						fill: true,
+						stepped: true,
+						pointRadius: 0,
+					},
 				],
 			};
 		},
@@ -580,17 +648,26 @@ export default {
 						tension: 0.5,
 						fill: true,
 					},
+					{
+						label: "Noc w lokalnej strefie czasowej",
+						backgroundColor: "rgb(132,132,130, 0.5)",
+						data: this.dayNightHumidityTab,
+						tension: 0.5,
+						fill: true,
+						stepped: true,
+						pointRadius: 0,
+					},
 				],
 			};
 		},
-		zakresyNocy(num, max, min) {
-			let dayNight = 0;
-			if (num >= 21 || num < 6) {
-				dayNight = max;
-			} else {
-				dayNight = min;
-			}
-			return dayNight;
+		zakresyNocy(arrayNumHours, arrayDayNightTabMax, arrayDayNightTabMin) {
+			return arrayNumHours.map((val, index) => {
+				if (val >= 21 || val < 6) {
+					return Math.ceil(max(arrayDayNightTabMax));
+				} else {
+					return Math.floor(min(arrayDayNightTabMin));
+				}
+			})
 		},
 	},
 	watch: {
@@ -600,9 +677,6 @@ export default {
 			this.chartDataCloudsHumidity = this.returnChartDataCloudsHumidity();
 			this.chartOptionsClouds = this.returnChartOptions(0, 100);
 			this.chartDataDewPointTemp = this.returnChartDataDewPointTemp();
-			this.chartOptionsDewPointTemp = this.returnChartOptions(15, 15);
-			// this.chartDataPop = this.returnChartDataPop();
-			// this.chartOptionsPop = this.returnChartOptions(0,100,20, "orange");
 			this.chartDataPressure = this.returnChartDataPressure();
 			this.chartDataRainSnow = this.returnChartDataRainSnow();
 			this.chartDataWindSpeedGust = this.returnChartDataWindSpeedGust();
