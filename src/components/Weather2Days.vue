@@ -154,7 +154,6 @@ import VueMultiselect from "vue-multiselect";
 import cities from "../module/cities";
 import citiesWorld from "../module/citiesWorld";
 import Weather48Chart from "./Weather48Chart.vue";
-// import lang from '../module/language';
 import axios from "axios";
 
 export default {
@@ -192,7 +191,6 @@ export default {
 
 			//API
 			API_KEY: "5baab241d44debf04d78944091967607",
-			// API_KEY: '1c7fbae096fe77971b1dc5aa8fcd17ae',
 			URLWeather: "https://api.openweathermap.org/data/2.5/weather?",
 			URLOneCall: "https://api.openweathermap.org/data/2.5/onecall?",
 		};
@@ -242,7 +240,7 @@ export default {
 					}
 				})
 				.catch((err) => {
-					console.log(err);
+					console.error(err, "getWeather - Weather2Days component");
 				});
 		},
 
@@ -260,13 +258,12 @@ export default {
 						this.hourlyWeather = res.data.hourly;
 						this.minutelyWeather = res.data.minutely;
 						this.alertsWeather = res.data.alerts;
-						console.log(res.data.alerts, "res.data.alerts");
 					} else {
-						console.log(res);
+						console.error(res, "daily48h - Weather2Days component");
 					}
 				})
 				.catch((err) => {
-					console.log(err, "forecast");
+					console.error(err, "daily48h - Weather2Days component");
 				});
 		},
 	},

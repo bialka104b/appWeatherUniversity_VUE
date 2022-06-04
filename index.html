@@ -27,12 +27,10 @@
   <script type="module" src="/src/main.js"></script>
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-      console.log('DOM fully loaded and parsed');
-
       window.addEventListener("scroll", function (event) {
 
-        var top = this.scrollY;
-        var scrollTop = document.querySelector(".scrollTop");
+        const top = this.scrollY;
+        const scrollTop = document.querySelector(".scrollTop");
         if (top > 500) {
           scrollTop.classList.remove("d-none")
           scrollTop.classList.add("d-block")

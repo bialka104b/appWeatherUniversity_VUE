@@ -4,47 +4,59 @@
 	<div class="container">
 		<div class="text-dark my-3 my-md-5">
 			<h3 class="text-success text-center">
-				{{$t("minAndMaxTemperature")}}
+				{{ $t("minAndMaxTemperature") }}
 			</h3>
 			<LineChart
-			:chartData="chartData"
-			:cssClasses="'bg-secondary rounded boxShadow py-3'"
-			:chartOptions="returnChartOptions(0, 10)" :height="350" />
+				:chartData="chartData"
+				:cssClasses="'bg-secondary rounded boxShadow py-3'"
+				:chartOptions="returnChartOptions(0, 10)"
+				:height="350"
+			/>
 		</div>
 		<div class="text-dark my-3 my-md-5">
-			<h3 class="text-success text-center">{{$t("atmosphericPressure")}}</h3>
+			<h3 class="text-success text-center">{{ $t("atmosphericPressure") }}</h3>
 			<LineChart
-			:cssClasses="'bg-secondary rounded boxShadow py-3'"
-			:chartData="chartDataPressure" :chartOptions="returnChartOptions(1000, 1013)"
-			:height="350" />
+				:cssClasses="'bg-secondary rounded boxShadow py-3'"
+				:chartData="chartDataPressure"
+				:chartOptions="returnChartOptions(1000, 1013)"
+				:height="350"
+			/>
 		</div>
 		<div class="text-dark my-3 my-md-5">
-			<h3 class="text-success text-center">{{ $t('Humidity')}}</h3>
+			<h3 class="text-success text-center">{{ $t("Humidity") }}</h3>
 			<LineChart
-			:cssClasses="'bg-secondary rounded boxShadow py-3'"
-			:chartData="chartDataHumidity" :chartOptions="returnChartOptions(0, 100)"
-			:height="350" />
+				:cssClasses="'bg-secondary rounded boxShadow py-3'"
+				:chartData="chartDataHumidity"
+				:chartOptions="returnChartOptions(0, 100)"
+				:height="350"
+			/>
 		</div>
 		<div class="text-dark my-3 my-md-5">
-			<h3 class="text-success text-center text-capitalize">{{$t("cloudy")}}</h3>
+			<h3 class="text-success text-center text-capitalize">{{ $t("cloudy") }}</h3>
 			<LineChart
-			:cssClasses="'bg-secondary rounded boxShadow py-3'"
-			:chartData="chartDataClouds" :chartOptions="returnChartOptions(0, 100)"
-			:height="350" />
+				:cssClasses="'bg-secondary rounded boxShadow py-3'"
+				:chartData="chartDataClouds"
+				:chartOptions="returnChartOptions(0, 100)"
+				:height="350"
+			/>
 		</div>
 		<div class="text-dark my-3 my-md-5">
-			<h3 class="text-success text-center">{{$t("rainAndSnowfall")}}</h3>
+			<h3 class="text-success text-center">{{ $t("rainAndSnowfall") }}</h3>
 			<LineChart
-			:cssClasses="'bg-secondary rounded boxShadow py-3'"
-			:chartData="chartDataRainfall" :chartOptions="returnChartOptions(0, 1)"
-			:height="350" />
+				:cssClasses="'bg-secondary rounded boxShadow py-3'"
+				:chartData="chartDataRainfall"
+				:chartOptions="returnChartOptions(0, 1)"
+				:height="350"
+			/>
 		</div>
 		<div class="text-dark my-3 my-md-5">
-			<h3 class="text-success text-center">{{$t("windSpeedAndGust")}}</h3>
+			<h3 class="text-success text-center">{{ $t("windSpeedAndGust") }}</h3>
 			<LineChart
-			:cssClasses="'bg-secondary rounded boxShadow py-3'"
-			:chartData="chartDataWind" :chartOptions="returnChartOptions(0, 1)"
-			:height="350" />
+				:cssClasses="'bg-secondary rounded boxShadow py-3'"
+				:chartData="chartDataWind"
+				:chartOptions="returnChartOptions(0, 1)"
+				:height="350"
+			/>
 		</div>
 	</div>
 </template>
@@ -52,7 +64,7 @@
 <script>
 import LineChart from "./../chart/LineChart";
 import moment from "moment";
-import { night, day, min, max}  from '../module/nightAndDay';
+import { night, day, min, max } from "../module/nightAndDay";
 
 class Options {
 	constructor(labelsFontSize, labelsColor, suggestedMin, suggestedMax) {
@@ -81,17 +93,11 @@ class Options {
 		};
 		this.scales = {};
 		this.scales.y = {
-			// suggestedMin: suggestedMin,
-			// suggestedMax: suggestedMax, //<- tu by trzeba było podać opcje max
 			ticks: {
 				color: labelsColor,
 				font: {
 					weight: "bold",
 				},
-				// major: {
-				// 	fontSize:50,
-				// 	enabled: true
-				// }
 			},
 		};
 		this.scales.x = {
@@ -125,15 +131,15 @@ export default {
 			chartDataRainfall: {},
 			chartDataWind: [],
 
-			dayNightRainTab:[],
-			dayNightHumidityTab:[],
-			dayNightPressureTab:[],
-			dayNightTemperatureTab:[],
-			dayNightWindSpeedGustTab:[],
-			dayNightUviTab:[],
-			dayNightVisibilityTab:[],
-			dayNightCloudsTab:[],
-			numberHours:[],
+			dayNightRainTab: [],
+			dayNightHumidityTab: [],
+			dayNightPressureTab: [],
+			dayNightTemperatureTab: [],
+			dayNightWindSpeedGustTab: [],
+			dayNightUviTab: [],
+			dayNightVisibilityTab: [],
+			dayNightCloudsTab: [],
+			numberHours: [],
 
 			dt_txtTab: [],
 			temp_minTab: [],
@@ -260,34 +266,34 @@ export default {
 			});
 			this.dayNightRainTab = this.scopeNights(
 				this.numberHours,
-				night(this.rainTab, this.snowTab, this.snowTab ),
-				day(this.rainTab, this.snowTab, this.snowTab )
+				night(this.rainTab, this.snowTab, this.snowTab),
+				day(this.rainTab, this.snowTab, this.snowTab),
 			);
 
 			this.dayNightHumidityTab = this.scopeNights(
 				this.numberHours,
-				night(this.humidityTab,	this.cloudsTab,	this.popTab),
-				day( this.humidityTab, this.cloudsTab,  this.popTab ),
+				night(this.humidityTab, this.cloudsTab, this.popTab),
+				day(this.humidityTab, this.cloudsTab, this.popTab),
 			);
 			this.dayNightCloudsTab = this.scopeNights(
 				this.numberHours,
-				night(this.cloudsTab,	this.cloudsTab,	this.popTab),
-				day( this.cloudsTab, this.cloudsTab,  this.popTab ),
+				night(this.cloudsTab, this.cloudsTab, this.popTab),
+				day(this.cloudsTab, this.cloudsTab, this.popTab),
 			);
 			this.dayNightPressureTab = this.scopeNights(
 				this.numberHours,
-				night(this.pressureTab,	this.grnd_levelTab, this.grnd_levelTab),
-				day(this.pressureTab,	this.grnd_levelTab, this.grnd_levelTab)
+				night(this.pressureTab, this.grnd_levelTab, this.grnd_levelTab),
+				day(this.pressureTab, this.grnd_levelTab, this.grnd_levelTab),
 			);
 			this.dayNightTemperatureTab = this.scopeNights(
 				this.numberHours,
-				night(this.temp_minTab,	this.temp_maxTab, this.temp_feelsLikeTab),
-				day(this.temp_minTab,	this.temp_maxTab, this.temp_feelsLikeTab)
+				night(this.temp_minTab, this.temp_maxTab, this.temp_feelsLikeTab),
+				day(this.temp_minTab, this.temp_maxTab, this.temp_feelsLikeTab),
 			);
 			this.dayNightWindSpeedGustTab = this.scopeNights(
 				this.numberHours,
-				night(this.gustWindTab,	this.speedWindTab, this.gustWindTab),
-				day(this.gustWindTab,	this.speedWindTab, this.gustWindTab)
+				night(this.gustWindTab, this.speedWindTab, this.gustWindTab),
+				day(this.gustWindTab, this.speedWindTab, this.gustWindTab),
 			);
 		},
 		scopeNights(arrayNumHours, arrayDayNightTabMax, arrayDayNightTabMin) {
@@ -297,7 +303,7 @@ export default {
 				} else {
 					return Math.floor(min(arrayDayNightTabMin));
 				}
-			})
+			});
 		},
 		returnChartOptions(min, max, fontSize = 20, color = "rgb(64, 10, 58)") {
 			const obj = new Options(fontSize, color, min, max);
@@ -308,7 +314,7 @@ export default {
 				labels: this.daysTab,
 				datasets: [
 					{
-						label: this.$t(`${'wind speed'}`) + " m/s",
+						label: this.$t(`${"wind speed"}`) + " m/s",
 						backgroundColor: "rgba(64, 10, 58, 0.7)",
 						data: this.speedWind,
 						borderColor: "rgb(64, 10, 58)",
@@ -404,7 +410,6 @@ export default {
 			return {
 				labels: this.daysTab,
 				datasets: [
-
 					{
 						label: "Wilgotność w %",
 						backgroundColor: "rgb(247, 79, 118, 0.7)",
@@ -412,15 +417,11 @@ export default {
 						borderColor: "rgb(247, 79, 118)",
 						tension: 0.5,
 						fill: true,
-						// stepped: true
 					},
-
 					{
 						label: "Noc w lokalnej strefie czasowej",
 						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightHumidityTab,
-						// borderColor: 'blue',
-						// lineTension:0,
 						tension: 0.5,
 						fill: true,
 						stepped: true,
@@ -438,28 +439,21 @@ export default {
 						backgroundColor: "rgb(0, 111, 166,0.2)",
 						data: this.grndLevel,
 						borderColor: "rgb(0, 111, 166)",
-						// lineTension:0,
 						tension: 0.5,
 						fill: true,
-						// stepped: true
 					},
 					{
 						label: "Ciśnienie",
 						backgroundColor: "rgb(64, 10, 58, 0.7)",
 						data: this.pressure,
 						borderColor: "rgb(64, 10, 58)",
-						// lineTension:0,
 						tension: 0.5,
 						fill: true,
-						// stepped: true
 					},
-
 					{
 						label: "Noc w lokalnej strefie czasowej",
 						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightPressureTab,
-						// borderColor: 'blue',
-						// lineTension:0,
 						tension: 0.5,
 						fill: true,
 						stepped: true,
@@ -479,7 +473,6 @@ export default {
 						borderColor: "rgb(64, 10, 58)",
 						tension: 0.5,
 						fill: false,
-						// stepped: true
 						pointRadius: 0,
 					},
 					{
@@ -489,14 +482,11 @@ export default {
 						borderColor: "rgb(247, 79, 118)",
 						tension: 0.5,
 						fill: true,
-						// stepped: true
 					},
 					{
 						label: "Noc w lokalnej strefie czasowej",
 						backgroundColor: "rgb(132,132,130, 0.5)",
 						data: this.dayNightTemperatureTab,
-						// borderColor: 'blue',
-						// lineTension:0,
 						tension: 0.5,
 						fill: true,
 						stepped: true,

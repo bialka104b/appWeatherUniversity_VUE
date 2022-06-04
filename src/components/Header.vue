@@ -23,12 +23,9 @@
 						>
 					</div>
 					<div class="d-none d-md-block">
-						<a href="" class="nav-link font-weight-bold">{{ $t("Contacts") }}</a>
+						<a href="#" class="nav-link font-weight-bold">{{ $t("Contacts") }}</a>
 					</div>
 					<div class="langSelect locale-changer d-flex align-items-center">
-						<!-- <select v-model="$i18n.locale">
-                        <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">{{ locale }}</option>
-                        </select> -->
 						<VueMultiselect
 							v-model="$i18n.locale"
 							:options="lang"
@@ -46,13 +43,10 @@
 				<div class="dropdownDiv d-md-none" v-show="showDropdown">
 					<ul class="list-group bg-primary dropdown-menu">
 						<li class="list-group-item bg-primary">
-							<a href="" class="nav-link p-0 text-center">Home</a>
+							<router-link to="/" class="nav-link p-0 text-center">{{$t("Home")}}</router-link>
 						</li>
 						<li class="list-group-item bg-primary">
-							<a href="" class="nav-link p-0 text-center">Home</a>
-						</li>
-						<li class="list-group-item bg-primary">
-							<a href="" class="nav-link p-0 text-center">Contacts</a>
+							<router-link to="/weather48h" class="nav-link p-0 text-center">{{ $t("Weather48h") }}</router-link>
 						</li>
 					</ul>
 				</div>

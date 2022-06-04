@@ -203,13 +203,6 @@ class Options {
 						} else {
 							label += `: ${context.parsed.y}`;
 						}
-						//     if (label == 'Promieniowanie UV' && context.parsed.y !== null) {
-						// 		console.log(context.parsed.y);
-						// 		if (context.parsed.y <= 2) {
-						// 			label += `${context.parsed.y} Brak zagrożeń dla zdrowego człowieka.`;
-						// 		}
-						// //         label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
-						//     }
 						return label;
 					},
 				},
@@ -217,17 +210,11 @@ class Options {
 		};
 		this.scales = {};
 		this.scales.y = {
-			// suggestedMin: suggestedMin,
-			// suggestedMax: suggestedMax, //<- tu by trzeba było podać opcje max
 			ticks: {
 				color: labelsColor,
 				font: {
 					weight: "bold",
 				},
-				// major: {
-				// 	fontSize:50,
-				// 	enabled: true
-				// }
 			},
 		};
 		this.scales.x = {
