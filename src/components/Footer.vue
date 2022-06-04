@@ -9,15 +9,13 @@
 
 <template>
 	<div class="footerContainer bg-info">
-		<footer class="container py-5">
-			<div class="copyright-text">
-				<p>
-					<i class="uil uil-copyright"></i> &amp; <strong>Your Weather</strong>
-					header.rightReserved
-				</p>
+		<footer class="container py-3 text-secondary d-flex justify-content-around">
+			<div class="copyright-text py-2">
+				<!-- <p class="m-0"> -->
+				<i class="uil uil-copyright"></i> <strong>Your Weather</strong>
+				<!-- </p> -->
 			</div>
 			<div class="footer-social-section d-flex justify-content-between align-items-center">
-				<h4 class="social-title mb-0">header.followUs:</h4>
 				<ul class="social-link nav">
 					<li class="nav-item">
 						<a href="" target="_blank" class="nav-link"

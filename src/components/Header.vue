@@ -11,13 +11,19 @@
 
 				<nav class="d-flex flex-fill justify-content-md-around justify-content-end">
 					<div class="d-none d-md-block">
-						<router to="/" class="nav-link btn-primary">Home</router>
+						<router to="/" class="nav-link btn-primary font-weight-bold">{{
+							$t("Home")
+						}}</router>
 					</div>
 					<div class="d-none d-md-block">
-						<router-link to="/weather48h" class="nav-link btn-primary">{{$t('Weather48h')}}</router-link>
+						<router-link
+							to="/weather48h"
+							class="nav-link btn-primary font-weight-bold"
+							>{{ $t("Weather48h") }}</router-link
+						>
 					</div>
 					<div class="d-none d-md-block">
-						<a href="" class="nav-link">Contacts</a>
+						<a href="" class="nav-link font-weight-bold">{{ $t("Contacts") }}</a>
 					</div>
 					<div class="langSelect locale-changer d-flex align-items-center">
 						<!-- <select v-model="$i18n.locale">

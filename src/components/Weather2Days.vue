@@ -7,9 +7,13 @@
 						<div class="col-12 bgOpacity my-4 bRadius">
 							<h2>
 								{{ name }}
-								<p class="h6 pt-2">
+								<p class="h6 pt-2" v-if="city.WOJ != ''">
 									{{ $t("province") }}:
 									{{ city.WOJ != undefined ? city.WOJ : "podkarpackie" }}
+								</p>
+								<p class="h6 pt-2" v-if="city.WOJ == ''">
+									{{ $t("country") }}:
+									{{ cityWorld.PANSTWO != undefined ? cityWorld.PANSTWO : "" }}
 								</p>
 							</h2>
 
@@ -45,13 +49,13 @@
 						</div>
 						<div class="col-12 bgOpacity my-4 bRadius">
 							<div class="row m-0">
-								<div class="col-12 col-xl-7">
+								<div class="col-12 col-xxl-6">
 									<SunriseSunset :sys="sys" :visible="currentWeather.visibility">
 									</SunriseSunset>
 									<UV :uvi="currentWeather.uvi" />
 								</div>
-								<hr class="hr d-xl-none" />
-								<div class="col-12 col-xl-5 text-capitalize mt-0 mt-md-3 mt-xl-0">
+								<hr class="hr d-xxl-none" />
+								<div class="col-12 col-xxl-6 text-capitalize mt-0 mt-md-3 mt-xl-0">
 									{{ $t("weatherAlerts") }}:
 									<Alerts :alerts="alertsWeather" />
 									<span v-if="alertsWeather == undefined">{{
@@ -97,7 +101,9 @@
 									<template v-slot:option="{ option }">
 										<div class="">
 											<p class="mb-0 w-100">{{ option.STOLICA }}</p>
-											<div class="fontSmall country">{{ option.PANSTWO }} - </div>
+											<div class="fontSmall country">
+												{{ option.PANSTWO }} -
+											</div>
 											<div class="fontSmall">{{ option.KONTYNENT }}</div>
 										</div>
 									</template>
@@ -254,7 +260,7 @@ export default {
 						this.hourlyWeather = res.data.hourly;
 						this.minutelyWeather = res.data.minutely;
 						this.alertsWeather = res.data.alerts;
-						console.log(res.data.alerts, 'res.data.alerts');
+						console.log(res.data.alerts, "res.data.alerts");
 					} else {
 						console.log(res);
 					}

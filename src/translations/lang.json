@@ -118,7 +118,9 @@
         "thunderstorm yellow warning": "thunderstorm yellow warning",
         "yellow thunderstorm warning": "yellow thunderstorm warning",
         "thunderstorm warning - yellow": "thunderstorm warning - yellow",
-        "country": "Country"
+        "country": "Country",
+        "Contacts": "Contacts",
+        "Home": "Home"
     },
     "pl": {
         "thunderstorm": "Burza z piorunami",
@@ -239,6 +241,8 @@
         "thunderstorm yellow warning": "żółty alert przed burzą",
         "yellow thunderstorm warning": "żółty alert przed burzą",
         "thunderstorm warning - yellow": "żółty alert przed burzą",
-        "country": "Państwo"
+        "country": "Państwo",
+        "Contacts": "Kontakt",
+        "Home": "Start"
     }
 }
