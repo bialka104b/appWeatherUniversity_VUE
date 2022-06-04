@@ -1,18 +1,23 @@
 <template>
-	<div v-if="sender_name != undefined">
-		<p class="mb-1 mt-1">Źródło alertu: {{ sender_name }}</p>
-		<p class="mb-1">Nazwa: {{ event }}</p>
-		<p class="mb-1">Początek alertu: {{ start }}</p>
-		<p class="mb-1">Koniec alertu: {{ end }}</p>
-		<p class="mb-1">Opis: {{ description }}</p>
-		<p class="mb-1">Rodzaj pogody: 
-            <span v-for="(tag, index) in tags" :key="index">{{ tag }}</span>
-        </p>
+	<div v-for="(alert, index) in alerts" :key="index" class="mb-3 d-flex flex-row">
+		<div class="my-1 mr-4">{{index + 1}}:</div>
+		<div v-if="alert != undefined">
+		<!-- {{alerts}} -->
+			<p class="mb-1 mt-1">{{$t('sourceOfAlert')}}: {{ alert.sender_name }}</p>
+			<p class="mb-1">{{$t("nameAlert")}}: {{$t(`${alert.event.toLowerCase()}`)}}</p>
+			<p class="mb-1">{{$t('startOfAlert')}}: {{ setDataAlert(alert.start) }}</p>
+			<p class="mb-1">{{$t('endOfAlert')}}: {{ setDataAlert(alert.end) }}</p>
+			<p class="mb-1">{{$t('description')}}: {{ alert.description }}</p>
+			<p class="mb-1" v-if="alert.tags.length > 0">{{$t('weatherType')}}: 
+				<span v-for="(tag, index) in alert.tags" :key="index">{{ $t(`${tag.toLowerCase()}`) }} </span>
+			</p>
+		</div>
 	</div>
 </template>
 
 <script>
 import moment from "moment";
+import lodash from "lodash";
 export default {
 	props: {
 		alerts: Array,
@@ -38,7 +43,11 @@ export default {
 			this.tags = this.alerts.tags;
 		}
 	},
-	methods: {},
+	methods: {
+		setDataAlert(dataUnix){
+			return moment.unix(dataUnix).format("YYYY-MM-DD, HH:mm")
+		}
+	},
 	watch: {
 		alerts() {
 			if (this.alerts != null && this.alerts.length > 0) {

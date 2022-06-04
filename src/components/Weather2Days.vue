@@ -254,6 +254,7 @@ export default {
 						this.hourlyWeather = res.data.hourly;
 						this.minutelyWeather = res.data.minutely;
 						this.alertsWeather = res.data.alerts;
+						console.log(res.data.alerts, 'res.data.alerts');
 					} else {
 						console.log(res);
 					}

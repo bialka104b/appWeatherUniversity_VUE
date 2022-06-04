@@ -13,11 +13,11 @@
 			<div class="copyright-text">
 				<p>
 					<i class="uil uil-copyright"></i> &amp; <strong>Your Weather</strong>
-					{{ $t('header.rightReserved') }}
+					header.rightReserved
 				</p>
 			</div>
 			<div class="footer-social-section d-flex justify-content-between align-items-center">
-				<h4 class="social-title mb-0">{{ $t('header.followUs') }}:</h4>
+				<h4 class="social-title mb-0">header.followUs:</h4>
 				<ul class="social-link nav">
 					<li class="nav-item">
 						<a href="" target="_blank" class="nav-link"

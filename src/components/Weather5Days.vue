@@ -93,9 +93,13 @@ import SupportIcon from "./icons/IconSupport.vue";
 						<div class="col-12 bgOpacity my-4 bRadius">
 							<h2>
 								{{ name }}
-								<p class="h6 pt-2">
+								<p class="h6 pt-2" v-if="city.WOJ != ''">
 									{{ $t("province") }}:
 									{{ city.WOJ != undefined ? city.WOJ : "podkarpackie" }}
+								</p>
+								<p class="h6 pt-2" v-if="city.WOJ == ''">
+									{{ $t("country") }}:
+									{{ cityWorld.PANSTWO != undefined ? cityWorld.PANSTWO: "" }}
 								</p>
 							</h2>
 
