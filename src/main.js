@@ -25,10 +25,9 @@ export const router = vueRouter.createRouter({
 });
 
 export const i18n = createI18n({
-	// something vue-i18n options here ...
 	locale: "pl", // set locale
 	fallbackLocale: "en", // set fallback locale
-	messages, // set locale messages
+	messages,
 });
 
 const app = createApp(App);

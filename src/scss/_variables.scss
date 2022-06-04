@@ -6,36 +6,20 @@ $color-light:rgb(238, 238, 238);
 
 //https: //www.palettable.io/000022-268279-C7FCFF-DB5E9C-EDD3C2
 
-// SASS style sheet */
-// Palette color codes */
-// Palette URL: http://paletton.com/#uid=73C1q0kgN5bllzOiVqxpU07dV00 */
-
-// Feel free to copy&paste color codes to your application */
-
-
-// As hex codes */
-
-// $color-primary-dark: #000022; // Main Primary color */
-// $color-primary-green: #268279; //rgb(38, 130, 121)
-// $color-primary-lightblue: #C7FCFF; //rgb(199, 252, 255)
-// $color-primary-pink: #DB5E9C; //rgb(219, 94, 156)
-// $color-primary-badge: #EDD3C2; //rgb(237, 211, 194)
-$color-primary-dark: rgb(27, 4, 38); // Main Primary color */
-$color-primary-green: rgb(64, 10, 58); //rgb(38, 130, 121)
-$color-primary-lightblue: #FFD0D0; //rgb(199, 252, 255)
-$color-primary-pink: rgb(247, 79, 118); //rgb(219, 94, 156)
-$color-primary-badge: rgb(252, 237, 215); //rgb(237, 211, 194)
+$color-primary-dark: rgb(27, 4, 38);
+$color-primary-green: rgb(64, 10, 58);
+$color-primary-lightblue: #FFD0D0;
+$color-primary-pink: rgb(247, 79, 118);
+$color-primary-badge: rgb(252, 237, 215);
 $color-wykres-noc: rgb(132, 132, 130);
-$pink :rgb(255, 0, 108); //pink;
-$blekitny: rgb(0, 111, 166); //green jasny
-$citrin:rgb(227, 190, 54); //cytrynowy
+$pink :rgb(255, 0, 108);
+$blekitny: rgb(0, 111, 166);
+$citrin:rgb(227, 190, 54);
 
 $primary: $color-primary-dark !default;
 $info: $color-primary-green !default;
 $secondary:$color-primary-lightblue !default;
 $success: $color-primary-pink !default;
 $warning: $color-primary-badge !default;
-// $warning: $yellow !default;
-// $danger: $red !default;
-// $dark: $gray-900 !default;
+
 @import "node_modules/bootstrap/scss/bootstrap";

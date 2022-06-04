@@ -11,14 +11,14 @@
 
 				<nav class="d-flex flex-fill justify-content-md-around justify-content-end">
 					<div class="d-none d-md-block">
-						<router to="/" class="nav-link btn-primary font-weight-bold">{{
+						<router to="/" class="nav-link font-weight-bold">{{
 							$t("Home")
 						}}</router>
 					</div>
 					<div class="d-none d-md-block">
 						<router-link
 							to="/weather48h"
-							class="nav-link btn-primary font-weight-bold"
+							class="nav-link font-weight-bold"
 							>{{ $t("Weather48h") }}</router-link
 						>
 					</div>

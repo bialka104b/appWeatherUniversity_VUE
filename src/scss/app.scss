@@ -1,9 +1,13 @@
 @import "./variables";
 @import "./component/inputs.scss";
 @import "./component/weather48h";
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,800;1,800&display=swap");
+@import "./component/table";
+@import "./component/graphs";
+@import "./component/multiselect";
+@import "./component/5daysWeather";
+@import "./component/header";
+@import "./component/scroll";
+@import "./component/footer";
 
 * {
 	cursor: url(./assets/icons/cursor.png), auto !important;
@@ -12,7 +16,6 @@
 body {
 	background-color: $color-primary-dark;
 	font-family: "Quicksand", sans-serif;
-	// font-family:'Courgette', cursive;
 }
 #app {
 	width: 100%;
@@ -20,7 +23,6 @@ body {
 	.section {
 		background-image: url("./assets/images/miasto.jpg");
 		background-position: center;
-		// background-repeat: none;
 		background-size: cover;
 		color: $secondary;
 
@@ -46,36 +48,6 @@ body {
 
 .textLightBlue {
 	color: $color-light;
-}
-
-header.header {
-	line-height: 1.5;
-	height: 100px;
-	background: $primary;
-	position: fixed;
-	z-index: 10;
-	width: 100%;
-	top: 0;
-	box-shadow: 0px 0px 8px 0px $info;
-}
-.navbar {
-	height: 100%;
-	i {
-		font-size: xx-large;
-	}
-}
-.dropdown-menu {
-	right: -20px;
-	left: auto;
-	top: 45px;
-	border-radius: 0;
-	border: 0;
-	a:hover {
-		background-color: transparent;
-	}
-	li {
-		border-width: 0;
-	}
 }
 
 .logo {
@@ -131,180 +103,4 @@ body::-webkit-scrollbar-thumb {
 .currentWeatherImage {
 	background-color: $color-light-blue;
 	border-radius: 20px;
-}
-
-//TABLE
-.table {
-	font-size: 11px;
-	td {
-		height: 100%;
-		border: 0;
-	}
-}
-
-.table-dark {
-	background: $color-primary-dark;
-}
-
-.table-striped > tbody > tr:nth-of-type(odd) > * {
-	--bs-table-accent-bg: var($primary);
-	color: var(--bs-table-striped-color);
-}
-
-//MULTISELECT
-.multiselect {
-	// border: 2px solid $success;
-	// border-radius: 6px;
-	.multiselect__option {
-		span {
-			display: block;
-			max-width: 100%;
-			overflow-wrap: break-word;
-		}
-		.country {
-			display: block;
-			overflow-wrap: break-word;
-		}
-		.fontSmall {
-			font-size: 8px;
-		}
-	}
-	.multiselect__option--highlight {
-		background: $info;
-	}
-	.multiselect__option--highlight.multiselect__option--selected {
-		background: $success;
-	}
-	.multiselect__tags input {
-		background-color: $secondary;
-	}
-	.multiselect__tags,
-	.multiselect__single {
-		background: $secondary;
-	}
-	// --webkit-input-placeholder {
-	//   background: $secondary;
-	//   }
-
-	.multiselect__content {
-		background-color: $secondary;
-		overflow-x: hidden;
-	}
-	
-	.multiselect__content-wrapper::-webkit-scrollbar-track {
-		--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-		background-color: $secondary;
-	}
-
-	.multiselect__content-wrapper::-webkit-scrollbar {
-		width: 6px;
-		background-color: $secondary;
-	}
-
-	.multiselect__content-wrapper::-webkit-scrollbar-thumb {
-		background: $info;
-	}
-}
-
-//WYKRESY
-.boxShadow {
-	-webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.608);
-	-moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.608);
-	box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.608);
-}
-
-//opisy do wykresów
-.pFirst {
-	padding-top: 52px;
-}
-
-//MODUŁ Z 5 DNI TYGODNIA
-.flexBasis20 {
-	flex-basis: 20%;
-
-	@media only screen and (max-width: 992px) {
-		flex-basis: 33%;
-		.fontSizeMobile {
-			font-size: 15px;
-		}
-	}
-	@media only screen and (max-width: 767px) {
-		.fontSizeMobile {
-			font-size: 12px;
-		}
-	}
-}
-
-//NAGŁÓWEK
-.nav-link {
-	color: $secondary;
-	&:hover {
-		color: $success;
-		background: rgba($color: $primary, $alpha: 0.8)
-	}
-}
-
-.hr {
-	width: calc(100% - 30px);
-}
-
-.langSelect {
-	width: 50px;
-}
-
-.sunriseSunsetIcon{
-
-	@media only screen and (max-width: 767px) {
-		height: 30px;
-		
-	}
-}
-
-.shadowNone {
-	// shadow: 
-	&:focus {
-		box-shadow: 0 0 0 0.25rem transparent;
-	}
-}
-
-.dropdown-menu {
-	min-width: 6rem;
-}
-
-//SCROLL TOP
-.scrollTop {
-	padding: 10px;
-	width: 50px;
-	height: 50px;
-	position: fixed;
-	bottom: 50px;
-	right: 50px;
-	border-radius: 0.25rem;
-	box-shadow: 0px 0px 8px 0px $success;
-	cursor: pointer;
-	a {
-		display: block;
-		height: 100%;
-		i {
-			display: block;
-			font-size: 30px;
-			height: 100%;
-			margin-top: 3px;
-			color: $primary;
-			&::before {
-				font-weight: bold;
-				display: block;
-			}
-		}
-	}
-}
-//FOOTER
-.copyright-text {
-	padding-left: 20px;
-}
-
-.social-link {
-	.nav-link {
-		background-color: transparent;
-	}
 }

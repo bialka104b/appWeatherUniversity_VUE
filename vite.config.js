@@ -14,7 +14,6 @@ export default defineConfig({
 			// this is required for the SCSS modules
 			find: /^~(.*)$/,
 			replacement: "$1",
-			// "@src": path.resolve(__dirname, "./src"),
 			"@assets": path.resolve(__dirname, "./assets"),
 		},
 	},

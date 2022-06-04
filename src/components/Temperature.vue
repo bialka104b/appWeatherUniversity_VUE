@@ -250,19 +250,19 @@ export default {
 				const dt_txt = moment(x.dt_txt).format("DD-MM, HH:mm");
 				const numDay = Number(moment(x.dt_txt).format("HH"));
 				this.numberHours.push(numDay);
-				this.dt_txtTab.push(dt_txt); //data
+				this.dt_txtTab.push(dt_txt);
 				this.temp_minTab.push(x.main.temp_min);
 				this.temp_maxTab.push(x.main.temp_max);
-				this.temp_feelsLikeTab.push(x.main.feels_like); //temperatura odczuwalna
-				this.pressureTab.push(x.main.pressure); //ciśnienie
-				this.grnd_levelTab.push(x.main.grnd_level); //ciśnienie na poziomie gruntu
-				this.humidityTab.push(x.main.humidity); //wilgotność
-				this.cloudsTab.push(x.clouds.all); //zachmurzenie
-				this.popTab.push(x.pop * 100); //prawdopodobieństwo opadów
-				this.rainTab.push(x.rain ? x.rain["3h"] : 0); // deszczu w mm
-				this.snowTab.push(x.snow ? x.snow["3h"] : 0); //śnieg w mm
-				this.speedWindTab.push(((x.wind.speed * 1000) / 3600).toFixed(2)); //śnieg w mm
-				this.gustWindTab.push(((x.wind.gust * 1000) / 3600).toFixed(2)); //śnieg w mm
+				this.temp_feelsLikeTab.push(x.main.feels_like);
+				this.pressureTab.push(x.main.pressure);
+				this.grnd_levelTab.push(x.main.grnd_level);
+				this.humidityTab.push(x.main.humidity);
+				this.cloudsTab.push(x.clouds.all);
+				this.popTab.push(x.pop * 100);
+				this.rainTab.push(x.rain ? x.rain["3h"] : 0);
+				this.snowTab.push(x.snow ? x.snow["3h"] : 0);
+				this.speedWindTab.push(((x.wind.speed * 1000) / 3600).toFixed(2));
+				this.gustWindTab.push(((x.wind.gust * 1000) / 3600).toFixed(2));
 			});
 			this.dayNightRainTab = this.scopeNights(
 				this.numberHours,

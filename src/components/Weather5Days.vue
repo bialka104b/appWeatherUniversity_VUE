@@ -179,12 +179,10 @@ export default {
 	},
 	data() {
 		return {
-			//FORECAST
 			listResultsForecast: [],
 			cityInfoForecast: {},
 			listInfoForecast: [],
 			defaultTable: [],
-
 			myCities: [],
 			myCitiesWorld: [],
 			city: { NAZWA: "Rzeszów" },
@@ -201,7 +199,6 @@ export default {
 			],
 			selectedTemperatureUnit: "metric",
 			myLang: [],
-
 			result: [],
 			lat: "",
 			lon: "",
@@ -219,8 +216,6 @@ export default {
 			id: 0,
 			name: "",
 			cod: 0,
-
-			//API
 			API_KEY: "5baab241d44debf04d78944091967607",
 			URLWeather: "https://api.openweathermap.org/data/2.5/weather?",
 			URLForecast: "https://api.openweathermap.org/data/2.5/forecast?",
@@ -287,8 +282,6 @@ export default {
 					console.error(err, "getWeather - Weather5Days component");
 				});
 		},
-
-		// FORECAST
 		async daily(lat = 50.0413, lon = 21.999, units = "metric") {
 			await axios
 				.get(

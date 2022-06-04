@@ -369,15 +369,14 @@ export default {
 				const dt = moment.unix(x.dt).format("DD-MM, HH:mm");
 				const numDay = Number(moment.unix(x.dt).format("HH"));
 				this.numberHours.push(numDay);
-				this.cloudsTab.push(x.clouds); //zachmurzenie
+				this.cloudsTab.push(x.clouds);
 				this.dew_pointTab.push(x.dew_point);
-				this.dtTab.push(dt); //data
-				this.feels_LikeTab.push(x.feels_like); //temperatura odczuwalna
-				this.humidityTab.push(x.humidity); //wilgotność
-				this.popTab.push(x.pop * 100); //prawdopodobieństwo opadów
-				this.pressureTab.push(x.pressure); //ciśnienie
-				this.snowTab.push(x.snow ? x.snow["1h"] : 0); // śnieg w mm
-
+				this.dtTab.push(dt);
+				this.feels_LikeTab.push(x.feels_like); 
+				this.humidityTab.push(x.humidity); 
+				this.popTab.push(x.pop * 100);
+				this.pressureTab.push(x.pressure);
+				this.snowTab.push(x.snow ? x.snow["1h"] : 0); 
 				this.rainTab.push(x.rain ? x.rain["1h"] : 0); // deszczu w mm3/1mm2
 				//1mm deszczu => 1000 mm * 1000 mm * 1 mm = 1 000 000 mm 3 = 1 litr
 				//2.2mm => 1000*1000*2.2 = 2 200 000 mm3 => 2,2l

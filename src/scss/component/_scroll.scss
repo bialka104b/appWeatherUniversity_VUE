@@ -1,0 +1,26 @@
+.scrollTop {
+	padding: 10px;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	border-radius: 0.25rem;
+	box-shadow: 0px 0px 8px 0px $success;
+	cursor: pointer;
+	a {
+		display: block;
+		height: 100%;
+		i {
+			display: block;
+			font-size: 30px;
+			height: 100%;
+			margin-top: 3px;
+			color: $primary;
+			&::before {
+				font-weight: bold;
+				display: block;
+			}
+		}
+	}
+}

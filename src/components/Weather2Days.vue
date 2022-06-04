@@ -188,8 +188,6 @@ export default {
 				PANSTWO: "Polska",
 				KONTYNENT: "Europa",
 			},
-
-			//API
 			API_KEY: "5baab241d44debf04d78944091967607",
 			URLWeather: "https://api.openweathermap.org/data/2.5/weather?",
 			URLOneCall: "https://api.openweathermap.org/data/2.5/onecall?",
@@ -243,8 +241,6 @@ export default {
 					console.error(err, "getWeather - Weather2Days component");
 				});
 		},
-
-		// FORECAST
 		async daily48h(lat = 50.0413, lon = 21.999) {
 			await axios
 				.get(
