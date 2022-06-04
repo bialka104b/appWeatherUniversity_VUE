@@ -470,19 +470,9 @@
 		"KONTYNENT": "Europa"
 	},
 	{
-		"PANSTWO": " Georgia Południowa i Sandwich Południowy",
-		"STOLICA": "King Edward Point",
-		"KONTYNENT": "Ameryka Południowa"
-	},
-	{
-		"PANSTWO": "Norfolk",
+		"PANSTWO": "Norfolk, Jamajka",
 		"STOLICA": "Kingston",
-		"KONTYNENT": "Australia i Oceania"
-	},
-	{
-		"PANSTWO": "Jamajka",
-		"STOLICA": "Kingston",
-		"KONTYNENT": "Ameryka Północna"
+		"KONTYNENT": "Australia i Oceania, Ameryka Północna"
 	},
 	{
 		"PANSTWO": " Saint Vincent i Grenadyny",
@@ -725,11 +715,6 @@
 		"KONTYNENT": "Afryka"
 	},
 	{
-		"PANSTWO": "Palau",
-		"STOLICA": "Ngerulmud",
-		"KONTYNENT": "Australia i Oceania"
-	},
-	{
 		"PANSTWO": "Niger",
 		"STOLICA": "Niamey",
 		"KONTYNENT": "Afryka"
@@ -740,18 +725,13 @@
 		"KONTYNENT": "Azja"
 	},
 	{
-		"PANSTWO": "Cypr Północny",
-		"STOLICA": "Nikozja",
-		"KONTYNENT": "Azja"
-	},
-	{
 		"PANSTWO": "Indie",
 		"STOLICA": "Nowe Delhi",
 		"KONTYNENT": "Azja"
 	},
 	{
 		"PANSTWO": "Tonga",
-		"STOLICA": "Nuku?alofa",
+		"STOLICA": "Nuku'alofa",
 		"KONTYNENT": "Australia i Oceania"
 	},
 	{
@@ -1150,11 +1130,6 @@
 		"KONTYNENT": "Europa"
 	},
 	{
-		"PANSTWO": "Tuvalu",
-		"STOLICA": "Vaiaku",
-		"KONTYNENT": "Australia i Oceania"
-	},
-	{
 		"PANSTWO": "Malta",
 		"STOLICA": "Valletta",
 		"KONTYNENT": "Europa"
@@ -1178,11 +1153,6 @@
 		"PANSTWO": "Stany Zjednoczone",
 		"STOLICA": "Waszyngton",
 		"KONTYNENT": "Ameryka Północna"
-	},
-	{
-		"PANSTWO": "Watykan",
-		"STOLICA": "Watykan",
-		"KONTYNENT": "Europa"
 	},
 	{
 		"PANSTWO": "Nowa Zelandia",

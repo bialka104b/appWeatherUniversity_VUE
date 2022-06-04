@@ -1,6 +1,6 @@
 <template>
 	<div class="w-100 position-relative">
-		<header class="header">
+		<header class="header bg-info">
 			<div class="navbar">
 				<div class="logo">
 					<h1 class="textLightBlue">
@@ -41,11 +41,11 @@
 					</button>
 				</nav>
 				<div class="dropdownDiv d-md-none" v-show="showDropdown">
-					<ul class="list-group bg-primary dropdown-menu">
-						<li class="list-group-item bg-primary">
+					<ul class="list-group bg-info dropdown-menu">
+						<li class="list-group-item bg-info">
 							<router-link to="/" class="nav-link p-0 text-center">{{$t("Home")}}</router-link>
 						</li>
-						<li class="list-group-item bg-primary">
+						<li class="list-group-item bg-info">
 							<router-link to="/weather48h" class="nav-link p-0 text-center">{{ $t("Weather48h") }}</router-link>
 						</li>
 					</ul>

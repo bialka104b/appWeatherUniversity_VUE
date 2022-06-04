@@ -32,6 +32,11 @@ body {
 		.bRadius {
 			border-radius: 20px;
 		}
+		a:active {
+			background-color: $success;
+			border-color: $success;
+			box-shadow: 0 0 0 0.2rem rgba($success, 0.2);
+		}
 	}
 }
 
@@ -65,6 +70,12 @@ header.header {
 	top: 45px;
 	border-radius: 0;
 	border: 0;
+	a:hover {
+		background-color: transparent;
+	}
+	li {
+		border-width: 0;
+	}
 }
 
 .logo {
