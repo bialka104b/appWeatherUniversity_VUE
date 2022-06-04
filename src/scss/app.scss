@@ -15,10 +15,7 @@ body {
 	// font-family:'Courgette', cursive;
 }
 #app {
-	// display: block;
 	width: 100%;
-	#forecast {
-	}
 	font-weight: normal;
 	.section {
 		background-image: url("./assets/images/miasto.jpg");
@@ -29,7 +26,6 @@ body {
 
 		.bgOpacity {
 			background-color: rgba($color: $primary, $alpha: 0.8);
-			// height: 200px;
 			padding: 20px;
 		}
 
@@ -87,17 +83,9 @@ a,
 }
 
 @media (hover: hover) {
-	a:hover {
-	}
 }
 
 @media (min-width: 1024px) {
-	// header .wrapper {
-	//   display: flex;
-	//   place-items: flex-start;
-	//   flex-wrap: wrap;
-	// }
-
 	.logo {
 		margin: 0 2rem 0 0;
 	}
@@ -191,9 +179,7 @@ body::-webkit-scrollbar-thumb {
 		background-color: $secondary;
 		overflow-x: hidden;
 	}
-	.multiselect__content-wrapper.multiselect-leave-from.multiselect-leave-active {
-	}
-
+	
 	.multiselect__content-wrapper::-webkit-scrollbar-track {
 		--webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 		background-color: $secondary;
@@ -253,9 +239,6 @@ body::-webkit-scrollbar-thumb {
 
 .langSelect {
 	width: 50px;
-	.multiselect {
-		// height: 100%;
-	}
 }
 
 .sunriseSunsetIcon{
